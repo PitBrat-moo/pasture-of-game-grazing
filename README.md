@@ -26,26 +26,26 @@ This repository provides precise, reproducible instructions for installing and c
 ## Contributions
 Issues and pull requests are welcome. All additions must follow the same standards of clarity, stability, and reproducibility.
 
-  ⟞⟢⟡⟠⟣⟜⟟⟣⟢⟞⟡⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿ 
-  ⟠⟜⟞      A U T H O R S H I P   &   R I G H T S   D E C L A R A T I O N      ⟣⟟⟡
-  ⟡⟢⟞⟜⟠⟣⟟⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
+
+   ⟞⟢⟡⟠⟣⟜⟟⟣⟢⟞⟡⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿  
+  ⟠⟜⟞      A U T H O R S H I P   &   R I G H T S   D E C L A R A T I O N      ⟣⟟⟡  ⟡⟢⟞⟜⟠⟣⟟⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿  
   
-This document was authored and compiled by **PitBrat**.
-All configuration notes, testing results, workflow descriptions, and technical
-explanations contained herein represent original work based on hands‑on
-research, emulator analysis, and system‑level experimentation.
-
-You may reference, share, or adapt this guide for personal or non‑commercial
-use, provided that proper credit to the original author is maintained.
-Commercial redistribution or paywalled reuse is not permitted without explicit
-permission from the author.
-
-All product names, trademarks, and hardware references belong to their
-respective owners. This guide is an independent technical resource and is not
-affiliated with or endorsed by any hardware manufacturer, software developer,
-or emulator project.
-
-Use all configurations and procedures at your own discretion.
-No warranty is expressed or implied.
-
-⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
+This document was authored and compiled by **PitBrat**.  
+All configuration notes, testing results, workflow descriptions, and technical  
+explanations contained herein represent original work based on hands‑on  
+research, emulator analysis, and system‑level experimentation.  
+  
+You may reference, share, or adapt this guide for personal or non‑commercial  
+use, provided that proper credit to the original author is maintained.  
+Commercial redistribution or paywalled reuse is not permitted without explicit  
+permission from the author.  
+  
+All product names, trademarks, and hardware references belong to their  
+respective owners. This guide is an independent technical resource and is not  
+affiliated with or endorsed by any hardware manufacturer, software developer,  
+or emulator project.  
+  
+Use all configurations and procedures at your own discretion.  
+No warranty is expressed or implied.  
+  
+⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿  
