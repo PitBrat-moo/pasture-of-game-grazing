@@ -27,7 +27,7 @@ This repository provides precise, reproducible instructions for installing and c
 Issues and pull requests are welcome. All additions must follow the same standards of clarity, stability, and reproducibility.
 
 ```
-  ⟞⟢⟡⟠⟣⟜⟟⟣⟢⟞⟡⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
+  ⟞⟢⟡⟠⟣⟜⟟⟣⟢⟞⟡⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
  ⟠⟜⟞      A U T H O R S H I P   &   R I G H T S   D E C L A R A T I O N      ⟣⟟⟡
 ⟡⟢⟞⟜⟠⟣⟟⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
