@@ -1,1 +1,40 @@
+NAMING CODEX
 
+1. purpose
+keep filenames consistent, clean, stable.
+
+2. two systems
+
+A. manuscripts / codex texts
+- use underscores
+- use Title_Case
+
+examples:
+The_Sacred_Forage_of_the_Nine_Eight_Pasture_codex.txt
+Revenant_Pasture_Manifest.txt
+
+B. game guides
+- use lowercase
+- use hyphens for game names
+- use space -- space as divider
+
+examples:
+revenant -- install.txt
+thief-gold -- tweaks.txt
+lands-of-lore-3 -- notes.txt
+
+3. rules
+- no underscores in game guides
+- no hyphens in manuscripts
+- no en dashes
+- lowercase for guides
+- one space on each side of --
+
+4. optional folders
+/games/game-name -- install.txt
+/docs/naming-codex.txt
+
+5. intent
+prevent drift
+protect aesthetic
+keep pasture pure
