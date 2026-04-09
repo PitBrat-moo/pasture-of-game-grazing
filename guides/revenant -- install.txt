@@ -1,0 +1,133 @@
+Revenant.txt
+============
+
+INSTALLATION
+------------
+
+A. VM INSTALLATION (Recommended)
+• Create a Windows 98 SE virtual machine in 86Box
+• Install Revenant inside the VM
+• Install Patch 1.22
+• Install NoCD patch
+• Install Dialogue Fix (copy Ahkuilon.rvm into the “modules” folder)
+
+Notes:
+- VM path avoids modern rendering issues
+- Game timing is stable under Win98SE
+
+
+B. WINDOWS 10/11 INSTALLATION
+-----------------------------
+Major issue: magenta chroma‑key artifacts around text (no known fix)
+
+Steps:
+• Install the game normally
+• Install dgVoodoo
+
+dgVoodoo Settings:
+  General → Windows
+    - Scaling: Unspecified
+  DirectX
+    - Uncheck “Watermark”
+    - Uncheck “Application controlled fullscreen”
+    - Check “Disable Alt‑Enter”
+  GeneralExt
+    - FPS Limit: 30
+
+Notes:
+- FPS limit is mandatory
+- Chroma‑key artifacts remain unresolved on modern systems
+
+
+PATCHES
+-------
+
+Patch 1.22  
+• File: rev122us.zip  
+  https://www.patches-scrolls.de/patch/3428/7/
+
+Dialogue Fix  
+• File: Ahkuilon.rvm  
+  https://mega.nz/file/EqIETAIA#N3H3aXJs_uUe5xMwiMBbrPCBmbpy9_C7XODNDGhmdXg
+
+Peixoto’s Patch (Not Recommended)  
+• File: WineHooks.-.0.10.22.zip  
+  https://www.patreon.com/u44312848
+
+  Note: Unstable; causes inconsistent behavior on modern Windows.
+
+
+MODS
+----
+
+Galactic Modd  
+• File: Revenant_Galactic_Mod_v0.12.7z  
+  https://mega.nz/file/F4F0QLYZ#Cot7Sns_PpFr0_VX-CcnfWPFi_GSnvmjOguXEFQGpFI  
+  https://www.moddb.com/games/revenant/downloads/revenant-galactic-mod
+
+  Note: Obsolete; includes outdated dgVoodoo and enemy balance changes.
+
+
+TOOLS (OPTIONAL)
+----------------
+
+Automap Stitcher  
+• File: automaps.py_v1.0.rar  
+  https://www.moddb.com/mods/the-forsaken/downloads/automapspy-v10
+
+DAT Extractor / Converter  
+• File: dat2bmp_v01_source.7z  
+  https://www.moddb.com/mods/the-forsaken/downloads/dat2bmp-v01
+
+
+TWEAKS & FIXES
+--------------
+
+Settings Reset on Startup  
+• Run the game from Revenant.exe instead of Launcher.exe  
+• Must run launcher once to configure settings  
+• Game speed resets every session
+
+Game Crashes  
+• Disable “Fast Surface Locks” in launcher advanced options
+
+Game Fails to Boot / Large Black Areas  
+• Limit RAM access to 2 GB  [unverified]
+
+Intro Movie Freeze  
+• Skip by removing / renaming SMK files or using wrappers with “no movies” flags
+
+
+KNOWN ISSUES (UNRESOLVED)
+-------------------------
+
+A4R4G4B4 Texture Failure (DXWND‑CONFIRMED)  
+• Dialog text, UI overlays, minimap elements fail to render  
+• Engine-level issue; no known fix
+
+Lighting / Gamma Problems  
+• Black areas at low gamma  
+• Interiors darken randomly  
+• Candle flames show black rectangles  
+• Gamma slider can exceed intended bounds
+
+Chroma‑Key Artifacts  
+• Magenta outlines around text and UI elements
+
+
+VERIFIED FIXES
+--------------
+• Disable “Fast Surface Locks”
+
+
+UNVERIFIED / HISTORICAL FIXES
+-----------------------------
+• Disable Z Buffering  
+• Forced Software Rendering  
+• Software3D=Yes  
+• Limit RAM to 2GB  
+• Disable texture blitting / overlays  
+• Software renderer for minimap (severe performance loss)
+
+Notes:
+- Kept for archival completeness only
