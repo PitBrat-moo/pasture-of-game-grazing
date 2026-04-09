@@ -38,7 +38,9 @@ Revenant Install Guide
 
 ```
 
-github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Gaming\_Setup.txt
+https://github.com
+
+/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Gaming\_Setup.txt
 
 ```
 
@@ -50,7 +52,9 @@ github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Ga
 
 ```
 
-github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt
+https://github.com
+
+/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt
 
 ```
 
