@@ -6,9 +6,9 @@ Best Grazing: Nine Eight Pasture (Windows 98 SE via 86Box)
 
 \## Required Guides
 
-\- \[86Box Windows 98 Gaming Setup](../docs/86Box\_Win98\_Gaming\_Setup.txt)
+\- \[86Box Windows 98 Gaming Setup](../guides/86Box\_Win98\_Gaming\_Setup.txt)
 
-\- \[Revenant Install Guide](../docs/revenant -- install.txt)
+\- \[Revenant Install Guide](../guides/revenant -- install.txt)
 
 
 
