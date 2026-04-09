@@ -1,62 +1,74 @@
 \# Revenant
 
-Best Grazing: Nine Eight Pasture (Windows 98 SE via 86Box)
+Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)  
+
+(Chosen for artifact‑pure DirectDraw timing and stable Voodoo3 behavior.)
 
 
 
 \## Required Guides
 
-86Box Windows 98 Gaming Setup  
+\~\~ 86Box Windows 98 Gaming Setup  
 
-Revenant Install Guide
+\~\~ Revenant Install Guide
+
+
+
+\~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~
 
 
 
 \## Notes
 
-\- Needs Win98SE VM to correctly display DirectDraw 16-bit textures.
+\- Needs Win98SE VM to correctly display DirectDraw 16‑bit textures.
 
 \- Requires official patches, dialogue restoration, and stability tweaks.
 
 \- DirectX/DirectDraw renderer via Voodoo3 provides the most stable behavior.
 
+\- Stable and reliable in 86Box using the Nine Eight Pasture configuration.
+
 \- Modern Windows builds are unreliable; avoid native execution.
 
 
 
-\---
+> ⚠️ Stable under 98SE + Voodoo3 in 86Box  
+
+> Avoid native execution on modern Windows builds.
 
 
 
-\## URL Vault
+\~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~
 
 
 
-\### 86Box Windows 98 Gaming Setup
+\## URL Vault  
+
+(Plain URLs shown to avoid GitHub autolink rewriting.)
 
 
 
-```
+\### 86Box Windows 98 Gaming Setup  
 
-https://github.com
+(Full Win98SE VM setup for 86Box.)  
 
-/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Gaming\_Setup.txt
-
-```
+https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Gaming\_Setup.txt
 
 
 
-\### Revenant Install Guide
+\### Revenant Install Guide  
+
+(Install steps, patches, and stability fixes.)  
+
+https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt
 
 
 
-```
+\~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~ \~\~
 
-https://github.com
 
-/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt
 
-```
+\~\~ Codex Entry: Revenant \~\~ Nine Eight Pasture
 
 
 
