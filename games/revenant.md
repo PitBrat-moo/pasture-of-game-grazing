@@ -1,10 +1,14 @@
 \# Revenant
 
+
+
 Best Grazing: Nine Eight Pasture (Windows 98 SE via 86Box)
 
 
 
 \## Required Guides
+
+
 
 \- \[86Box Windows 98 Gaming Setup](../guides/86Box\_Win98\_Gaming\_Setup.txt)
 
@@ -13,6 +17,8 @@ Best Grazing: Nine Eight Pasture (Windows 98 SE via 86Box)
 
 
 \## Notes
+
+
 
 \- Needs Win98SE VM to correctly display DirectDraw 16-bit textures.
 
