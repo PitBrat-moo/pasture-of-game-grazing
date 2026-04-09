@@ -1,14 +1,10 @@
 \# Revenant
 
-
-
 Best Grazing: Nine Eight Pasture (Windows 98 SE via 86Box)
 
 
 
 \## Required Guides
-
-
 
 86Box Windows 98 Gaming Setup  
 
@@ -17,8 +13,6 @@ Revenant Install Guide
 
 
 \## Notes
-
-
 
 \- Needs Win98SE VM to correctly display DirectDraw 16-bit textures.
 
@@ -40,13 +34,25 @@ Revenant Install Guide
 
 \### 86Box Windows 98 Gaming Setup
 
-<https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Gaming\_Setup.txt>
+
+
+```
+
+https\\://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Gaming\_Setup.txt
+
+```
 
 
 
 \### Revenant Install Guide
 
-<https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt>
+
+
+```
+
+https\\://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt
+
+```
 
 
 
