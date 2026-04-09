@@ -10,9 +10,9 @@ Best Grazing: Nine Eight Pasture (Windows 98 SE via 86Box)
 
 
 
-\- \[86Box Windows 98 Gaming Setup](https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Gaming\_Setup.txt)
+\- \[86Box Windows 98 Gaming Setup](#guide1)
 
-\- \[Revenant Install Guide](https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt)
+\- \[Revenant Install Guide](#guide2)
 
 
 
@@ -27,6 +27,30 @@ Best Grazing: Nine Eight Pasture (Windows 98 SE via 86Box)
 \- DirectX/DirectDraw renderer via Voodoo3 provides the most stable behavior.
 
 \- Modern Windows builds are unreliable; avoid native execution.
+
+
+
+\---
+
+
+
+\## URL Vault
+
+
+
+\### 86Box Windows 98 Gaming Setup
+
+<a id="guide1"></a>
+
+<https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box\_Win98\_Gaming\_Setup.txt>
+
+
+
+\### Revenant Install Guide
+
+<a id="guide2"></a>
+
+<https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt>
 
 
 
