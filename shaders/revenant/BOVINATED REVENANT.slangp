@@ -1,1 +1,63 @@
+shaders = 6
 
+########################################
+# 0 — SHARP-BILINEAR (cleaner, crisper)
+########################################
+shader0 = "pixel-art-scaling/shaders/sharp-bilinear.slang"
+filter_linear0 = false
+scale_type0 = source
+parameters0 = "SHARPNESS;GAMMA"
+SHARPNESS = 0.38        # was 0.45 — slightly less harsh
+GAMMA = 1.00
+
+########################################
+# 1 — CRT-GUESTLITE (reduced glow, cleaner depth)
+########################################
+shader1 = "custom/crt-guestlite.slang"
+filter_linear1 = false
+scale_type1 = source
+parameters1 = "glow_strength;chroma_spread;afterglow"
+glow_strength = 0.08     # was 0.12 — less bloom haze
+chroma_spread = 0.22     # was 0.30 — less color bleeding
+afterglow = 0.14         # was 0.20 — tighter response
+
+########################################
+# 2 — MICRO-BLUR (reduced to micro-soften only)
+########################################
+shader2 = "custom/3x3-micro-blur.slang"
+filter_linear2 = false
+scale_type2 = source
+parameters2 = "strength"
+strength = 0.02          # was 0.04 — half as strong
+
+########################################
+# 3 — HUD MICRO-STROKE (sharper HUD edges)
+########################################
+shader3 = "custom/hud-microstroke.slang"
+filter_linear3 = false
+scale_type3 = source
+parameters3 = "strength"
+strength = 0.16          # was 0.20 — slightly less halo
+
+########################################
+# 4 — BLOOM-SOFT (clean glow, reduced intensity)
+########################################
+shader4 = "custom/bloom-soft.slang"
+filter_linear4 = true
+scale_type4 = source
+parameters4 = "strength;threshold"
+strength = 0.035         # was 0.05 — more subtle
+threshold = 0.84         # was 0.82 — bloom triggers less often
+
+########################################
+# 5 — COLOR-GRADE (reduced vibrancy)
+########################################
+shader5 = "Custom/color-grade.slang"
+filter_linear5 = false
+scale_type5 = source
+parameters5 = "exposure;contrast;saturation;lift;gain"
+exposure = 1.00          # was 1.01
+contrast = 1.01          # was 1.02
+saturation = 1.015       # was 1.03 — vibrancy now tasteful
+lift = 1.00
+gain = 1.00
