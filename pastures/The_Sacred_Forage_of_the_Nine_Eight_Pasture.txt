@@ -1,4 +1,4 @@
-        T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S T U R E
+T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S T U R E
 
 
 ~~~≋≋≋≋≋≋≋≋≋≋≋≋⟪  (‾(oo)‾)  ⟫≋≋≋≋≋≋≋≋≋≋≋≋~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -18,8 +18,8 @@
                              /  (  )  \
                             /   |  |   \
                            /    |  |    \
-                          /_____|  |_____\               
-≈≈≈≋≋≋⟢⟢⟢(‾(oo)‾)⟣⟣⟣≋≋≋≈≈≈⟡⟡⟡(•(oo)•)⟢⟢⟢≈≈≈≋≋≋⟣⟣⟣(¬(oo)¬)⟢⟢⟢≋≋≋≈≈≈⟡⟡⟡(•(oo)•)⟢⟢⟢≈≈≈
+                          /_____|  |_____\
+≈≈≈≋≋≋⟢⟢⟢(‾(oo)‾)⟣⟣⟢≋≋≋≈≈≈⟡⟡⟡(•(oo)•)⟢⟢⟢≈≈≈≋≋≋⟣⟣⟣(¬(oo)¬)⟢⟢⟢≋≋≋≈≈≈⟡⟡⟡(•(oo)•)⟢⟢⟢≈≈≈
 
                  _______________________________
              ___/                               \___
@@ -30,7 +30,7 @@
     /        /\____________________________________/\       \
    /        (     o    o    o    o    o    o    o    )       \
   /         (                   ^^^                  )        \
- |           \__________________====_________________/         | 
+ |           \__________________====_________________/         |
  |                     |      |      |      |                  |
  |                     |      |      |      |                  |
  |                 ____/      |      |      \____              |
@@ -128,7 +128,6 @@ IMMERSIVE SIMS & ACTION-ADVENTURES
 RPGs  
 • Evil Islands ⟦ＧＭ⟧  
 • Gorasul ⟦ＧＭ⟧  
-• Arx Fatalis (French build) ⟦ＧＭ⟧  
 
 FMV / ADVENTURE  
 • Black Mirror ⟦ＧＭ⟧  
@@ -142,8 +141,6 @@ FMV / ADVENTURE
 
 EXPERIMENTAL / HYBRID  
 • Realms of the Haunting ⟦ＧＭ⟧  
-• Azrael’s Tear ⟦ＦＭ⟧  
-• Sentinel Returns ⟦ＦＭ⟧  
 
 ────────────────────────────────────────────────────────────────────────
                  ✦  H I G H - V A L U E   ( U N B E A T E N )  ✦
@@ -159,14 +156,12 @@ EXPERIMENTAL / HYBRID
 • Outcast ⟦ＸＲ⟧  
 • Nocturne ⟦ＧＭ⟧  
 • Heavy Gear II ⟦ＧＭ⟧  
-• MDK ⟦ＧＭ⟧  
 • MDK2 ⟦ＸＲ⟧  
 • Sacrifice ⟦ＸＲ⟧  
 • Revenant ⟦ＧＭ⟧  
 • Amber: Journeys Beyond ⟦ＧＭ⟧  
 • Urban Chaos ⟦ＧＭ⟧  
 • Battlezone II (original release) ⟦ＧＭ⟧  
-• Lands of Lore: Guardians of Destiny ⟦ＧＭ⟧  
 • Mysterious Journey I (Schizm I) ⟦ＧＭ⟧  
 • Mysterious Journey II (Schizm II) ⟦ＧＭ⟧  
 
@@ -203,7 +198,6 @@ JAPANESE PC PORTS
 DREAMCAST / PS2 ERA  
 • Slave Zero ⟦ＧＭ⟧  
 • Incoming ⟦ＧＭ⟧  
-• MDK ⟦ＧＭ⟧  
 • MDK2 ⟦ＸＲ⟧  
 
 ────────────────────────────────────────────────────────────────────────
@@ -218,8 +212,6 @@ DREAMCAST / PS2 ERA
 • ZPC ⟦ＦＭ⟧  
 • Bad Mojo ⟦ＦＭ⟧  
 • I Have No Mouth, and I Must Scream ⟦ＦＭ⟧  
-• Severance: Blade of Darkness ⟦ＧＭ⟧  
-• King’s Field (PC ports) ⟦ＦＭ⟧  
 • RealMyst ⟦ＸＲ⟧  
 
 ────────────────────────────────────────────────────────────────────────
@@ -239,7 +231,6 @@ DREAMCAST / PS2 ERA
 • Severance: Blade of Darkness ⟦ＧＭ⟧  
 • King’s Field ⟦ＦＭ⟧  
 • Realms of the Haunting ⟦ＧＭ⟧  
-• Azrael’s Tear ⟦ＦＭ⟧  
 
 ────────────────────────────────────────────────────────────────────────────
           𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁
@@ -288,7 +279,7 @@ DREAMCAST / PS2 ERA
 
 
 ── P L A T E   I I I :   T H E   E N D L E S S   P A T H ──
-   (\ (\
+   (\ (\ 
    ( -.-)
    o_(")
 
@@ -326,7 +317,7 @@ T H E   G A M E S   T H A T   W A N D E R   U N C L A I M E D
 • Reah ⟦ＧＭ⟧  
 • Reflux ⟦ＦＭ⟧  
 • Nightshade ⟦ＦＭ⟧  
-• The Devil Inside ⟦ＧＭ⟧
+• The Devil Inside ⟦ＧＭ⟧  
 
 
 ───────────────────────────  A U D I O   P A T H   S I G I L S  ───────────────────────────
