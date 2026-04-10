@@ -22,7 +22,7 @@ Major issue: magenta chroma‑key artifacts around text (no known fix)
 
 Steps:
 • Install the game normally
-• Install dgVoodoo
+• Install dgVoodoo (latest version unless otherwise specified)
 
 dgVoodoo Settings:
   General → Windows
@@ -80,6 +80,29 @@ DAT Extractor / Converter
   https://www.moddb.com/mods/the-forsaken/downloads/dat2bmp-v01
 
 
+TOOL DEPENDENCIES (OPTIONAL)
+----------------------------
+
+dgVoodoo  
+• https://dege.freeweb.hu/dgVoodoo2/
+• Purpose: Required wrapper for rendering stability on modern Windows  
+• Notes: Use latest version unless a guide specifies otherwise
+
+ShaderGlass
+• https://mausimus.itch.io/shaderglass  
+• Purpose: Host-side shader injection  
+• Notes: Only needed if using custom shaders
+
+
+CUSTOM ENHANCEMENTS (OPTIONAL)
+------------------------------
+
+Bovinated Revenant Shader  
+• GitHub: https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/shaders/BOVINATED%20REVENANT.slangp  
+• Purpose: Improved scaling clarity; preserves 16‑bit color behavior  
+• Compatibility: Requires ShaderGlass; not compatible with Lossless Scaling
+
+
 TWEAKS & FIXES
 --------------
 
@@ -128,6 +151,3 @@ UNVERIFIED / HISTORICAL FIXES
 • Limit RAM to 2GB  
 • Disable texture blitting / overlays  
 • Software renderer for minimap (severe performance loss)
-
-Notes:
-- Kept for archival completeness only
