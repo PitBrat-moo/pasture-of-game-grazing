@@ -19,7 +19,7 @@ HOW TO READ
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ MACHINE 
 Description: Machine / System / Performance
 → Machine type: [1997] Slot 1; Motherboard: [i440BX] ASUS P3B-F; Memory: 128 MB; Time synchronization: Enabled (local time)
-→ Processor → CPU: Pentium II (Deschutes); Frequency: 450 (**233 MHz** for widest compatibility; **450 MHz** for performance); SoftFloat FPU: Disabled
+→ Processor → CPU: Pentium II (Deschutes); Frequency: 300 (**233 MHz** for widest compatibility; **450 MHz** for power); SoftFloat FPU: Disabled
 → Performance → PIT Mode: Fast (use Auto if unstable); Dynamic Recompiler: ON; CPU Frame Size: Smaller Frames
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ DISPLAY
@@ -264,19 +264,27 @@ cat > Guide_Part2_Tweaks_Profiles.txt
                                    Chunk 2 — Tweaks, Profiles, Tests
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
 
-⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ AUDIO MIXER LEVELS (Creative Mixer / Volume Control)
-Description: set mixer levels to balance dialogue, SFX, music and avoid clipping.
-→ Master / Wave: **90%**  
-→ Synth / MIDI: **85%**  
-→ CD Audio: **75%** (options → properties → CD audio: Enabled) 
-→ PCM / Digital: **88%**  
-→ Microphone / Record Gain: **-6 dB** (or 50% slider) — avoid boosting  
-→ Line In (if used): **50%**  
+⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ AUDIO MIXER LEVELS (Volume Control)
+Description: set mixer levels to balance dialogue, SFX, music and avoid clipping lock CD Audio volume.
+→ Right click speaker in task tray→ 
+→ Master: **80%**  
+→ Synth / MIDI: **60%**  
+→ CD Audio: **55%** (options → properties → CD audio: Enabled) 
+→ Wave: **85%**  
+→ Line In (if used): 50% **Mute if unused**  
 → Mute unused inputs (Aux, Phone) to prevent background noise  
 → **Tip:** keep Master slightly below max to avoid clipping during dynamic scenes.
+→ Advanced → Bass: 55%; Treble: 45%
+
+→ Lock CD Audio volume to prevent it resetting to %100 after game loads, increase mixer stability.
+   • Options → Properties → Recording → CD Audio: Enabled; Microphone: Enabled; Line: Enabled → OK
+   • CD Audio: 70% → Select: Enabled
+   • Microphone: 0% → Select: Disabled **favor stability**
+   • Line: 0% → Select: Disabled **favor stability**
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ 3DFX TOOLS UI (SET IN APP)
-Description: set sliders in 3dfx Tools UI (preferred) — use registry only as fallback.
+Description: set sliders in 3dfx Tools UI  
+→ Double click 3dfx in task tray to open UI
 → Contexts: Desktop / Direct3D / Glide / Video Overlay  
 → 3D Filter Quality: High ; Alpha‑Blending: Smoother ; LOD Bias: -1.00  
 → Z‑buffer Optimization: Enable ; Depth Precision (16‑bit): Fast  
@@ -378,6 +386,7 @@ ChunkSize=512
 ═══⟦  \‾(••)‾/  ⟧═══--- END SYSTEM.INI (Profile B) ---═══════════════════════⟦  \‾(••)‾/  ⟧═══
 PROFILE B — PERFORMANCE FIRST (CPU‑bound titles)
 • Hardware: **CPU 450 MHz**, **Voodoo3 = 1 thread**
+• Note: CPU Frequency above 300 can introduce audio jitter and break games
 
 PROFILE RULES
 
@@ -388,7 +397,7 @@ PROFILE RULES
 Symptom | Likely cause | First action
 Dialogue jitter | IRQ/DMA contention or low DMABufferCount | Confirm YAMAHA IRQ=5 DMA=0 HDMA=1; increase DMABufferCount +2
 FMV drops / stutter | VCACHE / paging file too small or CD speed too high | Increase MaxFileCache or paging file; lower CD‑ROM speed to 24×/12×
-Low FPS in 3D | CPU bottleneck or Voodoo thread setting | Use Profile B (450 MHz, 1 thread) for that title; test and log results
+Low FPS in 3D | CPU bottleneck or Voodoo thread setting | Use Profile B (450 MHz, 1 thread) for that title; test and log results; reduce frequency if audio jitter
 --- END QUICK TROUBLESHOOTING ---
 
 ⎯(ᶜᵒʷ•ᵎ)⎯─◐◑◒◓─ PRACTICAL CHECKLIST (one‑page test plan)
@@ -601,3 +610,4 @@ Description: Tool cap FPS for better frame pacing for frame generation with Loss
 ⟣⟜⟞⟡⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜⟞⟡
 
 Ctrl-D
+
