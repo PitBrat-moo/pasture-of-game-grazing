@@ -14,6 +14,8 @@ A. VM INSTALLATION (Recommended)
 Notes:
 - VM path avoids modern rendering issues
 - Game timing is stable under Win98SE
+- In 86Box, set CPU speed to 300 to avoid audio jitter and a bug that prevents completing training.
+  • 86Box → Settings → Processor → Frequency: 300 **233 for compatibility**
 
 
 B. WINDOWS 10/11 INSTALLATION
