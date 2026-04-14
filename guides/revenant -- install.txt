@@ -11,12 +11,14 @@ A. VM INSTALLATION (Recommended)
 • Install NoCD patch
 • Install Dialogue Fix (copy Ahkuilon.rvm into the “modules” folder)
 
+Startup Routine:
+- Windows-Host → Select Sound Playback Device → Attach Controller → SRWE → Shaderglass → 86Box → Win98se vm → Mount Revenant Disk 2 → Shaderglass: Select 86Box as Input Window → SWRE: Select Shaderglass and set size/position → Win98se: Launch Revenant.exe  
+
 Notes:
 - VM path avoids modern rendering issues
 - Game timing is stable under Win98SE
 - In 86Box, set CPU speed to 300 to avoid audio jitter and a bug that prevents completing training.
   • 86Box → Settings → Processor → Frequency: 300 **233 for compatibility**
-
 
 B. WINDOWS 10/11 INSTALLATION
 -----------------------------
@@ -39,6 +41,12 @@ dgVoodoo Settings:
 Notes:
 - FPS limit is mandatory
 - Chroma‑key artifacts remain unresolved on modern systems
+
+
+NOTES  
+-----  
+- Start the game with Launcher.exe at least once to configure settings  
+- Launch the game with Revenant.exe, using Launcher.exe resets configuration data to default values (Keep a backup of revenant.ini)  
 
 
 PATCHES
