@@ -45,8 +45,10 @@ Notes:
 
 NOTES  
 -----  
-- Start the game with Launcher.exe at least once to configure settings  
-- Launch the game with Revenant.exe, using Launcher.exe resets configuration data to default values (Keep a backup of revenant.ini)  
+- Run Launcher.exe once to set resolution, detail levels, and hardware options  
+- Play using Revenant.exe — opening the launcher again resets your configuration back to defaults  
+- CD‑Audio bug: after loading a new area, CD volume increases to 100%  
+  • Enter Main Menu (press ESC) → Game Options. The volume will return to normal  
 
 
 PATCHES
