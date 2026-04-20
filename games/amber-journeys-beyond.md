@@ -25,13 +25,13 @@ Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)
 Avoid native execution on modern Windows builds.  
   
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~  
-
+  
 ## Enhancements (Optional)  
 > - Lossless Scaling (host‑side)  
->  - LSFG 3.1  
->  - Sharp Bilinear  
->  - Crop Top: 22 (hide 86Box menu bar)  
-
+>   - LSFG 3.1  
+>   - Sharp Bilinear  
+>   - Crop Top: 22 (hide 86Box menu bar)  
+  
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~  
   
 ## Codex Entry  
