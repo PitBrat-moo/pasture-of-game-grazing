@@ -1,0 +1,55 @@
+AMBER Journeys Beyond  
+=====================  
+  
+INSTALLATION
+------------  
+  
+86BOX WIN98SE VM INSTALLATION
+• Create a Windows 98 SE virtual machine in 86Box  
+• Set CPU Frequency to 100 MHz (QuickTime FMV stability)  
+• Start VM  
+• Mount game disc  
+• Install Amber: Journeys Beyond  
+• Install QuickTime 2.1.2 (included on disc)  
+  
+VM CONFIGURATION
+• CPU Frequency: 100 MHz  
+• CD-ROM Speed: 72x 
+• Win98SE  
+• Desktop Resolution: 640x480  
+• Desktop Color Depth: 16‑bit (High Color)  
+• QuickTime 2.1.2  
+  
+LOSSLESS SCALING SETTINGS
+-------------------------
+• Frame Generations Type: LSFG 3.1  
+• Flow Scale: 100%  
+• Performance: ON **preserve VGA beauty**  
+• Capture API: WGC  
+• Scaling Type: Sharp Bilinear **preserve VGA beauty**  
+• Crop Input → Top Box: 22 **crops 86Box menu bar**  
+  
+STARTUP ROUTINE  
+---------------  
+Windows‑Host →  
+• Select sound playback device  
+• Launch Lossless Scaling  
+• Launch 86Box → start Win98SE VM  
+• Mount Amber Disc 1 in VM  
+• Win98SE‑Guest → run AMBER_JB.EXE  
+• Activate Lossless Scaling (Ctrl+Alt+S)  
+  
+NOTES
+-----
+• Native Win98SE path avoids modern QuickTime rendering issues.  
+• QuickTime FMV timing becomes unstable above ~200 MHz.  
+• 100 MHz provides the cleanest audio and video playback.  
+• 640x480 @ 16‑bit prevents FMV from rendering as a small centered box.  
+• Use QuickTime 2.1.2; later versions cause audio jitter and scaling issues.  
+  
+TOOL DEPENDENCIES (OPTIONAL)
+----------------------------
+Lossless Scaling  
+• https://losslessscaling.com/  
+• Purpose: host‑side scaling and frame generation  
+• Notes: optional; only needed for frame generation. For scaling alone, use SWRE.  
