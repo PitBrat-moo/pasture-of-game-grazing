@@ -1,18 +1,22 @@
-Revenant.txt
-============
+Revenant
+========
 
 INSTALLATION
 ------------
 
 A. VM INSTALLATION (Recommended)
 • Create a Windows 98 SE virtual machine in 86Box
+• Set CPU Frequency to <=300MHZ **favor stability**
+• Start VM
+• Mount install disk
 • Install Revenant inside the VM
 • Install Patch 1.22
 • Install NoCD patch
 • Install Dialogue Fix (copy Ahkuilon.rvm into the “modules” folder)
+• Run Launcher.exe once to configure settings
 
 Startup Routine:
-- Windows-Host → Select Sound Playback Device → Attach Controller → SRWE → Shaderglass → 86Box → Win98se vm → Mount Revenant Disk 2 → Shaderglass: Select 86Box as Input Window → SWRE: Select Shaderglass and set size/position → Win98se: Launch Revenant.exe  
+- Windows-Host → Select Sound Playback Device → Attach Controller → Launch SRWE → Launch Shaderglass → Launch 86Box → Sart Win98se vm → Mount Revenant Disk 2 → Shaderglass: Select 86Box as Input Window → SWRE: Select Shaderglass and set size/position → Win98SE-Guest: Launch Revenant.exe  
 
 Notes:
 - VM path avoids modern rendering issues
@@ -22,6 +26,7 @@ Notes:
 
 B. WINDOWS 10/11 INSTALLATION
 -----------------------------
+
 Major issue: magenta chroma‑key artifacts around text (no known fix)
 
 Steps:
@@ -45,6 +50,7 @@ Notes:
 
 NOTES  
 -----  
+
 - Run Launcher.exe once to set resolution, detail levels, and hardware options  
 - Play using Revenant.exe — opening the launcher again resets your configuration back to defaults  
 - CD‑Audio bug: after loading a new area, CD volume increases to 100%  
@@ -105,7 +111,11 @@ ShaderGlass
 • Purpose: Host-side shader injection  
 • Notes: Only needed if using custom shaders
 
-
+SWRE
+• https://github.com/dtgDTGdtg/SRWE
+• Purpose: Scale and tame windows
+• Notes: Only needed for custom scaling options not surfaced in Shaderglass
+ 
 CUSTOM ENHANCEMENTS (OPTIONAL)
 ------------------------------
 
@@ -163,6 +173,4 @@ UNVERIFIED / HISTORICAL FIXES
 • Limit RAM to 2GB  
 • Disable texture blitting / overlays  
 • Software renderer for minimap (severe performance loss)
-
-Notes:
-- Kept for archival completeness only
+  
