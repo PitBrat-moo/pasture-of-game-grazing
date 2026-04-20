@@ -6,11 +6,11 @@ Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~  
   
 ## Required Guides  
->- Amber Journeys Beyond -- install.txt  
->     https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/amber%20journeys%20beyond%20--%20install.txt  
+> - Amber Journeys Beyond -- install.txt  
+>   - https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/amber%20journeys%20beyond%20--%20install.txt  
 >  
->- 86Box Windows 98 Gaming Setup  
->     https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box_Win98_Gaming_Setup.txt  
+> - 86Box Windows 98 Gaming Setup  
+>   - https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86Box_Win98_Gaming_Setup.txt  
   
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~  
   
