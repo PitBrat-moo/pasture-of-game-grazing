@@ -95,6 +95,8 @@ T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S 
 • Need for Speed II SE ⟦ＸＲ⟧
 • Need for Speed III: Hot Pursuit ⟦ＸＲ⟧
 • Need for Speed: High Stakes ⟦ＸＲ⟧
+• Incoming ⟦ＧＭ⟧  
+• Slave Zero ⟦ＧＭ⟧  
 
 ────────────────────────────────────────────────────────────────────────
                          ✦  D E E P   C U T S  ✦
@@ -120,7 +122,6 @@ T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S 
              ^^     ^^
 
 IMMERSIVE SIMS & ACTION-ADVENTURES  
-• Pathologic ⟦ＧＭ⟧  
 • The Precursors ⟦ＸＲ⟧  
 • White Gold: War in Paradise ⟦ＸＲ⟧  
 • Boiling Point: Road to Hell ⟦ＸＲ⟧  
@@ -139,8 +140,16 @@ FMV / ADVENTURE
 • Panic in the Park ⟦ＧＭ⟧  
 • Bad Day on the Midway ⟦ＦＭ⟧  
 
-EXPERIMENTAL / HYBRID  
-• Realms of the Haunting ⟦ＧＭ⟧  
+      (⟃⟄)
+   __(⚈⚈)__
+  /  /\/\  \
+  \__\||/__/
+
+⟡  T R A V E L E R S   W H O   G R A Z E   O U T   O F   T H E I R   A G E  ⟡
+• Pathologic ⟦ＧＭ⟧  
+• The Precursors ⟦ＸＲ⟧
+• White Gold: War in Paradise ⟦ＸＲ⟧
+• Boiling Point: Road to Hell ⟦ＸＲ⟧
 
 ────────────────────────────────────────────────────────────────────────
                  ✦  H I G H - V A L U E   ( U N B E A T E N )  ✦
@@ -194,11 +203,6 @@ ACTION / ADVENTURE
 JAPANESE PC PORTS  
 • Ys IV ⟦ＸＲ⟧  
 • Sorcerian ⟦ＦＭ⟧  
-
-DREAMCAST / PS2 ERA  
-• Slave Zero ⟦ＧＭ⟧  
-• Incoming ⟦ＧＭ⟧  
-• MDK2 ⟦ＸＲ⟧  
 
 ────────────────────────────────────────────────────────────────────────
                          ✦  C U L T   –   W E I R D  ✦
@@ -261,7 +265,7 @@ DREAMCAST / PS2 ERA
 • System Shock 2 ⟦ＧＭ⟧  
 • Thief II ⟦ＦＭ⟧  
 • Messiah ⟦ＧＭ⟧  
-• Revenant ⟦ＧＭ⟧  
+• Giants: Citizen Kabuto ⟦ＧＭ⟧  
 
 
 ── P L A T E   I I :   T H E   B R O K E N   M I R R O R ──
@@ -276,6 +280,7 @@ DREAMCAST / PS2 ERA
 • Nightlong: Union City Conspiracy ⟦ＧＭ⟧  
 • Faust: Seven Games of the Soul ⟦ＧＭ⟧  
 • Omikron: The Nomad Soul ⟦ＧＭ⟧  
+• King’s Quest: Mask of Eternity ⟦ＧＭ⟧
 
 
 ── P L A T E   I I I :   T H E   E N D L E S S   P A T H ──
@@ -288,8 +293,6 @@ DREAMCAST / PS2 ERA
 • Myst III: Exile ⟦ＧＭ⟧  
 • The Longest Journey ⟦ＧＭ⟧  
 • Dreamfall ⟦ＧＭ⟧  
-• Giants: Citizen Kabuto ⟦ＧＭ⟧  
-• King’s Quest: Mask of Eternity ⟦ＧＭ⟧
 
 
 ──── S E A L   O F   T H E   F A D I N G   M E M O R Y ────
