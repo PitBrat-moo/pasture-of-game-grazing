@@ -15,8 +15,32 @@ A. VM INSTALLATION (Recommended)
 • Install Dialogue Fix (copy Ahkuilon.rvm into the “modules” folder)
 • Run Launcher.exe once to configure settings
 
+VM CONFIGURATION
+• CPU Frequency: 300 MHz  
+• CD-ROM Speed: 72x 
+• Renderer: OpenGL
+• Target Framerate: 60 fps
+• Win98SE  
+• Desktop Resolution: 640x480  
+• Desktop Color Depth: 16‑bit (High Color)  
+
+SHADERGLASS CONFIGURATION  
+• Crop Input Top: 22 **removes vm menu bar**  
+• Pixel Size: x1  
+• Custom Shader: Bovinated Revenant Shader  
+  
+SWRE CONFIGURATION  
+• y: -31 **hide Shaderglass menu bar**
+• Width: 2896 **add 16 pixels to compensate for window frame at 4x3 resolution**  
+• Height: 2199 **add 39 pixels to compensate for window frame at 4x3 resolution**  
+• Align Windows: H.Center
+
 Startup Routine:
-- Windows-Host → Select Sound Playback Device → Attach Controller → Launch SRWE → Launch Shaderglass → Launch 86Box → Sart Win98se vm → Mount Revenant Disk 2 → Shaderglass: Select 86Box as Input Window → SWRE: Select Shaderglass and set size/position → Win98SE-Guest: Launch Revenant.exe  
+• Windows-Host → Select Sound Playback Device → Attach Controller → Launch SRWE → Launch Shaderglass
+• Launch 86Box → Sart Win98se vm → Mount Revenant Disk 2
+• Shaderglass: Select 86Box as Input Window; 
+• SWRE: Select Shaderglass and set size/position
+• Win98SE-Guest: Launch Revenant.exe  
 
 Notes:
 - VM path avoids modern rendering issues
