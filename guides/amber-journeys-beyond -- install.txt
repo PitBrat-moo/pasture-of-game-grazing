@@ -15,6 +15,8 @@ INSTALLATION
 VM CONFIGURATION
 • CPU Frequency: 100 MHz  
 • CD-ROM Speed: 72x 
+• Renderer: OpenGL
+• Target Framerate: 60 fps
 • Win98SE  
 • Desktop Resolution: 640x480  
 • Desktop Color Depth: 16‑bit (High Color)  
@@ -35,7 +37,7 @@ Windows‑Host →
 • Select sound playback device  
 • Launch Lossless Scaling  
 • Launch 86Box → start Win98SE VM  
-• Mount Amber Disc 1 in VM  
+• Mount Amber Disc in VM  
 • Win98SE‑Guest → run AMBER_JB.EXE  
 • Activate Lossless Scaling (Ctrl+Alt+S)  
   
@@ -46,7 +48,8 @@ NOTES
 • 100 MHz provides the cleanest audio and video playback.  
 • 640x480 @ 16‑bit prevents FMV from rendering as a small centered box.  
 • Use QuickTime 2.1.2; later versions cause audio jitter and scaling issues.  
-  
+• Transitions cause infrequent warning popups that don't impede progress. Set transitions to none to avoid popups.  
+
 TOOL DEPENDENCIES (OPTIONAL)
 ----------------------------
 Lossless Scaling  
