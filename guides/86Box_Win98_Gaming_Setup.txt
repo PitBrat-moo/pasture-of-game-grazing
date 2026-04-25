@@ -12,14 +12,40 @@ cat > Guide_Part1_Setup_Drivers.txt
 
 HOW TO READ
 → Heading → one‑line description (where to set) → exact settings/steps.
-→ Follow order: 86Box settings → BIOS → Install order → Windows Setup → Disable IRQ Steering → 3dfx Drivers → Yamaha Drivers → MIDI → DirectX → Shutdown Fix → PS2Plus mouse → DCOM98 → USB Supplement → DMA → Joystick → Multimedia/Mixer → 3dfx UI → Tweaks/INI/REG → Verify.
+→ Follow order: 86Box Host Install → 86Box settings → BIOS → Install order → Windows Setup → Disable IRQ Steering → 3dfx Drivers → Yamaha Drivers → MIDI → DirectX → Shutdown Fix → PS2Plus mouse → DCOM98 → USB Supplement → DMA → Joystick → Multimedia/Mixer → 3dfx UI → Tweaks/INI/REG → Verify.
+
+~(ᶜᵒʷʘ͜ʖʘ)~ ≈≋⟢(‾(oo)‾)⟣≋≈⟡(•(oo)•)⟢≈≋⟣(¬(oo)¬)⟡≋≈ ⟢(•(oo)•)⟣ ≋≈
+                         86BOX HOST INSTALL
+~(ᶜᵒʷʘ͜ʖʘ)~ ≈≋⟣(•(oo)•)⟢≈≋⟡(¬(oo)¬)⟣≈≋⟢(‾(oo)‾)⟡≋≈ ⟣(•(oo)•)⟢ ≋≈
+Desciption: Download 86Box and ROM Repository, extract, and install on host machine
+⟆⟆⟆~⟡~⟆⟆   ⇢ downloads ⇠   ⟅⟅~⟣~⟅⟅⟅
+⟢(•(oo)•)→ 86Box Emulator (Home) - experimental builds  
+⟝→ https://86box.net/
+⟢(•(oo)•)→ 86Box Emulator (GitHub) - official releases  
+⟝→ https://github.com/86Box/86Box
+⟢(•(oo)•)→ ROM Repository (GitHub) - required ROMS  
+⟝→ https://github.com/86Box/roms
+⟅⟅~⟣~⟅⟅⟅   ⇢ end of downloads ⇠   ⟆⟆~⟡~⟆⟆⟆
+
+→ Download 86Box EXPERIMENTAL build with the new recompiler from the home page
+  • Switch to the STABLE build from GitHub only if the new recompiler causes issues **does not require reinstalling Windows**
+→ Download 86Box ROM Repository from GitHub
+→ Extract the 86Box archive
+  • Copy files to the installation folder: .\Emulators\86Box\ 
+    → 86Box.exe, discord_game_sdk.dll, gsdll64.dll, mdsx.dll  
+  • Update the experimental build regularly  
+  • Overwrite files when updating/downgrading
+→ Extract the ROM Repository
+  • Copy contents of the roms-5.3 folder to the installation folder: .\Emulators\86Box\Roms
+    → .github, floppy, hdd, machines, network, printer, rtc, scsi, sound, video, LICENSE, README.md
+~(ᶜᵒʷʘ͜ʖʘ)~ ≋≈⟡(•(oo)•)⟢≈≋    END OF HOST INSTALL    ≋≈⟢(•(oo)•)⟡≈≋
 
 /==[⟢ OPENING THE 86BOX SETTINGS ]=\
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ MACHINE 
 Description: Machine / System / Performance
 → Machine type: [1997] Slot 1; Motherboard: [i440BX] ASUS P3B-F; Memory: 128 MB; Time synchronization: Enabled (local time)
-→ Processor → CPU: Pentium II (Deschutes); Frequency: 300 (**233 MHz** for widest compatibility; **450 MHz** for power); SoftFloat FPU: Disabled
+→ Processor → CPU: Pentium II (Deschutes); Frequency: 300 (**100 MHz** for FMV timing; **400 MHz** for hardcore 3D); SoftFloat FPU: Disabled
 → Performance → PIT Mode: Fast (use Auto if unstable); Dynamic Recompiler: ON; CPU Frame Size: Smaller Frames
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ DISPLAY
@@ -53,18 +79,17 @@ Description: Devices → attach and set ports; disable unused ports to match BIO
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ HARD DISKS **favor performance**
 → Hard Disks → HDD: Size = 16384 MB (16GB); File Type = Raw Image (.img)
 → Channel: 0:0 (Primary Master)
-→ Guest → **DMA = ENABLED**
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ FLOPPY & CD-ROM DRIVES
 → Floppy A: 3.5" 1.44MB; Check BPB: Disabled
-→ CD‑ROM → Bus: ATAPI; Channel: 1:0 (Secondary Master); Type: `86b_cd 3.50`; Speed: 48× (lower if audio/read issues); Use EDC/ECC emulation: Disabled
-→ Guest → **DMA = ENABLED**
+→ CD‑ROM → Bus: ATAPI; Channel: 1:0 (Secondary Master); Type: `86b_cd 3.50`; Speed: 72× (lower if audio/read issues); Use EDC/ECC emulation: Disabled
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ SET RENDERER AND PREPARE WINDOWS 98SE INSTALLATION
 → Enter BIOS: Start VM → Press DEL during boot
 → Set Renderer: 86Box vm window → View → Renderer → OpenGL **favor quality**
-  • Vulkan renderer is more powerful, but less compatible and reduces Voodoo3 image quality.
+  • Vulkan renderer is more powerful, but less compatible, reduces Voodoo3 image quality, and requires RTSS for fps cap.
 → Cap FPS: 86VBox vm window → View → Renderer options → Use target framerate: 60 fps **favor stability**
+  • Some older FMV/DirectDraw titles may prefer **30 fps** (optional; adjust per‑game after install).
 → Mount WIN98se Install CD-ROM: Media → CD-ROM → Image → Win98se.iso
 
 \==[⟡ CLOSING THE 86BOX SETTINGS ]=/
@@ -176,7 +201,7 @@ Description: Install Voodoo3 drivers and select host renderer.
 Description: Install Yamaha YMF719 (OPL3-SA3) drivers with correct IRQ/DMA (5,0,1)
 → Verify IRQ Steering is disabled in Device Manager → System devices → PCI bus → IRQ Steering: Disabled **favor caution**
 → Remove Yamaha devices: Device Manager → Other Devices → MPU-401 Compatible, OPL-SAX Sound Board (both instances)
-→ Install YMF719 Driver v2.3.43 for Win95 (95v2342)
+→ Install YMF719 Driver v2.3.43 for Win95 (95v2343)
 → Reboot → BIOS → [BOOT] → Reset Configuration Data: Yes **force IRQ/DMA refresh**
 → Verify IRQ for Yamaha YMF719 (OPL3-SA3) **favor caution**
   • Device Manager → System devices → Sound, video and game controllers → YAMAHA OPL3SAx → Resources
@@ -203,7 +228,7 @@ Purpose: Play MIDI through the host (GM/GS/XG games) **host running VirtualMIDIS
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ PS2RATE PLUS MOUSE POLLING (optional)
 → Install PS2RATE to adjust PS/2 mouse refresh rate from default 40hz to 200hz.
-  • Configure polling rate: 80 **40hz to 200mhz** **favor stability**
+  • Configure polling rate: 80 **40 Hz to 200 Hz** **favor stability**
   • Make default: Enabled
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DCOM98 (optional)
@@ -265,7 +290,7 @@ cat > Guide_Part2_Tweaks_Profiles.txt
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ AUDIO MIXER LEVELS (Volume Control)
-Description: set mixer levels to balance dialogue, SFX, music and avoid clipping lock CD Audio volume.
+Description: set mixer levels to balance dialogue, SFX, music and avoid clipping.
 → Right click speaker in task tray→ 
 → Master: **80%**  
 → Synth / MIDI: **60%**  
@@ -273,14 +298,14 @@ Description: set mixer levels to balance dialogue, SFX, music and avoid clipping
 → Wave: **85%**  
 → Line In (if used): 50% **Mute if unused**  
 → Mute unused inputs (Aux, Phone) to prevent background noise  
-→ **Tip:** keep Master slightly below max to avoid clipping during dynamic scenes.
 → Advanced → Bass: 55%; Treble: 45%
 
-→ Lock CD Audio volume to prevent it resetting to %100 after game loads, increase mixer stability.
-   • Options → Properties → Recording → CD Audio: Enabled; Microphone: Enabled; Line: Enabled → OK
-   • CD Audio: 70% → Select: Enabled
-   • Microphone: 0% → Select: Disabled **favor stability**
-   • Line: 0% → Select: Disabled **favor stability**
+⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ LOCK CD-AUDIO, MIC & LINE VOLUME (Recording Levels)
+Description: Lock CD Audio volume to prevent it resetting to %100 when games load data, increase mixer stability.
+→ Options → Properties → Recording → CD Audio: Enabled; Microphone: Enabled; Line: Enabled → OK
+  • CD Audio (recording): 70% → Select: Enabled
+  • Microphone (recording): 0% → Select: Disabled **favor stability**
+  • Line (recording): 0% → Select: Disabled **favor stability**
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ 3DFX TOOLS UI (SET IN APP)
 Description: set sliders in 3dfx Tools UI  
@@ -291,17 +316,15 @@ Description: set sliders in 3dfx Tools UI
 → Limit Texture Memory: Software Controlled ; Max Buffered Frames: 1 Pending Buffer  
 → MIP Map Dithering: Disable ; Triple Buffering: Disable (unstable); VSync: Disable  
 → Color (per context): R=1.12, G=1.08, B=1.10 ; Contrast=-1 ; Brightness=-2
-→ Set Desktop color depth to 32bpp (improves hardware dithering)
-
+→ Desktop resolution: 640x480 **adjust per game**
+  • 1024x768 for convenience when using the desktop
+  • Games running in windowed mode **fake fullscreen**
+    → Set desktop resolution equal to game window resolution
+→ Desktop color depth: 16 Bpp **favor stability**
+  • Voodoo 3 renders all games in 16-bit; 32-bit desktop only affects icons/wallpapers.
+  
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ VOODOO3 REG TWEAK (IMPORT)
 Description: .reg file to set alpha dither mode — purpose: reduce banding and stabilize Glide alpha blending.
-
-BACKUP (first)
---- Save original ---
-Export full registry via RegEdit.
---- End save ---
-
-→ Purpose: **improves alpha dither and color stability in Glide/D3D**; safe and reversible.  
 → Steps:
    1. Open Notepad, paste the REG block below, save as `3dfx_voodoo3_alphadither.reg`.  
    2. Double‑click the file in guest → Accept prompts → Reboot.  
@@ -328,46 +351,24 @@ REGEDIT4
 ═══⟦  \‾(••)‾/  ⟧══════════════════END REG BLOCK════════════════════⟦  \‾(••)‾/  ⟧═══
 
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DMA — BARE ESSENTIALS (HDD & CD‑ROM)
+⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ DMA — DISK PERFORMANCE (HDD & CD‑ROM)
 Description: enable DMA so transfers are fast and smooth.
 → Device Manager → Primary IDE Channel → Properties → Advanced Settings:
    • Device 0 (HDD): Transfer Mode = "DMA if available" → Enable DMA  
    • Device 1 (CD‑ROM): Transfer Mode = "DMA if available" → Enable DMA  
-→ Reboot → confirm "DMA" shown next to devices.  
-→ If missing: uninstall Primary IDE Channel → reboot → install Intel i440BX/PIIX4 INF → re-enable DMA.
+→ Reboot → confirm "DMA" shown next to devices.
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ TWEAKS · AUDIO / DMA / VCACHE · PROFILES
-Description: two single‑profile options; apply one, reboot, test 10–15 minutes per title.
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ TWEAKS · AUDIO / DMA / VCACHE
+Description: Stability/Performance System.ini profile for virtual memory, DMA and vcache.
 
 BACKUP (first)
 --- Save original ---
 copy C:\WINDOWS\SYSTEM.INI C:\WINDOWS\SYSTEM.INI.bak
 --- End save ---
 
-→ Purpose: **Stability/Performance System.ini profiles for virtual memory, DMA and vcache**; safe and reversible.  
 → Open System.ini in Notepad, add/update entries below, save.  
 
-═══⟦  \‾(••)‾/  ⟧═══--- SYSTEM.INI (Profile A) ---══════════════════════════⟦  \‾(••)‾/  ⟧═══
-[386Enh]
-PagingDrive=C:
-MinPagingFileSize=262144
-MaxPagingFileSize=262144
-ConservativeSwapfileusage=1
-DMABufferSize=128
-DMABufferCount=8
-ForceProtectedModeDMA=1
-PageBuffers=64
-MinSPs=8
-
-[vcache]
-MinFileCache=8192
-MaxFileCache=65536
-ChunkSize=512
-═══⟦  \‾(••)‾/  ⟧═══--- END SYSTEM.INI (Profile A) ---═══════════════════════⟦  \‾(••)‾/  ⟧═══
-PROFILE A — COMPATIBILITY FIRST (default)
-• Hardware: **CPU 233 MHz**, **Voodoo3 = 1 thread**
-
-═══⟦  \‾(••)‾/  ⟧═══--- SYSTEM.INI (Profile B) ---══════════════════════════⟦  \‾(••)‾/  ⟧═══
+═══⟦  \‾(••)‾/  ⟧═══--- SYSTEM.INI ---══════════════════════════⟦  \‾(••)‾/  ⟧═══
 [386Enh]
 PagingDrive=C:
 MinPagingFileSize=262144
@@ -384,42 +385,37 @@ MinFileCache=8192
 MaxFileCache=131072
 ChunkSize=512
 ═══⟦  \‾(••)‾/  ⟧═══--- END SYSTEM.INI (Profile B) ---═══════════════════════⟦  \‾(••)‾/  ⟧═══
-PROFILE B — PERFORMANCE FIRST (CPU‑bound titles)
-• Hardware: **CPU 450 MHz**, **Voodoo3 = 1 thread**
-• Note: CPU Frequency above 300 can introduce audio jitter and break games
 
-PROFILE RULES
-
-• Default: **Profile B** for maximum power; if jitter appears, increase `DMABufferCount` or revert to Profile A.  
-• Use **Profile A** for set‑and‑forget compatibility. If a game demands more CPU headroom, revert to Profile B.
-
---- QUICK TROUBLESHOOTING ---
+⟦⟦⟦~⟡🐄⟧⟧⟧ QUICK TROUBLESHOOTING ⟦⟦🐄⟣~⟧⟧⟧
 Symptom | Likely cause | First action
-Dialogue jitter | IRQ/DMA contention or low DMABufferCount | Confirm YAMAHA IRQ=5 DMA=0 HDMA=1; increase DMABufferCount +2
-FMV drops / stutter | VCACHE / paging file too small or CD speed too high | Increase MaxFileCache or paging file; lower CD‑ROM speed to 24×/12×
-Low FPS in 3D | CPU bottleneck or Voodoo thread setting | Use Profile B (450 MHz, 1 thread) for that title; test and log results; reduce frequency if audio jitter
---- END QUICK TROUBLESHOOTING ---
+⟢ FMV drops / stutter | Per‑game FMV timing sensitivity | Set MHz per‑game: FMV‑heavy titles prefer lower MHz; 3D‑heavy titles prefer higher MHz
+  • Optional: lower CD‑ROM speed (24×/12×) for disc-image read consistency
+⟢ Low FPS in 3D | CPU bottleneck | Use 450 MHz frequency for that title; reduce frequency if audio jitter
+⟆⟆~⟡~⟆⟆   ⇢ GLIDE GRAPHICS CORRUPTION ⇠   ⟅⟅~⟣~⟅⟅  
+→ If a game crashes or shows corrupted textures, delete its local glide2x.dll: Tomb Raider, Carmageddon, Fatal Racing, Screamer 2
+  • Delete 'glide2x.dll' in game folder
+⟦⟦~⟣~⟧⟧⟧ END QUICK TROUBLESHOOTING ⟦⟦~⟡~⟧⟧⟧
 
-⎯(ᶜᵒʷ•ᵎ)⎯─◐◑◒◓─ PRACTICAL CHECKLIST (one‑page test plan)
-→ Snapshot VM + export registry.  
-→ Apply **Profile A** → Reboot.  
-→ Confirm Device Manager: **YAMAHA = IRQ 5 / DMA 0 / HDMA 1**; HDD & CD = DMA.  
-→ Run three titles 10–15 min each:  
-   • MIDI‑heavy title (Timing) — listen for jitter.  
-   • Redbook / CD audio title — verify track switching and volume.  
-   • CPU/3D title (Quake II / Unreal / AoE2) — note FPS and FMV smoothness.  
-→ Log results in VM notes: title, profile used, jitter (none/slight/noticeable), FMV drops, FPS.  
-→ If jitter on Profile B: increase `DMABufferCount` +2 and retest; if still present, use Profile A for that title.
+⟊⟊⟊~⟡🐮⟡~⟊⟊⟊   ⇢ FREQUENCY TUNING — THE PER‑GAME RITUAL ⇠   ⟉⟉⟉~⟣🐮⟣~⟉⟉⟉
+Description: Determine optimum CPU frequency (MHz) settings on a per‑game basis.  
+→ Check recommended system requirements for the title.  
+  • FMV‑heavy titles: ~100–133 MHz
+  • Dialogue-heavy & 3D/2D hybrid titles: ~233–300 MHz
+  • 3D Accelerated titles: ~333–366 MHz
+  • Late era titles (2000–2002): ~366–400 MHz
+→ Run three titles:  
+   • FMV / Dialogue / MIDI heavy title — listen for audio jitter and note timing.
+   • Redbook / CD audio title — verify track switching and volume.
+   • 3D Accelerated title (Glide, OpenGL, D3D) — note emulation speed dips, frame pacing, and jitter.  
+→ If jitter, reduce MHz and retest.
+→ Log results: title, tuned frequency.
+⟉⟉⟉~⟣🐮⟣~⟉⟉⟉   ⇢ END OF RITUAL — FREQUENCY TUNING COMPLETE ⇠   ⟊⟊⟊~⟡🐮⟡~⟊⟊⟊
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ TEST · VERIFY · ROLLBACK
-1. Export registry and snapshot VM.  
-2. Apply chosen profile → Reboot.  
-3. Confirm resources and DMA.  
-4. Run tests (see Practical Checklist).  
-5. Rollback if needed:
-copy C:\WINDOWS\SYSTEM.INI.bak C:\WINDOWS\SYSTEM.INI
-shutdown -r -t 5
-(Or restore VM snapshot / import exported registry.)
+⎯(ᶜᵒʷ•⬛)⎯─◐◓◑◒─ TEST · VERIFY · ROLLBACK
+1. Backup VM drive .img.  
+2. Confirm Device Manager: **YAMAHA = IRQ 5 / DMA 0 / HDMA 1**; HDD & CD = DMA.  
+3. Run tests (see Frequency Tuning).  
+4. Rollback if needed: Restore VM drive .img.
 
 Ctrl-D
 ⎯(ᶜᵒʷᵔ)⎯  ──  END OF CHUNK 2 — STOP COPYING HERE
@@ -455,7 +451,7 @@ cat > Guide_Part3_The_Omasum.txt
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
 
 ⎯(ᶜᵒʷ•ᵎ)⎯─◐◑◒◓─ FINAL CHECKLIST BEFORE PLAY
-→ 86Box: Voodoo3 3000 = Primary ; Yamaha YMF719 (OPL3-SA3) = **IRQ 5 / DMA 0 / HDMA 1** ; HDD 16GB `.img` Primary Master DMA ; CD‑ROM ATAPI Secondary Master 1:0 `86b_cd 3.50` DMA 48× ; Floppy 1.44MB ; PS/2 mouse 5 buttons + wheel.  
+→ 86Box: Voodoo3 3000 = Primary ; Yamaha YMF719 (OPL3-SA3) = **IRQ 5 / DMA 0 / HDMA 1** ; HDD 16GB `.img` Primary Master DMA 0:0 ; CD‑ROM ATAPI Secondary Master 1:0 `86b_cd 3.50` DMA 72× ; Floppy 1.44MB ; PS/2 mouse 5 buttons + wheel.  
 → 86Box: **Ports (COM & LPT)** → disable unused COM/LPT to match BIOS; re‑enable only when needed.  
 → BIOS: PNP OS = NO ; USB disabled ; Primary/Secondary IDE Slave = DISABLED unless devices attached ; Video BIOS shadow DISABLED.  
 → Windows: Voodoo3 drivers, Yamaha VxD, DirectX 7.0a installed, Shutdown Fix; Device Manager shows DMA enabled.  
@@ -464,9 +460,12 @@ cat > Guide_Part3_The_Omasum.txt
 → Registry: `SSTH3_ALPHADITHERMODE="3"` present under `...Display\0000\Glide` (adjust index if card appears under `0001`).
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ LAUNCH SEQUENCE
-→ Attach Joystick to host → Launch Rivatuner (optional fps cap) → Launch VirtualMIDISynth (optional host MIDI) → Launch 86Box → Start VM → Boot Win98 → Mount CD-ROM → Launch game → Enable host Lossless Scaling or Shaderglass → enjoy.  
-   → If audio/read stutter: lower CD‑ROM speed.  
-   → If IRQ conflicts: disable unused COM/LPT in BIOS and 86Box and reassign Yamaha OPL3-SAx Sound System to IRQ 5.
+Note: Enable the host audio device and joystick before launching 86Box; they will not be detected afterward.  
+      Launch RTSS before 86Box; starting it afterward can cause a crash.
+→ Windows Host → Select Audio Device → Attach Joystick → Launch RTSS (optional fps cap)
+→ Launch VirtualMIDISynth (optional host MIDI)
+→ Launch ShaderGlass or Lossless Scaling (choose one); use SRWE for scaling when using ShaderGlass
+→ Launch 86Box → Start VM → Boot Win98 → Mount CD-ROM → Launch game
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ BOVINE SCRIPTURE (for the faithful retro‑cow)
 • "In the pasture of pixels, the cow of compatibility grazes first; speed follows where stability permits."  
@@ -498,7 +497,7 @@ cat > Guide_Part3_The_Omasum.txt
 → Place all driver and file offerings into a host‑side folder.
    • Extract archives (.zip, .rar) on host **only place extracted files in host-side folder** **86Box can not mount large, complex folders**
    • Organize files by device and you will avoid future sorrow.
-   • Align the folder structure to an actual CD-ROM **shallow directories and a maximum of 300-500 total files and folders combined**
+   • Align the folder structure to an actual CD-ROM **shallow directories and 300-500 total files and folders combined is safe**
 → Boot the Win98se guest and mount the host-side folder as a CD‑ROM.
    • 86Box vm window → Media → CD‑ROM → Folder → Select folder: host-side folder
 → Guest → Open “My Computer”.
@@ -532,29 +531,34 @@ R I T U A L   D E C R E E :
 M O O – M A N T R A :
 “Once burned, never booted; once golden, always cloned.”
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ GLIDE GRAPHICS CORRUPTION 
-→ If a game crashes or shows corrupted textures, delete its local glide2x.dll: Tomb Raider, Carmageddon, Fatal Racing, Screamer 2
-   • Delete 'glide2x.dll' in game folder
-
 ⎯(⌐■ᴗ■)っ≋≋≋≋≋≋≋≋≋⟪  (oo‾)  ⟫≋≋≋≋≋≋≋≋~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /==[ HOST-SIDE PADDOCK ]--> 
 \==[ ~(⌐(oo)⌐)~>~~>~>~~>~>~~>~>~~>~>~~>~>~~>~> ]-->
-Description: Host-side tools for pacing, scaling, shading, and MIDI rendering. Lossless Scaling and Shaderglass do not work together in the pipeline. Use SWRE for custom scaling when the other options (86Box native, Shaderglass, Lossless Scaling) are not adequate.  
-
-Lossless Scaling — Exact, artifact‑free scaling and frame generation.
-ShaderGlass — Host‑side shader layer.
-SWRE (Simple Window Runtime Editor) — Resize and reposition windows.
-CoolSoft VirtualMIDISynth — High‑quality GM/GS MIDI output.
-Arachno SoundFont - Version 1.0.sf2 — Elevated, accurate MIDI soundfont.
-GeneralUser GS v1.471.sf2 — Dream, atmospheric MIDI soundfont.
-Unison.SF2 — Pure, SC-55-like correctness.
-RTSS (RivaTuner Statistics Server) — Stable frame pacing.
+Description: Host-side tools for pacing, scaling, shading, and MIDI rendering. Lossless Scaling and Shaderglass do not work together in the pipeline. Use SRWE for custom scaling when the other options (86Box native, Shaderglass, Lossless Scaling) are not adequate.  
+⟆⟆⟆~⟡~⟆⟆   ⇢ downloads ⇠   ⟅⟅~⟣~⟅⟅⟅
+⟢(•(oo)•)→ Lossless Scaling — Exact, artifact‑free scaling and frame generation.  
+⟝→ https://losslessscaling.com/
+⟢(•(oo)•)→ ShaderGlass — Host‑side shader layer.
+⟝→ https://github.com/mausimus/ShaderGlass
+⟢(•(oo)•)→ SRWE (Simple Runtime Window Editor) — Resize and reposition windows.
+⟝→ https://github.com/dtgDTGdtg/SRWE
+⟢(•(oo)•)→ CoolSoft VirtualMIDISynth — High‑quality GM/GS MIDI output.
+⟝→ https://coolsoft.altervista.org/en/virtualmidisynth
+⟢(•(oo)•)→ Arachno SoundFont - Version 1.0.sf2 — Elevated, accurate MIDI soundfont.
+⟝→ https://github.com/Daniel-176/Usefull-Soundfonts/blob/main/Arachno_SoundFont_Version_1.0.sf2
+⟢(•(oo)•)→ GeneralUser GS v1.471.sf2 — Dream, atmospheric MIDI soundfont.
+⟝→ https://github.com/Daniel-176/Usefull-Soundfonts/blob/main/GeneralUser%20GS%20v1.471.sf2
+⟢(•(oo)•)→ Unison.SF2 — Pure, SC-55-like correctness.
+⟝→ https://github.com/wrightflyer/SF2_SoundFonts/blob/master/Unison.SF2
+⟢(•(oo)•)→ RTSS (RivaTuner Statistics Server) — Stable frame pacing.
+⟝→ https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/
+⟅⟅~⟣~⟅⟅⟅   ⇢ end of downloads ⇠   ⟆⟆~⟡~⟆⟆⟆
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ LOSSLESS SCALING
-Description: Lossless Scaling settings optimized for VGA gaming at 60Hz 
+Description: Lossless Scaling settings optimized for VGA gaming at 60Hz **not compatible with Shaderglass**
 → Frame Generation → Type: LSFG 3.1 → Mode: Fixed → Multiplier: 4 → Flow scale: 100% → Performance: ON **preserves VGA detail**
 → Capture → Capture API: WGC; Queue target: 0
-→ Scaling → Type: Sharp Bilinear **preserves VGA detial**
+→ Scaling → Type: Sharp Bilinear **preserves VGA detail**
 → Rendering → Sync mode: Off; Max frame latency: 1; G-Sync support: On
 → Crop Input → Top: 22; Right: 0; Bottom: 0; Left: 0 **crop vm menu bar from output**
 → 86Box vm window → View → Hide toolbar: ON; Hide status bar: ON **hide toolbar from scaled output**
@@ -562,12 +566,12 @@ Description: Lossless Scaling settings optimized for VGA gaming at 60Hz
    • Alternately, use RTSS to cap fps. **NVIDIA/AMD frame limiter does not work on vm window**
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SHADERGLASS
-Description: Applies .slang shaders in real time. **Not compatible with Lossless Scaling.**
+Description: Applies .slang shaders in real time. **not compatible with Lossless Scaling.**
 → Launch ShaderGlass → Input → Window → select your game.  
 → Input → Pixel Size → x1
 → Shader → Choose From Library / Import Custom → choose shader. 
-→ Output → Scale →  Scaling % **for custom scaling select FREE and use SWRE to adjust Shaderglass window**
-   • Press 'm' to toggle menu on/off, useful when scaling with SWRE.
+→ Output → Scale →  Scaling % **for custom scaling select FREE and use SRWE to adjust Shaderglass window**
+   • Press 'm' to toggle menu on/off, useful when scaling with SRWE.
 → Performance tweaks **Undo if tearing presents in game**
    • Processing → Advanced → Use Flip Mode: Enabled; Allow Tearing: Enabled; Max Capture Rate: Enabled
    • Processing → FPS → 100% (VSync)
@@ -575,9 +579,9 @@ Description: Applies .slang shaders in real time. **Not compatible with Lossless
    • RetroArch Library/pixel-art-scaling/sharp-bilinear **purity and edge integrity**
    • misc/simple_color_control **faithfully enhanced color depth**
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SWRE (SIMPLE RUNTIME WINDOW EDITOR)
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SRWE (SIMPLE RUNTIME WINDOW EDITOR)
 Description: Tool for resizing, repositioning, and border‑taming stubborn apps and games.
-→ Launch SWRE → Select Running Application → Shaderglass.exe **if not using Shaderglass, apply directly to 86Box vm window**
+→ Launch SRWE → Select Running Application → Shaderglass.exe **if not using Shaderglass, apply directly to 86Box vm window**
 → Adjust Window position and size → Set **maintain 4x3 aspect ratio to avoid stretching** **Press ENTER after entering values or they won't apply**
    • Hide title bar → Set Y: -31 **moves window title bar up and off screen**
    • Hide menu bar in Shaderglass → Processing → Toggle Menu (press 'm')
@@ -592,8 +596,8 @@ Description: Host-side MIDI synthesizer with customizable soundfonts.
    • For SC‑55‑like correctness.: Unison.SF2
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ RTSS (RivaTuner Statistics Server)
-Description: Tool cap FPS for better frame pacing for frame generation with Lossless Scaling.
-→ Launcnh RTSS before 86Box **Launching after 86Box causes crash**
+Description: Optional tool for an external framerate cap when using the Vulkan renderer.
+→ Launch RTSS before 86Box **Launching after 86Box causes a crash**
 → Add → 86Box.exe
 → Framerate limit = 60 **favor compatibility**
 
@@ -602,6 +606,10 @@ Description: Tool cap FPS for better frame pacing for frame generation with Loss
 ⟢⟞⟟⟡⟠⟜⟣⟿⟿⟿  C H A N G E   L O G   O F   T H E   C O D E X  ⟿⟿⟿⟣⟜⟠⟡⟟⟞⟢
 
    • v1.0 — Initial forging of the Codex structure; paddock boundaries raised.
+
+   • v1.1 — Added full 86Box Host Install section to the guide.
+          — Added download links.
+          — Applied desktop compatibility tweaks.
 
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
