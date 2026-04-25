@@ -480,7 +480,7 @@ Note: Enable the host audio device and joystick before launching 86Box; they wil
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ FILES
 ---------------------------------------------------------
-[SETUP] Windows 98 Second Edition.iso |Microsoft Win98se Install Disk Image (O/S)
+[SETUP]   Windows 98 Second Edition.iso   |Microsoft Win98se Install Disk Image (O/S)
 [DRIVER]  3dfx Voodoo3 reference driver 1.07.00.rar |3dfx Voodoo3 driver v1.07.00 (GPU driver)
 [DRIVER]  95v2343.exe                     | Yamaha YMF71x (OPL3-SAx) Win9x Driver v4.03.2343 (Sound driver)
 [API]     DirectX-70a(en).zip             | DirectX 7.0a Runtime (Stability for ~2000 era games)
