@@ -57,7 +57,7 @@ Description: Video hardware mapping in guest. **Host renderer is set from the VM
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ INPUT DEVICES
 → Mouse: PS/2 (5 buttons + wheel) — 86Box Input
-→ Joystick: 2-axis, 4-button joystick (favor compatibility) (optional)
+→ Joystick: 2-axis, 4-button joystick **favor compatibility** **Optional**
 → Joystick 1 → Device: [HOST JOYSTICK] **Attach joystick before starting 86Box**
   • Map Inputs
 
@@ -86,40 +86,41 @@ Description: Devices → attach and set ports; disable unused ports to match BIO
 → Floppy A: 3.5" 1.44MB; Check BPB: Disabled
 → CD‑ROM → Bus: ATAPI; Channel: 1:0 (Secondary Master); Type: `86b_cd 3.50`; Speed: 72× (lower if audio/read issues); Use EDC/ECC emulation: Disabled
 
-⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ SET RENDERER AND PREPARE WINDOWS 98SE INSTALLATION
+⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ ENTER BIOS, SET RENDERER AND PREPARE WINDOWS INSTALLATION  
 → Enter BIOS: Start VM → Press DEL during boot
-→ Set Renderer: 86Box vm window → View → Renderer → OpenGL **favor quality**
+→ Set Renderer: 86Box VM window → View → Renderer → OpenGL **favor quality**
   • Vulkan renderer is more powerful, but less compatible, reduces Voodoo3 image quality, and requires RTSS for fps cap.
-→ Cap FPS: 86VBox vm window → View → Renderer options → Use target framerate: 60 fps **favor stability**
+→ Cap FPS: 86VBox VM window → View → Renderer options → Use target framerate: 60 fps **favor stability**
   • Some older FMV/DirectDraw titles may prefer **30 fps** (optional; adjust per‑game after install).
-→ Mount WIN98se Install CD-ROM: Media → CD-ROM → Image → Win98se.iso
+→ Mount WIN98se Install CD-ROM: Media → CD-ROM → Image → Windows 98 Second Edition.iso
 
 \==[⟡ CLOSING THE 86BOX SETTINGS ]=/
 
 ⎯(ᶜᵒʷᵎ)⎯─◐◑◒◓─ BIOS TWEAKS FOR STABILITY (Asus P3B-F)
-Description: Boot → Setup. Disable primary/secondary IDE SLAVE unless drives attached.
+Description: Configure BIOS for optimal performance before Windows setup.
+Note: Disable primary/secondary IDE SLAVE unless drives attached.
 [MAIN]
 → Primary Master:        Auto
 → Primary Slave:         None
 → Secondary Master:      Auto
 → Secondary Slave:       None
-→ USB Legacy Support:    Disabled (Optional)
+→ USB Legacy Support:    Disabled **Optional**
 → Halt On:               No Errors
 
 [ADVANCED]
   • [CHIP CONFIGURATION]
     → SDRAM Configuration:         User Defined
-    → SDRAM RAS to CAS Delay:      3T (favor stability)
-    → SDRAM RAS Precharge Time:    3T (favor stability)
+    → SDRAM RAS to CAS Delay:      3T **favor stability**
+    → SDRAM RAS Precharge Time:    3T **favor stability**
 
   • [I/O DEVICE CONFIGURATION]
-    → Onboard Serial Port 1/2:    Disabled (Optional)
-    → Onboard Parallel Port:      Disabled (Optional)
+    → Onboard Serial Port 1/2:    Disabled **Optional**
+    → Onboard Parallel Port:      Disabled **Optional**
 
   • [PCI CONFIGURATION]
     → Slot 1 IRQ:    Auto
     → Slot 2 IRQ:    Auto
-    → USB IRQ:       Disabled (Optional)
+    → USB IRQ:       Disabled **Optional**
 
       • [PCI/PNP ISA IRQ RESOURCE EXCLUSION]
         → IRQ 5:    Yes 
@@ -138,27 +139,30 @@ Description: Boot → Setup. Disable primary/secondary IDE SLAVE unless drives a
 → Boot Order:                  ATAPI CD-ROM, IDE Hard Drive, Removable Device
 → Other Boot Device:           Disabled
 → Plug & Play O/S:             No
-→ Reset Configuration Data:    Yes (On first setup then resets to Disabled)
+→ Reset Configuration Data:    Yes **clears data and resets to 'No' after boot**
 → Boot Virus Detection:        Disabled
 → Full Screen Logo:            Disabled
 
+[EXIT]
+→ Exit Saving Changes
+
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ INSTALL ORDER (Win98SE)
-Description: perform inside VM; reboot after each major driver.
+Description: Summary of installation. Perform inside VM; reboot after each major driver.
 → 0 — Mount Windows 98 Second Edition.iso  Setup → 86Box vm window → Media → CD-ROM → Image → Open: Windows 98 Second Edition.iso → Boot from CD-ROM
 → 1 — Win98SE base install (enable large disk support) **Before restarting, eject install disk → Cancel driver installations → Disable IRQ steering**
 → 2 — 3dfx Voodoo3 3000 drivers (Glide + D3D + 3dfx Tools) — set UI sliders now **Before installing, remove display device conflicts** 
 → 3 — Yamaha YMF719 (OPL3-SA3) drivers **Before installing, remove device conflicts**
 → 4 — DirectX 7.0a  
 → 5 — Win98SE Shutdown Supplement  
-→ 6 — PS2PLUS Mouse Polling Rate (optional)
-→ 7 — DCOM98 v1.3 (optional)
-→ 8 — Win98SE USB Supplement (optional)
-→ 9 — 2-axis, 4-button joystick (optional)
+→ 6 — PS2PLUS Mouse Polling Rate **Optional**
+→ 7 — DCOM98 v1.3 **Optional**
+→ 8 — Win98SE USB Supplement **Optional**
+→ 9 — 2-axis, 4-button joystick **Optional**
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ WINDOWS SETUP
 Description: install Windows and avoid IRQ/DMA poisoning
-→ Enable large disk support (drives > 512MB)
-[Custom Setup] (optional)
+→ Enable large disk support **drives > 512MB**
+[Custom Setup] **Optional**
 → Accessibility: Disabled
 → Address Book: Disabled
 → Communications: Disabled
@@ -189,15 +193,11 @@ Description: install Windows and avoid IRQ/DMA poisoning
 → Reboot → Cancel driver installation **favor caution**
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ VOODOO 3 3000 AND HOST RENDERER
-Description: Install Voodoo3 drivers and select host renderer.
-→ 86Box vm window → View → Renderer → OpenGL **favor consistency**
-  • Vulkan is more powerful but less compatible and produces a less accurate image.
-→ Remove any conflicting display adapter devices in device manager **favor caution**
+Description: Install Voodoo3 drivers.
+→ (Optional) Device Manager → If “Standard PCI Graphics Adapter (VGA)” appears, remove it **favor caution**
 → Install 3dfx Voodoo3 reference driver 1.07
 → Reboot → Cancel generic display driver installation → Continue Voodoo3 Installation
 → Reboot → BIOS → [BOOT] → Reset Configuration Data: Yes **force IRQ/DMA refresh**
-→ Desktop → Properties → Colors: True Color **Improves shading** → Screen area: 1024x768 **adjust per game compatibility**
-→ Desktop → Properties → Advanced → Adapter → Refresh Rate: 60 Hz **favor compatibility**
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ YAMAHA YMF719 (OPL3-SA3) SETUP
 Description: Install Yamaha YMF719 (OPL3-SA3) drivers with correct IRQ/DMA (5,0,1)
@@ -228,16 +228,16 @@ Purpose: Play MIDI through the host (GM/GS/XG games) **host running VirtualMIDIS
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ WIN98SE SHUTDOWN SUPPLEMENT
 → Install Win98SE Shutdown Supplement
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ PS2RATE PLUS MOUSE POLLING (optional)
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ PS2RATE PLUS MOUSE POLLING **Optional**
 → Install PS2RATE to adjust PS/2 mouse refresh rate from default 40hz to 200hz.
   • Configure polling rate: 80 **40 Hz to 200 Hz** **favor stability**
   • Make default: Enabled
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DCOM98 (optional)
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DCOM98 **Optional**
 Description: Distributed COM support for installers
 → Install DCOM98 v1.3
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ WIN98SE USB SUPPLEMENT AND CLEANUP (optional)
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ WIN98SE USB SUPPLEMENT AND CLEANUP **Optional**
 Description: Update and disable unused USB controller
 → Install USB Supplement
 → Disable USB Host Controller
@@ -250,12 +250,12 @@ Description: Increase performance of HDD and CD-ROM
 → Device Manager → CDROM → [CD ROM DRIVE] → Properties → Settings → DMA: Enabled
 → Device Manager → Disk drives → [IDE DISK DRIVE] → Properties → Settings → DMA: Enabled
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ JOYSTICK (optional)
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ JOYSTICK **Optional**
 Description: Configure a DirectInput compatible game controller **If needed, Use XInput-to-DirectInput wrapper on host**
 → Attach joystick → Launch 86Box → Settings → Input devices → Joystick 1 → Device: [HOST JOYSTICK]
   • Configure axis and button mappings
 → Launch vm → Control Panel → Game Controllers → Add → 2-axis, 4-button joystick
-  • Properties → Calibrate (optional)
+  • Properties → Calibrate **Optional**
   • Advanced → Poll with interrupts enabled: Disabled
 
 Ctrl-D
