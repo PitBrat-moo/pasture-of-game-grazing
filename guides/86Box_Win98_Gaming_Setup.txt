@@ -40,6 +40,8 @@ Desciption: Download 86Box and ROM Repository, extract, and install on host mach
     → .github, floppy, hdd, machines, network, printer, rtc, scsi, sound, video, LICENSE, README.md
 ~(ᶜᵒʷʘ͜ʖʘ)~ ≋≈⟡(•(oo)•)⟢≈≋    END OF HOST INSTALL    ≋≈⟢(•(oo)•)⟡≈≋
 
+→ Launch 86Box to open the main window, then click the ⚙ Settings icon.
+
 /==[⟢ OPENING THE 86BOX SETTINGS ]=\
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ MACHINE 
@@ -609,7 +611,9 @@ Description: Optional tool for an external framerate cap when using the Vulkan r
 
    • v1.1 — Added full 86Box Host Install section to the guide.
           — Added download links.
-          — Applied desktop compatibility tweaks.
+		  — Added Frequency Tuning section.
+          — Applied desktop and CD-ROM tweaks.
+          — Mucked stalls; cleared stray hay from the paddock.
 
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
