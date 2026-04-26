@@ -305,9 +305,9 @@ Description: set mixer levels to balance dialogue, SFX, music and avoid clipping
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ LOCK CD-AUDIO, MIC & LINE VOLUME (Recording Levels)
 Description: Lock CD Audio volume to prevent it resetting to %100 when games load data, increase mixer stability.
 → Options → Properties → Recording → CD Audio: Enabled; Microphone: Enabled; Line: Enabled → OK
-  • CD Audio (recording): 70% → Select: Enabled
-  • Microphone (recording): 0% → Select: Disabled **favor stability**
-  • Line (recording): 0% → Select: Disabled **favor stability**
+   • CD Audio (recording): 70% → Select: Enabled
+   • Microphone (recording): 0% → Select: Disabled **favor stability**
+   • Line (recording): 0% → Select: Disabled **favor stability**
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ 3DFX TOOLS UI (SET IN APP)
 Description: set sliders in 3dfx Tools UI  
@@ -356,8 +356,8 @@ REGEDIT4
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ DMA — DISK PERFORMANCE (HDD & CD‑ROM)
 Description: enable DMA so transfers are fast and smooth.
 → Device Manager → Primary IDE Channel → Properties → Advanced Settings:
-   • Device 0 (HDD): Transfer Mode = "DMA if available" → Enable DMA  
-   • Device 1 (CD‑ROM): Transfer Mode = "DMA if available" → Enable DMA  
+  • Device 0 (HDD): Transfer Mode = "DMA if available" → Enable DMA  
+  • Device 1 (CD‑ROM): Transfer Mode = "DMA if available" → Enable DMA  
 → Reboot → confirm "DMA" shown next to devices.
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ TWEAKS · AUDIO / DMA / VCACHE
@@ -406,9 +406,9 @@ Description: Determine optimum CPU frequency (MHz) settings on a per‑game basi
   • 3D Accelerated titles: ~333–366 MHz
   • Late era titles (2000–2002): ~366–400 MHz
 → Run three titles:  
-   • FMV / Dialogue / MIDI heavy title — listen for audio jitter and note timing.
-   • Redbook / CD audio title — verify track switching and volume.
-   • 3D Accelerated title (Glide, OpenGL, D3D) — note emulation speed dips, frame pacing, and jitter.  
+  • FMV / Dialogue / MIDI heavy title — listen for audio jitter and note timing.
+  • Redbook / CD audio title — verify track switching and volume.
+  • 3D Accelerated title (Glide, OpenGL, D3D) — note emulation speed dips, frame pacing, and jitter.  
 → If jitter, reduce MHz and retest.
 → Log results: title, tuned frequency.
 ⟉⟉⟉~⟣🐮⟣~⟉⟉⟉   ⇢ END OF RITUAL — FREQUENCY TUNING COMPLETE ⇠   ⟊⟊⟊~⟡🐮⟡~⟊⟊⟊
@@ -497,16 +497,16 @@ Note: Enable the host audio device and joystick before launching 86Box; they wil
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ FILE TRANSFER RITUAL
 → Place all driver and file offerings into a host‑side folder.
-   • Extract archives (.zip, .rar) on host **only place extracted files in host-side folder** **86Box can not mount large, complex folders**
-   • Organize files by device and you will avoid future sorrow.
-   • Align the folder structure to an actual CD-ROM **shallow directories and 300-500 total files and folders combined is safe**
+  • Extract archives (.zip, .rar) on host **only place extracted files in host-side folder** **86Box can not mount large, complex folders**
+  • Organize files by device and you will avoid future sorrow.
+  • Align the folder structure to an actual CD-ROM **shallow directories and 300-500 total files and folders combined is safe**
 → Boot the Win98se guest and mount the host-side folder as a CD‑ROM.
-   • 86Box vm window → Media → CD‑ROM → Folder → Select folder: host-side folder
+  • 86Box vm window → Media → CD‑ROM → Folder → Select folder: host-side folder
 → Guest → Open “My Computer”.
-   • The folder will appear as a CD‑ROM volume.
+  • The folder will appear as a CD‑ROM volume.
 → Copy all necessary files from the mounted host-side folder CD-ROM to the guest HDD.
-   • Copy into a safe place inside the guest → C:\DRIVERS\
-→ Only after the files graze safely inside the guest pasture should you begin installing them.
+  • Copy into a safe place inside the guest → C:\DRIVERS\
+  Only after the files graze safely inside the guest pasture should you begin installing them.
 
 ⚠ W A R N I N G ⚠  
 Do not install drivers directly from the mounted folder.  
@@ -536,7 +536,13 @@ M O O – M A N T R A :
 ⎯(⌐■ᴗ■)っ≋≋≋≋≋≋≋≋≋⟪  (oo‾)  ⟫≋≋≋≋≋≋≋≋~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /==[ HOST-SIDE PADDOCK ]--> 
 \==[ ~(⌐(oo)⌐)~>~~>~>~~>~>~~>~>~~>~>~~>~>~~>~> ]-->
-Description: Host-side tools for pacing, scaling, shading, and MIDI rendering. Lossless Scaling and Shaderglass do not work together in the pipeline. Use SRWE for custom scaling when the other options (86Box native, Shaderglass, Lossless Scaling) are not adequate.  
+Description: Host-side tools for pacing, scaling, shading, and MIDI rendering. 
+Note: Tools in this paddock are optional and path‑specific. 
+      Scaling tools (ShaderGlass, Lossless Scaling, SRWE) affect only the picture. 
+      Audio tools (VirtualMIDISynth, SoundFonts) affect only MIDI. 
+      Lossless Scaling and ShaderGlass do not work together. 
+      Use SRWE for custom scaling when the other options (86Box native, ShaderGlass, Lossless Scaling) are not adequate.
+	  RTSS is optional and used only to cap the framerate when using the Vulkan renderer.
 ⟆⟆⟆~⟡~⟆⟆   ⇢ downloads ⇠   ⟅⟅~⟣~⟅⟅⟅
 ⟢(•(oo)•)→ Lossless Scaling — Exact, artifact‑free scaling and frame generation.  
 ⟝→ https://losslessscaling.com/
@@ -565,7 +571,7 @@ Description: Lossless Scaling settings optimized for VGA gaming at 60Hz **not co
 → Crop Input → Top: 22; Right: 0; Bottom: 0; Left: 0 **crop vm menu bar from output**
 → 86Box vm window → View → Hide toolbar: ON; Hide status bar: ON **hide toolbar from scaled output**
 → 86Box vm window → View → Renderer options → Use target framerate: 60 fps
-   • Alternately, use RTSS to cap fps. **NVIDIA/AMD frame limiter does not work on vm window**
+  • Alternately, use RTSS to cap fps. **NVIDIA/AMD frame limiter does not work on vm window**
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SHADERGLASS
 Description: Applies .slang shaders in real time. **not compatible with Lossless Scaling.**
@@ -573,29 +579,38 @@ Description: Applies .slang shaders in real time. **not compatible with Lossless
 → Input → Pixel Size → x1
 → Shader → Choose From Library / Import Custom → choose shader. 
 → Output → Scale →  Scaling % **for custom scaling select FREE and use SRWE to adjust Shaderglass window**
-   • Press 'm' to toggle menu on/off, useful when scaling with SRWE.
+  • Press 'm' to toggle menu on/off, useful when scaling with SRWE.
 → Performance tweaks **Undo if tearing presents in game**
-   • Processing → Advanced → Use Flip Mode: Enabled; Allow Tearing: Enabled; Max Capture Rate: Enabled
-   • Processing → FPS → 100% (VSync)
+  • Processing → Advanced → Use Flip Mode: Enabled; Allow Tearing: Enabled; Max Capture Rate: Enabled
+  • Processing → FPS → 100% (VSync)
+  • Hide menu bar in Shaderglass (Shortcut M) → Processing → Toggle Menu
 → Shader suggestions:
-   • RetroArch Library/pixel-art-scaling/sharp-bilinear **purity and edge integrity**
-   • misc/simple_color_control **faithfully enhanced color depth**
+  • RetroArch Library/pixel-art-scaling/sharp-bilinear **purity and edge integrity**
+  • misc/simple_color_control **faithfully enhanced color depth**
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SRWE (SIMPLE RUNTIME WINDOW EDITOR)
 Description: Tool for resizing, repositioning, and border‑taming stubborn apps and games.
-→ Launch SRWE → Select Running Application → Shaderglass.exe **if not using Shaderglass, apply directly to 86Box vm window**
-→ Adjust Window position and size → Set **maintain 4x3 aspect ratio to avoid stretching** **Press ENTER after entering values or they won't apply**
-   • Hide title bar → Set Y: -31 **moves window title bar up and off screen**
-   • Hide menu bar in Shaderglass → Processing → Toggle Menu (press 'm')
-   • Accomodate for window frame: Width + 16, Height +39 **add to desired 4x3 resolution to fit and cover screen top to bottom**
+→ Launch SRWE → Select Running Application
+  • Select Shaderglass.exe when using Shaderglass
+  • Select 86Box VM Manager only when scaling 86Box directly (no ShaderGlass, no LS)
+→ Window position and size **Scale to 4K resolution at 4x3 aspect ratio** 
+  **Press ENTER after entering each value or it won't apply**
+  • Shaderglass Config **primary path**:
+    → Y: -31; Width: 2896; Height: 2199 **press ENTER to after each value**
+  • 86Box Config **use only when not using ShaderGlass or LS**
+    → Y: -53; Width: 2961; Height: 2221 **press ENTER to after each value** 
+→ Click SET to apply **upper SET button in the Window position and size box**
+→ Align Window: H.Center
+  • Centers the window horizontally; adjust Left/Right if ShaderGlass covers 86Box.
+→ Save profiles for convenience
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Coolsoft VirtualMIDISynth
 Description: Host-side MIDI synthesizer with customizable soundfonts.
 → Launch VirtualMIDISynth → Add/Select soundfont → Apply
 → Suggested soundfonts:
-   • For elevated accuracy: Arachno SoundFont - Version 1.0.sf2
-   • For dreamy and atmospheric: GeneralUser GS v1.471.sf2
-   • For SC‑55‑like correctness.: Unison.SF2
+  • For elevated accuracy: Arachno SoundFont - Version 1.0.sf2
+  • For dreamy and atmospheric: GeneralUser GS v1.471.sf2
+  • For SC‑55‑like correctness.: Unison.SF2
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ RTSS (RivaTuner Statistics Server)
 Description: Optional tool for an external framerate cap when using the Vulkan renderer.
@@ -607,14 +622,17 @@ Description: Optional tool for an external framerate cap when using the Vulkan r
 
 ⟢⟞⟟⟡⟠⟜⟣⟿⟿⟿  C H A N G E   L O G   O F   T H E   C O D E X  ⟿⟿⟿⟣⟜⟠⟡⟟⟞⟢
 
-   • v1.0 — Initial forging of the Codex structure; paddock boundaries raised.
+  • v1.0 — Initial forging of the Codex structure; paddock boundaries raised.
 
-   • v1.1 — Added full 86Box Host Install section to the guide.
-          — Added download links.
-		  — Added Frequency Tuning section.
-          — Applied desktop and CD-ROM tweaks.
-          — Mucked stalls; cleared stray hay from the paddock.
+  • v1.1 — Added full 86Box Host Install section to the guide.
+         — Added download links.
+         — Added Frequency Tuning section.
+         — Applied desktop and CD-ROM tweaks.
+         — Mucked stalls; cleared stray hay from the paddock.
 
+  • v1.2 — Revised SRWE Configuration
+         — Host‑Side Paddock cultivated
+		 
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
 ⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜
