@@ -61,7 +61,7 @@ T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S 
                      `--'
            THE COW OF OMENS REVEALS THE FIRST PAGE
 ════════════════════════════════════════════════════════════════════════
-                     ✦  F O R E M O S T   G R A Z I N G - G R O U N D S  ✦
+            ✦  F O R E M O S T   G R A Z I N G - G R O U N D S  ✦
 ════════════════════════════════════════════════════════════════════════
 
                  (__)
@@ -72,9 +72,6 @@ T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S 
                   ^^    ^^
 
 • Revenant ⟦ＦＭ⟧  
-• Gorasul ⟦ＦＭ⟧  
-• Sacrifice ⟦ＸＲ⟧  
-• Black Dahlia ⟦ＦＭ⟧
 
 ────────────────────────────────────────────────────────────────────────
                ✦  S E C O N D A R Y   S T R O N G   F I T S  ✦
@@ -87,10 +84,8 @@ T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S 
             *  ||----||
                ^^    ^^
 
-• Ripper ⟦ＧＭ⟧
-• Need for Speed II SE ⟦ＸＲ⟧
-• Need for Speed III: Hot Pursuit ⟦ＸＲ⟧
-• Need for Speed: High Stakes ⟦ＸＲ⟧
+• Icarus: Sanctuary of Gods ⟦ＦＭ⟧
+• Nocturne ⟦ＧＭ⟧  
 
 ────────────────────────────────────────────────────────────────────────
                          ✦  E D G E B O R N   G R A Z E R S  ✦
@@ -101,8 +96,9 @@ T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S 
   \/ \_/
 
 • Urban Chaos ⟦ＦＭ⟧  
-• Incoming (1998) ⟦ＧＭ⟧  
-• Rayman 2 ⟦ＧＭ⟧  
+• King’s Quest: Mask of Eternity ⟦ＦＭ⟧
+• Gorasul ⟦ＦＭ⟧  
+• Sacrifice ⟦ＧＭ⟧  
 
 ────────────────────────────────────────────────────────────────────────
     ✦  D R E A M F R A M E S   O F   T H E   A D V E N T U R O U S  ✦
@@ -114,15 +110,26 @@ T H E   S A C R E D   F O R A G E   O F   T H E   N I N E – E I G H T   P A S 
            * ||-----||
              ^^     ^^
 
-FMV / ADVENTURE  
-• The X-Files Game ⟦ＦＭ⟧  
-• Panic in the Park ⟦ＧＭ⟧  
+FMV  
+• Imagination Pilots Presents: Panic in the Park ⟦ＧＭ⟧  
 • The Residents' Bad Day on the Midway ⟦ＦＭ⟧
 • Riana Rouge ⟦ＦＭ⟧
 • Frankenstein: Through the Eyes of the Monster ⟦ＦＭ⟧  
+• Faust: Seven Games of the Soul ⟦ＧＭ⟧  
+• Amber: Journeys Beyond ⟦ＦＭ⟧  
+• Dust: A Tale of the Wired West ⟦ＦＭ⟧  
+• Realms of Illusion ⟦ＦＭ⟧
+• The Elk Moon Murder ⟦ＧＭ⟧
+• Temüjin ⟦ＦＭ⟧
+• Maabus ⟦ＦＭ⟧
+• The Arrival ⟦ＦＭ⟧
+• A Fork in the Tale ⟦ＦＭ⟧
+• Angel Devoid: Face of the Enemy ⟦ＦＭ⟧
+• Dark Side of the Moon ⟦ＦＭ⟧
+• Black Dahlia ⟦ＦＭ⟧
 
 ────────────────────────────────────────────────────────────────────────
-✦  M O O N F A T   O F   T H E   U N V A N Q U I S H E D   F O L D  ✦
+            ✦  M O O N F A T   O F   T H E   S T A R S  ✦
 ────────────────────────────────────────────────────────────────────────
 
          (__)
@@ -132,14 +139,12 @@ FMV / ADVENTURE
  *  ||---||
     ^^   ^^
 
-• Nocturne ⟦ＧＭ⟧  
-• Heavy Gear II ⟦ＦＭ⟧  
-• Amber: Journeys Beyond ⟦ＦＭ⟧  
-• Mysterious Journey I (Schizm I) ⟦ＧＭ⟧  
-• Mysterious Journey II (Schizm II) ⟦ＧＭ⟧  
+• Star Trek: Klingon ⟦ＦＭ⟧
+• Star Trek: Borg ⟦ＦＭ⟧
+• Star Trek The Next Generation: A Final Unity ⟦ＦＭ⟧
 
 ────────────────────────────────────────────────────────────────────────
-             ✦  D A R K   F A N T A S Y   I M M E R S I V E   S I M  ✦
+        ✦  P I N   T H E   T A I L   O N   A D V E N T U R E  ✦
 ────────────────────────────────────────────────────────────────────────
 
                     (__)
@@ -149,36 +154,37 @@ FMV / ADVENTURE
            *  ||----||
               ^^    ^^
 
-• Witchaven ⟦ＦＭ⟧  
-• Witchaven II ⟦ＦＭ⟧  
-• King’s Field ⟦ＦＭ⟧  
-• Realms of the Haunting ⟦ＧＭ⟧  
+• Chronicles of Pern: Dragon Riders ⟦ＦＭ⟧
+• The New Adventures of the Time Machine ⟦ＦＭ⟧
+• Light and Darkness: The Prophecy ⟦ＦＭ⟧
+• Beyond Time ⟦ＦＭ⟧
+• Wild West Adventure ⟦ＦＭ⟧
+• Timeline ⟦ＦＭ⟧
 
 ────────────────────────────────────────────────────────────────────────
-                         ✦  C U L T   –   W E I R D  ✦
+        ✦  O V E R   T H E   M O O N   A D V E N T U R E  ✦
 ────────────────────────────────────────────────────────────────────────
 
         (\__/)
         ( oo )
         / >♥ >
 
-• ZPC ⟦ＦＭ⟧  
+• Martian Gothic: Unification ⟦ＦＭ⟧
+• Traitors Gate ⟦ＦＭ⟧
 
 ────────────────────────────────────────────────────────────────────────
-✦  E C H O E S   &   R E I S S U E S  ✦  
-✦  R I T U A L   O F   T W O   S O U L S  ✦
+           ✦  R I T U A L   O F   T W O   S O U L S  ✦
 ────────────────────────────────────────────────────────────────────────
 
         (\_(\         /)_/)
         ( -.-)       (-.- )   
         o_(")(")   (")(")_o
 
-• System Shock 1 (CD Enhanced Edition) ⟦ＦＭ⟧
-• Harvester ⟦ＧＭ⟧  
-• Severance: Blade of Darkness ⟦ＦＭ⟧  
+• Heavy Gear II ⟦ＦＭ⟧  
+• Shivers Two ⟦ＦＭ⟧
 
 ────────────────────────────────────────────────────────────────────────
-            ✦  C O N S O L E - O R I G I N   P C   P O R T S  ✦
+            ✦  R E A L   T I M E   S T R A T E G Y  ✦
 ────────────────────────────────────────────────────────────────────────
 
                      (__)
@@ -188,9 +194,7 @@ FMV / ADVENTURE
                 ||----||
                 ^^    ^^
 
-JAPANESE PC PORTS  
-• Ys IV ⟦ＸＲ⟧  
-• Sorcerian ⟦ＧＭ⟧  
+• Real War ⟦ＦＭ⟧
 
 ────────────────────────────────────────────────────────────────────────────
           𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁  𐚁𐚁𐚁
@@ -218,8 +222,6 @@ JAPANESE PC PORTS
    (  @@)
    / 🜂 >
 
-• Nox ⟦ＦＭ⟧  
-• American McGee’s Alice ⟦ＧＭ⟧  
   
   
 ── P L A T E   I I :   T H E   B R O K E N   M I R R O R ──
@@ -227,10 +229,6 @@ JAPANESE PC PORTS
   ^_(xx)_^
     \/\/
 
-• Sanitarium ⟦ＧＭ⟧  
-• Faust: Seven Games of the Soul ⟦ＧＭ⟧  
-• Omikron: The Nomad Soul ⟦ＧＭ⟧  
-• King’s Quest: Mask of Eternity ⟦ＦＭ⟧
 
 
 ── P L A T E   I I I :   T H E   E N D L E S S   P A T H ──
@@ -238,11 +236,6 @@ JAPANESE PC PORTS
    ( -.-)
    o_(")
 
-• Myst ⟦ＧＭ⟧  
-• Riven ⟦ＧＭ⟧  
-• Myst III: Exile ⟦ＦＭ⟧  
-• The Longest Journey ⟦ＧＭ⟧  
-• Dreamfall ⟦ＧＭ⟧  
 
 
 ──── S E A L   O F   T H E   F A D I N G   M E M O R Y ────
@@ -264,17 +257,10 @@ JAPANESE PC PORTS
 
 T H E   G A M E S   T H A T   W A N D E R   U N C L A I M E D
 
-• The Forgotten: It Begins ⟦ＦＭ⟧  
-• Byzantine: The Betrayal ⟦ＧＭ⟧  
-• Real War ⟦ＦＭ⟧  
-• Reah ⟦ＧＭ⟧  
-• Reflux ⟦ＦＭ⟧  
-• Nightshade ⟦ＦＭ⟧  
 • The Devil Inside ⟦ＧＭ⟧  
 
 
 ───────────────────────────  A U D I O   P A T H   S I G I L S  ───────────────────────────
 ⟦ＦＭ⟧  FM PURE        ·  OPL3 / dark / era‑authentic  
-⟦ＧＭ⟧  GM ENHANCE     ·  Wavetable clarity / GS / XG aware  
-⟦ＸＲ⟧  XR TRANSFORMED ·  Modern synthesis elevates original mix  
+⟦ＧＭ⟧  GM ENHANCE     ·  Modern synthesis elevates original mix  
 ────────────────────────────────────────────────────────────────────────
