@@ -463,10 +463,10 @@ cat > Guide_Part3_The_Omasum.txt
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ LAUNCH SEQUENCE
 Note: Enable the host audio device and joystick before launching 86Box; they will not be detected afterward.  
-      Launch RTSS before 86Box; starting it afterward can cause a crash.
-→ Windows Host → Select Audio Device → Attach Joystick → Launch RTSS (optional fps cap)
-→ Launch VirtualMIDISynth (optional host MIDI)
-→ Launch ShaderGlass or Lossless Scaling (choose one); use SRWE for scaling when using ShaderGlass
+      (Optional) Launch RTSS before 86Box; starting it afterward can cause a crash.
+→ Windows Host → Select Audio Device → Attach Joystick → (Optional) Launch RTSS (fps cap when using vulkan renderer)
+→ (Optional) Launch VirtualMIDISynth (host MIDI)
+→ (Optional) Launch ShaderGlass or Lossless Scaling (choose one); use SRWE for scaling when using ShaderGlass
 → Launch 86Box → Start VM → Boot Win98 → Mount CD-ROM → Launch game
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ BOVINE SCRIPTURE (for the faithful retro‑cow)
@@ -596,9 +596,9 @@ Description: Tool for resizing, repositioning, and border‑taming stubborn apps
 → Window position and size **Scale to 4K resolution at 4x3 aspect ratio** 
   **Press ENTER after entering each value or it won't apply**
   • Shaderglass Config **primary path**:
-    → Y: -31; Width: 2896; Height: 2199 **press ENTER to after each value**
+    → Y: -31; Width: 2896; Height: 2199 **press ENTER after each value**
   • 86Box Config **use only when not using ShaderGlass or LS**
-    → Y: -53; Width: 2961; Height: 2221 **press ENTER to after each value** 
+    → Y: -53; Width: 2961; Height: 2221 **press ENTER after each value** 
 → Click SET to apply **upper SET button in the Window position and size box**
 → Align Window: H.Center
   • Centers the window horizontally; adjust Left/Right if ShaderGlass covers 86Box.
