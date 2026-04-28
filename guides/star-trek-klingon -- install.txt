@@ -1,0 +1,76 @@
+Star Trek: Klingon  
+=====================  
+  
+INSTALLATION
+------------  
+  
+86BOX WIN98SE VM INSTALLATION
+• Create a Windows 98 SE virtual machine in 86Box  
+• Set CPU Frequency to 100 MHz    
+• Start VM  
+• Mount Star Trek: Klingon Disk 1 
+• Launch Setup.exe from the CD-ROM and complete full installation  
+• Install Video for Windows 1.1d (included on disk 1)  
+• Select Restart Now
+• If a full-screen DOS configuration menu appears with red text after reboot:
+  → This is the Yamaha DOS audio configuration utility (SETUPSA.EXE) 
+    • Press ESC to cancel
+    • If a popup window appears, Select NO to save settings on next restart
+    
+VM CONFIGURATION
+• CPU Frequency: 100 MHz  
+• CD-ROM Speed: 72x 
+• Renderer: OpenGL
+• Target Framerate: 60 fps
+• Win98SE  
+• Desktop Resolution: 640x480  
+• Desktop Color Depth: 16‑bit (High Color)  
+• Video for Windows 1.1d  
+	
+LOSSLESS SCALING SETTINGS (OPTIONAL)
+-------------------------
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed
+• Multiplier: 2 (120 fps) or 4 (240 fps)
+• Flow Scale: 40%  
+• Performance: ON **preserve VGA beauty**  
+• Capture API: WGC  
+• Queue target: 0 **1 for compatibility**
+• Clip cursor: On **Optional**
+• Adjust cursor speed: On **Optional**
+• Crop Input → Top Box: 22 **crops 86Box menu bar**  
+• Scaling Type: Sharp Bilinear **preserve VGA beauty**  
+• Sync Mode: Vsync
+• Max frame latency: 1
+• G-Sync support: ON
+
+STARTUP ROUTINE  
+---------------  
+Windows‑Host →  
+• Select sound playback device  
+• Launch Lossless Scaling  
+• Launch 86Box → start Win98SE VM  
+• Mount appropriate Star Trek: Klingon Disk (1-3) in VM
+  → Immersion Studies Enhanced Audio **Disk 1**
+  → Klingon Language Lab **Disk 3**
+• Win98SE‑Guest → Start → Programs → STAR TREK KLINGON
+• Activate Lossless Scaling (Ctrl+Alt+S) **Optional**
+  → Ctrl+Alt+S also opens the Game Save dialogue box, click X to exit, or learn Klingon in the Language Lab
+  → Avoid clipping:
+    • Wait for the game to enter fullscreen before activating scaling
+    • Toggle scaling off and on until the full image is scaled  
+• Exit the game with ALT+F4
+  
+NOTES
+-----
+• If Yamaha DOS Setup appears after reboot, press ESC.
+• 640x480 @ 16‑bit presents the game at a consistent resolution. 
+• Video for Windows 1.1d is identical to the Win98SE version; installing it from Disk 1 ensures the game registers its codecs correctly.
+• Microphone input is not supported in the 86Box Win98SE VM. This does not affect game completion. Klingon Language Lab and other voice‑recognition features are unavailable.
+ 
+TOOL DEPENDENCIES (OPTIONAL)
+----------------------------
+Lossless Scaling  
+• https://losslessscaling.com/  
+• Purpose: host‑side scaling and frame generation  
+• Notes: Optional; host‑side, only needed for frame generation. For scaling alone, use SRWE.  
