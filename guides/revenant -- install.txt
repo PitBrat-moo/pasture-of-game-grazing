@@ -19,7 +19,7 @@ VM CONFIGURATION
 • CPU Frequency: 300 MHz  
 • CD-ROM Speed: 72x 
 • Renderer: OpenGL
-• Target Framerate: 60 fps
+• Target Framerate: 60 fps  **Use RTSS to set 30 fps cap**
 • Win98SE  
 • Desktop Resolution: 640x480  
 • Desktop Color Depth: 16‑bit (High Color)  
@@ -35,8 +35,11 @@ SWRE CONFIGURATION
 • Height: 2199 **add 39 pixels to compensate for window frame at 4x3 resolution**  
 • Align Windows: H.Center
 
+RTSS Configuration
+• 86Box.exe → Framerate limit: 30 **match game engine**
+
 Startup Routine:
-• Windows-Host → Select Sound Playback Device → Attach Controller → Launch SRWE → Launch Shaderglass
+• Windows-Host → Select Sound Playback Device → Attach Controller → Launch SRWE → Launch Shaderglass → Launch RTSS
 • Launch 86Box → Sart Win98se vm → Mount Revenant Disk 2
 • Shaderglass: Select 86Box as Input Window; 
 • SWRE: Select Shaderglass and set size/position
@@ -139,6 +142,11 @@ SWRE
 • https://github.com/dtgDTGdtg/SRWE
 • Purpose: Scale and tame windows
 • Notes: Only needed for custom scaling options not surfaced in Shaderglass
+
+RTSS (RivaTuner Statistics Server) — Stable frame pacing.
+• https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/
+• Purpose: Caps frame rate to 30
+• Notes: Improves latency. The game engine runs at 30 fps natively.
  
 CUSTOM ENHANCEMENTS (OPTIONAL)
 ------------------------------
