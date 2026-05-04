@@ -16,9 +16,13 @@ Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)
 
 ## Notes
 - Runs cleanly under Win98SE in 86Box with a 100 MHz CPU target.  
-- FMV timing and module transitions remain stable at 640×480 @ 16‑bit.  
+- FMV timing and module transitions remain stable at 640×480 @ 16‑bit with Video for Windows 1.1d.  
 - Disc handling is required for Immersion Studies and the Language Lab.  
+- Voice recognition is not available. 86Box lacks audio inputs.
 - Native execution on modern systems is unreliable; the VM path avoids timing drift and codec issues.
+
+⚠️ Stable under 98SE + Video for Windows 1.1d in 86Box  
+Avoid native execution on modern Windows builds.  
 
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~
 
