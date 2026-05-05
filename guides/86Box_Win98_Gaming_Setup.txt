@@ -91,8 +91,7 @@ Description: Devices → attach and set ports; disable unused ports to match BIO
 → Set Renderer: 86Box VM window → View → Renderer → OpenGL **favor quality**
   • Vulkan renderer is more powerful, but less compatible, reduces Voodoo3 image quality, and requires RTSS for fps cap.
 → Cap FPS: 86VBox VM window → View → Renderer options → Use target framerate: 60 fps **favor stability**
-  • Some older FMV/DirectDraw titles may prefer **30 fps** **requires RTSS** (optional; adjust per‑game after install).
-→ Mount WIN98se Install CD-ROM: Media → CD-ROM → Image → Windows 98 Second Edition.iso
+→ Mount WIN98se Install CD-ROM: 86VBox VM window → Media → CD-ROM → Image → Windows 98 Second Edition.iso
 
 \==[⟡ CLOSING THE 86BOX SETTINGS ]=/
 
