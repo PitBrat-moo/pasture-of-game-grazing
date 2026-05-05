@@ -19,7 +19,7 @@ VM CONFIGURATION
 • CPU Frequency: 300 MHz  
 • CD-ROM Speed: 72x 
 • Renderer: OpenGL
-• Target Framerate: 60 fps  **Use RTSS to set 30 fps cap**
+• Target Framerate: 60 fps **favor stability**
 • Win98SE  
 • Desktop Resolution: 640x480  
 • Desktop Color Depth: 16‑bit (High Color)  
@@ -47,10 +47,11 @@ Startup Routine:
 
 Notes:
 - VM path avoids modern rendering issues
-- Game timing is stable under Win98SE
-- In 86Box, set CPU speed to 300 to avoid audio jitter and a bug that prevents completing training.
+- Game timing is stable under Win98SE with host-side 30 fps cap
+- In 86Box, set CPU speed to 300 to avoid audio jitter and the training bug.
   • 86Box → Settings → Processor → Frequency: 300 **233 for compatibility**
-
+- Requires host-side RTSS 30 fps limit; launch RTSS before 86Box  
+  
 B. WINDOWS 10/11 INSTALLATION
 -----------------------------
 
@@ -174,6 +175,8 @@ Game Fails to Boot / Large Black Areas
 Intro Movie Freeze  
 • Skip by removing / renaming SMK files or using wrappers with “no movies” flags
 
+Visual effects stay active
+• Requires RTSS host‑side 30 fps cap; launch RTSS before 86Box
 
 KNOWN ISSUES (UNRESOLVED)
 -------------------------
@@ -205,4 +208,9 @@ UNVERIFIED / HISTORICAL FIXES
 • Limit RAM to 2GB  
 • Disable texture blitting / overlays  
 • Software renderer for minimap (severe performance loss)
+  
+  
+CHANGELOG
+---------  
+1.1 — Added host‑side 30 Hz cap via RTSS.
   
