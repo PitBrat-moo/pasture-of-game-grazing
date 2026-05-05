@@ -175,8 +175,14 @@ Game Fails to Boot / Large Black Areas
 Intro Movie Freeze  
 • Skip by removing / renaming SMK files or using wrappers with “no movies” flags
 
-Visual effects stay active
+Visual effects stay active / minimap corruption / animation jitter
 • Requires RTSS host‑side 30 fps cap; launch RTSS before 86Box
+
+Character keeps walking
+• Open menu to clear input state.
+
+CD-Audio volume jumps to 100%
+• Open menu and enter game options; volume return to normal.
 
 KNOWN ISSUES (UNRESOLVED)
 -------------------------
@@ -191,7 +197,7 @@ Lighting / Gamma Problems
 • Candle flames show black rectangles  
 • Gamma slider can exceed intended bounds
 
-Chroma‑Key Artifacts  
+Chroma‑Key Artifacts (on modern Windows)  
 • Magenta outlines around text and UI elements
 
 
