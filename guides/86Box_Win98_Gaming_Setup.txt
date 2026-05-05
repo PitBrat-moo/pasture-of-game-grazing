@@ -632,9 +632,11 @@ Note: Cap framerate on a per-game basis. Required for 30 framerate limit with Op
          — Applied desktop and CD-ROM tweaks.
          — Mucked stalls; cleared stray hay from the paddock.
 
-  • v1.2 — Revised SRWE Configuration
-         — Host‑Side Paddock cultivated
+  • v1.2 — Revised SRWE Configuration.
+         — Host‑Side Paddock cultivated.
 		 
+  • v1.3 — Added host‑side RTSS 30 Hz cap.	
+  
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
 ⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜
