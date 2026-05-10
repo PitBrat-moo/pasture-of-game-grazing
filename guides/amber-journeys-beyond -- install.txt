@@ -1,18 +1,20 @@
+[[== Recommended 86Box Profile: 86box-win98-s3-v2-ya -- adventure-gamer.txt =][[
+------------------------------------------------------------------------------
+
 AMBER Journeys Beyond  
 =====================  
   
+))(~~~~~~~~~~(()
 INSTALLATION
-------------  
-  
-86BOX WIN98SE VM INSTALLATION
-• Create a Windows 98 SE virtual machine in 86Box  
-• Set CPU Frequency to 100 MHz (QuickTime FMV stability)  
-• Start VM  
-• Mount game disc  
-• Install Amber: Journeys Beyond  
-• Install QuickTime 2.1.2 (included on disc)  
+(()~~~~~~~~~~))(
+
+⟢(•(oo)•)→ 86box-win98-setup-v3-ya -- adventure-gamer.txt  
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
+⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  ⟝⟜⟝
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-toolshed.txt
   
 VM CONFIGURATION
+-----------------------
 • CPU Frequency: 100 MHz  
 • CD-ROM Speed: 72x 
 • Renderer: OpenGL
@@ -21,15 +23,32 @@ VM CONFIGURATION
 • Desktop Resolution: 640x480  
 • Desktop Color Depth: 16‑bit (High Color)  
 • QuickTime 2.1.2  
+
+86BOX WIN98SE VM INSTALLATION
+--------------------------------
+• Create a Windows 98 SE virtual machine in 86Box  
+• Set CPU Frequency to 100 MHz (QuickTime FMV stability)  
+• Start VM  
+• Mount game disc  
+• Install Amber: Journeys Beyond  
+• Install QuickTime 2.1.2 (included on disc)  
   
 LOSSLESS SCALING SETTINGS
 -------------------------
 • Frame Generations Type: LSFG 3.1  
-• Flow Scale: 100%  
+• Mode: Fixed
+• Multiplier: 3.9 (235 fps)
+• Flow Scale: 40%  
 • Performance: ON **preserve VGA beauty**  
 • Capture API: WGC  
-• Scaling Type: Sharp Bilinear **preserve VGA beauty**  
+• Queue target: 0 **1 for compatibility**
+• Clip cursor: On **Optional**
+• Adjust cursor speed: On **Optional**
 • Crop Input → Top Box: 22 **crops 86Box menu bar**  
+• Scaling Type: Sharp Bilinear **preserve VGA beauty**  
+• Sync Mode: Vsync
+• Max frame latency: 1
+• G-Sync support: ON
   
 STARTUP ROUTINE  
 ---------------  
@@ -50,9 +69,7 @@ NOTES
 • Use QuickTime 2.1.2; later versions cause audio jitter and scaling issues.  
 • Transitions cause infrequent warning popups that don't impede progress. Set transitions to none to avoid popups.  
 
-TOOL DEPENDENCIES (OPTIONAL)
-----------------------------
-Lossless Scaling  
-• https://losslessscaling.com/  
-• Purpose: host‑side scaling and frame generation  
-• Notes: optional; only needed for frame generation. For scaling alone, use SWRE.  
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
