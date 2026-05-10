@@ -1,10 +1,31 @@
+[[== Recommended 86Box Profile: 86box-win98-s3-v2-ya -- adventure-gamer.txt =][[
+------------------------------------------------------------------------------
+
 Star Trek: Klingon  
 =====================  
   
+))(~~~~~~~~~~(()
 INSTALLATION
-------------  
+(()~~~~~~~~~~))(
+
+⟢(•(oo)•)→ 86box-win98-setup-v3-ya -- adventure-gamer.txt  
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
+⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  ⟝⟜⟝
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-toolshed.txt
   
+VM CONFIGURATION
+---------------------
+• CPU Frequency: 100 MHz  
+• CD-ROM Speed: 72x 
+• Renderer: OpenGL
+• Target Framerate: 60 fps
+• Win98SE  
+• Desktop Resolution: 640x480  
+• Desktop Color Depth: 16‑bit (High Color)  
+• Video for Windows 1.1d  
+	
 86BOX WIN98SE VM INSTALLATION
+--------------------------------
 • Create a Windows 98 SE virtual machine in 86Box  
 • Set CPU Frequency to 100 MHz    
 • Start VM  
@@ -17,21 +38,11 @@ INSTALLATION
     • Press ESC to cancel
     • If a popup window appears, Select NO to save settings on next restart
     
-VM CONFIGURATION
-• CPU Frequency: 100 MHz  
-• CD-ROM Speed: 72x 
-• Renderer: OpenGL
-• Target Framerate: 60 fps
-• Win98SE  
-• Desktop Resolution: 640x480  
-• Desktop Color Depth: 16‑bit (High Color)  
-• Video for Windows 1.1d  
-	
 LOSSLESS SCALING SETTINGS (OPTIONAL)
 -------------------------
 • Frame Generations Type: LSFG 3.1  
 • Mode: Fixed
-• Multiplier: 2 (120 fps) or 4 (240 fps)
+• Multiplier: 3.9 (235 fps)
 • Flow Scale: 40%  
 • Performance: ON **preserve VGA beauty**  
 • Capture API: WGC  
@@ -67,10 +78,8 @@ NOTES
 • 640x480 @ 16‑bit presents the game at a consistent resolution. 
 • Video for Windows 1.1d is identical to the Win98SE version; installing it from Disk 1 ensures the game registers its codecs correctly.
 • Microphone input is not supported in the 86Box Win98SE VM. This does not affect game completion. Klingon Language Lab and other voice‑recognition features are unavailable.
- 
-TOOL DEPENDENCIES (OPTIONAL)
-----------------------------
-Lossless Scaling  
-• https://losslessscaling.com/  
-• Purpose: host‑side scaling and frame generation  
-• Notes: Optional; host‑side, only needed for frame generation. For scaling alone, use SRWE.  
+
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+  
