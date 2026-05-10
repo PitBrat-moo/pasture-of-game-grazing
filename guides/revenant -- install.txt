@@ -1,93 +1,196 @@
+[[== Recommended 86Box Profile: 86box-win98-s3-v2-ya -- adventure-gamer.txt =][[
+------------------------------------------------------------------------------
+
+
 Revenant
 ========
+  
+  
+NOTES  
+-----  
+- Run Launcher.exe and set detail levels every time before starting the game. WARNING, opening Launcher.exe will reset configuration to defaults
+- Play the game with Launcher.exe. WARNING, opening Revenant.exe can make the game appear too bright
+- Cap fps at 30 to match the internal game engine for stability **required**
 
+
+))(~~~~~~~~~~(()
 INSTALLATION
-------------
+(()~~~~~~~~~~))(
 
+Two install paths 
+  A. VM installation (Requires an existing 86Box Win98se VM)
+  B. Win10/11 Installation
+
+
+[]]-----------------------------------][[
 A. VM INSTALLATION (Recommended)
-• Create a Windows 98 SE virtual machine in 86Box
-• Set CPU Frequency to <=300MHZ **favor stability**
-• Start VM
-• Mount install disk
-• Install Revenant inside the VM
-• Install Patch 1.22
-• Install NoCD patch
-• Install Dialogue Fix (copy Ahkuilon.rvm into the “modules” folder)
-• Run Launcher.exe once to configure settings
+]][-----------------------------------[[]
+
+⟢(•(oo)•)→ 86box-win98-setup-v3-ya -- adventure-gamer.txt  
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
+⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  ⟝⟜⟝
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-toolshed.txt
 
 VM CONFIGURATION
+---------------------------
 • CPU Frequency: 300 MHz  
 • CD-ROM Speed: 72x 
 • Renderer: OpenGL
 • Target Framerate: 60 fps **favor stability**
 • Win98SE  
-• Desktop Resolution: 640x480  
+• Desktop Resolution: 800x600  
 • Desktop Color Depth: 16‑bit (High Color)  
 
-SHADERGLASS CONFIGURATION  
+VM INSTALLATION 
+---------------------------
+• Set CPU Frequency to <=300MHZ **favor stability**
+• Start VM
+• Mount Revenant disc 1
+• Install Revenant inside the VM
+  → Complete DirectX 6.1 installation
+• Install Patch 1.22
+  → Select game folder → Overwrite → Yes to All
+• Install NoCD patch
+• Install Dialogue Fix
+  → copy Ahkuilon.rvm into the “modules” folder
+• Run Launcher.exe once to configure settings and generate Revenant.ini
+  → Run Revenant → Display Device → Primary display adapter
+  → Display Mode: Full Screen
+  → Advanced Options
+    • Force Software Rendering: Disabled **favor stability**
+    • Disable Fast Surface Locks: Disabled **favor beauty**
+    • Preload Sectors: Enabled
+    • Preload Sector Size: Maximum
+    • Chunkcache Size: Maximum
+    • Detail Level: Maximum
+  → Start Game → Revenant.ini automatically generated
+    • Game Options → Enable Real Time Lights: Enabled (re-enable each game session)
+    • Launcher.exe always resets settings; configure every time before starting game
+
+RTSS CONFIGURATION (strongly recommended)
+---------------------------
+• 86Box.exe → Framerate limit: 30 **critical for stable timing** 
+
+SHADERGLASS CONFIGURATION (OPTIONAL)
+---------------------------
 • Crop Input Top: 22 **removes vm menu bar**  
-• Pixel Size: x1  
-• Custom Shader: Bovinated Revenant Shader  
-  
-SWRE CONFIGURATION  
+• Pixel Size: x1
+• Custom Shader: Bovinated Revenant Shader
+
+SRWE CONFIGURATION (OPTIONAL)  
+---------------------------
 • y: -31 **hide Shaderglass menu bar**
 • Width: 2896 **add 16 pixels to compensate for window frame at 4x3 resolution**  
 • Height: 2199 **add 39 pixels to compensate for window frame at 4x3 resolution**  
 • Align Windows: H.Center
 
-RTSS Configuration
-• 86Box.exe → Framerate limit: 30 **match game engine**
+LOSSLESS SCALING SETTINGS (OPTIONAL)
+---------------------------
+• Crop Input → Top Box: 22 **crops 86Box menu bar**  
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed
+• Multiplier: 7.8 (235 fps)
+• Flow Scale: 30%  
+• Performance: ON **preserve VGA beauty**  
+• Capture API: WGC  
+• Queue target: 0 **1 for compatibility**
+• Clip cursor: On **Optional**
+• Adjust cursor speed: On **Optional**
+• Scaling Type: Sharp Bilinear **preserve VGA beauty**  
+• Sync Mode: Vsync
+• Max frame latency: 1
+• G-Sync support: ON
 
-Startup Routine:
+<>>------------------><<
+STARTUP ROUTINE
+>><------------------<<>
 • Windows-Host → Select Sound Playback Device → Attach Controller → Launch SRWE → Launch Shaderglass → Launch RTSS
-• Launch 86Box → Sart Win98se vm → Mount Revenant Disk 2
+• Launch 86Box → Sart Win98se VM → Mount Revenant Disk 2
 • Shaderglass: Select 86Box as Input Window; 
-• SWRE: Select Shaderglass and set size/position
-• Win98SE-Guest: Launch Revenant.exe  
+• SRWE: Select Shaderglass and set size/position
+• Win98SE-Guest: Launch Launcher.exe  
 
 Notes:
 - VM path avoids modern rendering issues
+- VM path is the only path that enables redbook CD-Audio
 - Game timing is stable under Win98SE with host-side 30 fps cap
-- In 86Box, set CPU speed to 300 to avoid audio jitter and the training bug.
+- In 86Box, set CPU speed to 300 to avoid audio jitter and the training bug
   • 86Box → Settings → Processor → Frequency: 300 **233 for compatibility**
 - Requires host-side RTSS 30 fps limit; launch RTSS before 86Box  
+- Use S3 with software rendering for best gameplay
+  • Voodoo3 DirectX hardware mode is unstable but the game is completable and visually authentic; its software path is broken
+  • Voodoo1/2 Glide is incomplete and non-functional
+   
   
+[]]-----------------------------------][[
 B. WINDOWS 10/11 INSTALLATION
------------------------------
+]][-----------------------------------[[]
+
+⟝⟜⟝  wrappers · scaling · shading · MIDI · pacing graze in → pasture‑toolshed.txt  ⟞⟟⟞
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture‑toolshed.txt
 
 Major issue: magenta chroma‑key artifacts around text (no known fix)
 
 Steps:
 • Install the game normally
-• Install dgVoodoo (latest version unless otherwise specified)
+  → Complete DirectX 6 installation
+• Install dgVoodoo (latest version)
+  → Copy required files to game root folder
+    • dgVoodoo.conf, dgVoodooCpl.exe, MS\x86\D3DImm.dll, MS\x86\DDraw.dll
+• Install Patch 1.22
+• Install NoCD patch
+• Install Dialogue Fix 
+  → copy Ahkuilon.rvm into the “modules” folder
+• Run Launcher.exe once to configure settings and generate Revenant.ini
+  → Run Revenant → Display Device → dgVoodoo DirectX Wrapper
+  → Display Mode: Full Screen
+  → Advanced Options
+    • Force Software Rendering: Disabled **favor stability**  
+    • Disable Fast Surface Locks: Disabled **favor beauty**
+    • Preload Sectors: Enabled
+    • Preload Sector Size: Maximum
+    • Chunkcache Size: Maximum
+    • Detail Level: Maximum
+  → Start Game → Revenant.ini automatically generated → exit game and configure dgVoodoo
+    • Launcher.exe always resets settings; configure every time before starting game
 
-dgVoodoo Settings:
-  General → Windows
-    - Scaling: Unspecified
-  DirectX
-    - Uncheck “Watermark”
-    - Uncheck “Application controlled fullscreen”
-    - Check “Disable Alt‑Enter”
-  GeneralExt
-    - FPS Limit: 30
+DGVOODOO CONFIGURATION 
+---------------------------
+• General 
+  → Appearance: Fullscreen **favor stability**
+  → Scaling: Stretched, 4:3 Asspect Ration
+• DirectX
+  → VRAM: 64 MB
+  → Filtering: Force point sampled
+  → Mipmapping: Disabled
+  → Application controlled fullscreen: Disabled
+  → Disable Alt‑Enter: Enabled
+  → dgVoodoo Watermark: Disabled
+• GeneralExt
+  → FPS Limit: 30 **critical for stable timing**
+  
+<>>------------------><<
+STARTUP ROUTINE
+>><------------------<<>
+• Select Sound Playback Device → Attach Controller
+• Insert Revenant Disk 2
+• Launch Launcher.exe
 
 Notes:
-- FPS limit is mandatory
-- Chroma‑key artifacts remain unresolved on modern systems
+- 30 FPS limit is mandatory
+- dgVoodoo provides the most complete DirectX support but remains unstable
+  → Use Enhanced 3D Lighting has no effect in game
+- Redbook CD‑Audio does not play reliably (Windows 10/11)
+  → This is a Windows subsystem limitation; DXWND does not fix the issue
+- Revenant with dgVoodoo is not compatible with scaling, frame generation, or shader tools  
 
-
-NOTES  
------  
-
-- Run Launcher.exe once to set resolution, detail levels, and hardware options  
-- Play using Revenant.exe — opening the launcher again resets your configuration back to defaults  
-- CD‑Audio bug: after loading a new area, CD volume increases to 100%  
-  • Enter Main Menu (press ESC) → Game Options. The volume will return to normal  
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
 
 
 PATCHES
 -------
-
 Patch 1.22  
 • File: rev122us.zip  
   https://www.patches-scrolls.de/patch/3428/7/
@@ -105,8 +208,7 @@ Peixoto’s Patch (Not Recommended)
 
 MODS
 ----
-
-Galactic Modd  
+(Outdated)Galactic Modd  
 • File: Revenant_Galactic_Mod_v0.12.7z  
   https://mega.nz/file/F4F0QLYZ#Cot7Sns_PpFr0_VX-CcnfWPFi_GSnvmjOguXEFQGpFI  
   https://www.moddb.com/games/revenant/downloads/revenant-galactic-mod
@@ -114,9 +216,8 @@ Galactic Modd
   Note: Obsolete; includes outdated dgVoodoo and enemy balance changes.
 
 
-TOOLS (OPTIONAL)
+EDITOR TOOLS (OPTIONAL)
 ----------------
-
 Automap Stitcher  
 • File: automaps.py_v1.0.rar  
   https://www.moddb.com/mods/the-forsaken/downloads/automapspy-v10
@@ -126,32 +227,8 @@ DAT Extractor / Converter
   https://www.moddb.com/mods/the-forsaken/downloads/dat2bmp-v01
 
 
-TOOL DEPENDENCIES (OPTIONAL)
-----------------------------
-
-dgVoodoo  
-• https://dege.freeweb.hu/dgVoodoo2/  
-• Purpose: Required wrapper for rendering stability on modern Windows  
-• Notes: Use latest version unless a guide specifies otherwise
-
-ShaderGlass  
-• https://mausimus.itch.io/shaderglass  
-• Purpose: Host-side shader injection  
-• Notes: Only needed if using custom shaders
-
-SWRE
-• https://github.com/dtgDTGdtg/SRWE
-• Purpose: Scale and tame windows
-• Notes: Only needed for custom scaling options not surfaced in Shaderglass
-
-RTSS (RivaTuner Statistics Server) — Stable frame pacing.
-• https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/
-• Purpose: Caps frame rate to 30
-• Notes: Improves latency. The game engine runs at 30 fps natively.
- 
 CUSTOM ENHANCEMENTS (OPTIONAL)
 ------------------------------
-
 Bovinated Revenant Shader  
 • GitHub: https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/enhancements/revenant/BOVINATED%20REVENANT.slangp  
 • Purpose: Improved scaling clarity; preserves 16‑bit color behavior  
@@ -160,33 +237,37 @@ Bovinated Revenant Shader
 
 TWEAKS & FIXES
 --------------
-
 Settings Reset on Startup  
-• Run the game from Revenant.exe instead of Launcher.exe  
-• Must run launcher once to configure settings  
-• Game speed resets every session
+• Configure settings every time before starting the game 
+• Do not run the game from Revenant.exe; it breaks gamma and makes the game look too bright  
+• Run launcher and configure settings every time
+
+The game is too dark or bright
+• Pressing OK in the menu can make the game too bright or dark; Restart game client; do not change settings in-game
 
 Game Crashes  
 • Disable “Fast Surface Locks” in launcher advanced options
 
-Game Fails to Boot / Large Black Areas  
-• Limit RAM access to 2 GB  [unverified]
-
-Intro Movie Freeze  
-• Skip by removing / renaming SMK files or using wrappers with “no movies” flags
-
 Visual effects stay active / minimap corruption / animation jitter
-• Requires RTSS host‑side 30 fps cap; launch RTSS before 86Box
+• Requires 30 fps cap; save and reload to clear effect
 
 Character keeps walking
-• Open menu to clear input state.
+• Open menu to clear input state
 
-CD-Audio volume jumps to 100%
-• Open menu and enter game options; volume return to normal.
+CD‑Audio bug: after loading a new area, CD volume increases to 100%  
+• Open Menu (press ESC) → Game Options; volume returns to normal  
+
+Do not force software renderer; it makes the game unstable. Allow the engine to automatically choose the rendering path for stability 
+• Revenant.ini → Software3D=No  
+
+Install disc 2 movies to the game folder
+• Copy contents of disc 2 into a new folder inside the games folder: .\Disc2
+  → Open Revenant.ini and change:
+    • MoviePath=".\Disc2"
+
 
 KNOWN ISSUES (UNRESOLVED)
 -------------------------
-
 A4R4G4B4 Texture Failure (DXWND‑CONFIRMED)  
 • Dialog text, UI overlays, minimap elements fail to render  
 • Engine-level issue; no known fix
@@ -200,23 +281,13 @@ Lighting / Gamma Problems
 Chroma‑Key Artifacts (on modern Windows)  
 • Magenta outlines around text and UI elements
 
+Revenant cannot survive losing focus; it will crash
 
-VERIFIED FIXES
---------------
-• Disable “Fast Surface Locks”
-
-
-UNVERIFIED / HISTORICAL FIXES
------------------------------
-• Disable Z Buffering  
-• Forced Software Rendering  
-• Software3D=Yes  
-• Limit RAM to 2GB  
-• Disable texture blitting / overlays  
-• Software renderer for minimap (severe performance loss)
-  
+The game freezes for a few milliseconds during loot spawns when using DirectX hardware mode
   
 CHANGELOG
 ---------  
-1.1 — Added host‑side 30 Hz cap via RTSS.
+1.1 — Added host‑side 30 Hz cap via RTSS
+1.2 — Optimized Windows10/11 installation
+    	  
   
