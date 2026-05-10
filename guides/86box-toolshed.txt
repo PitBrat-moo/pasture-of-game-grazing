@@ -1,0 +1,71 @@
+⎯(⌐■ᴗ■)っ≋≋≋≋≋≋≋≋≋⟪  (oo‾)  ⟫≋≋≋≋≋≋≋≋~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/==[ 86BOX TOOLSHED ]--> 
+\==[ ~(⌐(oo)⌐)~>~~>~>~~>~>~~>~>~~>~>~~>~>~~>~> ]-->
+Description: Host-side tools for pacing, scaling, shading, and MIDI rendering. 
+Note: Tools in this paddock are optional and path‑specific. 
+      Scaling tools (ShaderGlass, Lossless Scaling, SRWE) affect only the picture. 
+      Audio tools (VirtualMIDISynth, SoundFonts) affect only MIDI. 
+      Lossless Scaling and ShaderGlass do not work together. 
+      Use SRWE for custom scaling when the other options (86Box native, ShaderGlass, Lossless Scaling) are not adequate.
+	  RTSS is optional and used only to cap the framerate to 30 fps or when using the Vulkan renderer.
+
+⟢(oo)⟣  Download Links → toolshed-download-links.txt  ⟢(oo)⟣
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/toolshed-download-links.txt
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ LOSSLESS SCALING
+Description: Lossless Scaling settings optimized for VGA gaming at 60Hz **not compatible with Shaderglass**
+→ Frame Generation → Type: LSFG 3.1 → Mode: Fixed → Multiplier: 4 → Flow scale: 30% → Performance: ON **preserves VGA detail**
+→ Capture → Capture API: WGC; Queue target: 0
+→ Scaling → Type: Sharp Bilinear **preserves VGA detail**
+→ Rendering → Sync mode: Vsync; Max frame latency: 1; G-Sync support: On
+→ Crop Input → Top: 22; Right: 0; Bottom: 0; Left: 0 **crop vm menu bar from output**
+→ 86Box vm window → View → Hide toolbar: ON; Hide status bar: ON **hide toolbar from scaled output**
+→ 86Box vm window → View → Renderer options → Use target framerate: 60 fps
+  • Alternately, use RTSS to cap fps. **NVIDIA/AMD frame limiter does not work on vm window**
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SHADERGLASS
+Description: Applies .slang shaders in real time. **not compatible with Lossless Scaling.**
+→ Launch ShaderGlass → Input → Window → select your game.  
+→ Input → Pixel Size → x1
+→ Shader → Choose From Library / Import Custom → choose shader. 
+→ Output → Scale →  Scaling % **for custom scaling select FREE and use SRWE to adjust Shaderglass window**
+  • Press 'm' to toggle menu on/off, useful when scaling with SRWE.
+→ Performance tweaks **Undo if tearing presents in game**
+  • Processing → Advanced → Use Flip Mode: Enabled; Allow Tearing: Enabled; Max Capture Rate: Enabled
+  • Processing → FPS → 100% (VSync)
+  • Hide menu bar in Shaderglass (Shortcut M) → Processing → Toggle Menu
+→ Shader suggestions:
+  • RetroArch Library/pixel-art-scaling/sharp-bilinear **purity and edge integrity**
+  • misc/simple_color_control **faithfully enhanced color depth**
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SRWE (SIMPLE RUNTIME WINDOW EDITOR)
+Description: Tool for resizing, repositioning, and border‑taming stubborn apps and games.
+→ Launch SRWE → Select Running Application
+  • Select Shaderglass.exe when using Shaderglass
+  • Select 86Box VM Manager only when scaling 86Box directly (no ShaderGlass, no LS)
+→ Window position and size **Scale to 4K resolution at 4x3 aspect ratio** 
+  **Press ENTER after entering each value or it won't apply**
+  • Shaderglass Config **primary path**:
+    → Y: -31; Width: 2896; Height: 2199 **press ENTER after each value**
+  • 86Box Config **use only when not using ShaderGlass or LS**
+    → Y: -53; Width: 2961; Height: 2221 **press ENTER after each value** 
+→ Click SET to apply **upper SET button in the Window position and size box**
+→ Align Window: H.Center
+  • Centers the window horizontally; adjust Left/Right if ShaderGlass covers 86Box.
+→ Save profiles for convenience
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Coolsoft VirtualMIDISynth
+Description: Host-side MIDI synthesizer with customizable soundfonts.
+→ Launch VirtualMIDISynth → Add/Select soundfont → Apply
+→ Suggested soundfonts:
+  • For elevated accuracy: Arachno SoundFont - Version 1.0.sf2
+  • For dreamy and atmospheric: GeneralUser GS v1.471.sf2
+  • For SC‑55‑like correctness.: Unison.SF2
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ RTSS (RivaTuner Statistics Server)
+Description: Optional tool for an external framerate cap for games that prefer 30 fps or when using the Vulkan renderer.
+Note: Cap framerate on a per-game basis. Required for 30 framerate limit with OpenGL renderer. Vulcan renderer always requires RTSS for framerate limit.
+→ Launch RTSS before 86Box **Launching after 86Box causes a crash**
+→ Add → 86Box.exe
+→ Framerate limit = 60 **favor compatibility**
+  • Some games prefer **30 fps** (adjust per-game)
