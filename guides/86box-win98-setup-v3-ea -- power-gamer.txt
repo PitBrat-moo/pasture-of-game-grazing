@@ -1,0 +1,53 @@
+86Box → Win98SE : VOODOO3 3000 ⟿ ENSONIQ AUDIOPCI ES1370 ⟣⟢ POWER GAMER SETUP
+
+; THIS DOCUMENT IS SPLIT INTO THREE CHUNKS FOR COPY/PASTE IN CLI
+; Save chunk 1:
+cat > Guide_Part1_Setup_Drivers.txt
+
+~(⌐ᵘᴗᵘ)~ ≋⟣⟜⟢≋⟣⟡⟣≋⟜⟢⟣≋
+      POWER‑GAMER VM · VOODOO3 ~ D3D ~ GLIDE · AUDIOPCI · ≤450 MHz
+     Powerful Win98 build for demanding 3D engines with hardware acceleration
+≋⟢⟣⟜≋⟡⟣⟢≋⟣⟜⟢≋ ~(ᵘᴗᵘ⌐)~
+
+⎯(ᶜᵒʷᵒ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
+                         86Box → Win98SE : VOODOO3 3000 AUDIOPCI POWER GAMER SETUP
+                                   Bound to the Pillars: Beauty · Power · Stability
+                                   Chunk 1: Setup and Installation
+⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
+
+⟝⟜⟝  required drivers · patches · offerings graze in → The Omasum (end of guide)  ⟞⟟⟞
+⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  ⟝⟜⟝
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box‑toolshed.txt
+
+HOW TO READ
+→ Heading → one‑line description (where to set) → exact settings/steps.
+→ Follow order: 86Box Host Install → 86Box settings → BIOS → Install order → Windows Setup → Disable IRQ Steering → S3 Drivers → 3dfx Drivers → AudioPCI Drivers → MIDI → DirectX → Shutdown Fix → PS2Plus mouse → DCOM98 → USB Supplement → DMA → Joystick → Multimedia/Mixer → 3dfx UI → Tweaks/INI/REG → Verify.
+
+~(ᶜᵒʷʘ͜ʖʘ)~ ≈≋⟢(‾(oo)‾)⟣≋≈⟡(•(oo)•)⟢≈≋⟣(¬(oo)¬)⟡≋≈ ⟢(•(oo)•)⟣ ≋≈
+                         86BOX HOST INSTALL
+~(ᶜᵒʷʘ͜ʖʘ)~ ≈≋⟣(•(oo)•)⟢≈≋⟡(¬(oo)¬)⟣≈≋⟢(‾(oo)‾)⟡≋≈ ⟣(•(oo)•)⟢ ≋≈
+Desciption: Download 86Box and ROM Repository, extract, and install on host machine
+⟆⟆⟆~⟡~⟆⟆   ⇢ downloads ⇠   ⟅⟅~⟣~⟅⟅⟅
+⟢(•(oo)•)→ 86Box Emulator (Home) - experimental builds  
+⟝→ https://86box.net/
+⟢(•(oo)•)→ 86Box Emulator (GitHub) - official releases  
+⟝→ https://github.com/86Box/86Box
+⟢(•(oo)•)→ ROM Repository (GitHub) - required ROMS  
+⟝→ https://github.com/86Box/roms
+⟅⟅~⟣~⟅⟅⟅   ⇢ end of downloads ⇠   ⟆⟆~⟡~⟆⟆⟆
+
+→ Download 86Box EXPERIMENTAL build with the new recompiler from the home page
+  • Switch to the STABLE build from GitHub only if the new recompiler causes issues **does not require reinstalling Windows**
+→ Download 86Box ROM Repository from GitHub
+→ Extract the 86Box archive
+  • Copy files to the installation folder: .\Emulators\86Box\ 
+    → 86Box.exe, discord_game_sdk.dll, gsdll64.dll, mdsx.dll  
+  • Update the experimental build regularly  
+  • Overwrite files when updating/downgrading
+→ Extract the ROM Repository
+  • Copy contents of the roms-5.3 folder to the installation folder: .\Emulators\86Box\Roms
+    → .github, floppy, hdd, machines, network, printer, rtc, scsi, sound, video, LICENSE, README.md
+~(ᶜᵒʷʘ͜ʖʘ)~ ≋≈⟡(•(oo)•)⟢≈≋    END OF HOST INSTALL    ≋≈⟢(•(oo)•)⟡≈≋
+
+→ Launch 86Box to open the main window, then click the ⚙ Settings icon.
+
