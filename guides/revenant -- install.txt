@@ -26,7 +26,7 @@ Two install paths
 A. VM INSTALLATION (Recommended)
 ]][-----------------------------------[[]
 
-⟢(•(oo)•)→ 86box-win98-setup-v3-ya -- adventure-gamer.txt  
+⟢(•(oo)•)→ 86box-win98-setup-s3-v2-ya -- adventure-gamer.txt  
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
 ⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  ⟝⟜⟝
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-toolshed.txt
@@ -108,7 +108,7 @@ STARTUP ROUTINE
 • Launch 86Box → Sart Win98se VM → Mount Revenant Disk 2
 • Shaderglass: Select 86Box as Input Window; 
 • SRWE: Select Shaderglass and set size/position
-• Win98SE-Guest: Launch Launcher.exe  
+• Win98SE-Guest: Launch Launcher.exe → Configure cache and detail  
 
 Notes:
 - VM path avoids modern rendering issues
@@ -174,7 +174,7 @@ STARTUP ROUTINE
 >><------------------<<>
 • Select Sound Playback Device → Attach Controller
 • Insert Revenant Disk 2
-• Launch Launcher.exe
+• Launch Launcher.exe → Configure cache and detail
 
 Notes:
 - 30 FPS limit is mandatory
@@ -265,6 +265,8 @@ Install disc 2 movies to the game folder
   → Open Revenant.ini and change:
     • MoviePath=".\Disc2"
 
+Spell effects cause engine slowdown (geyser + flame + buffs + melee)
+• Lower Detail Level by one notch to reduce particle/event load with no noticeable visual loss
 
 KNOWN ISSUES (UNRESOLVED)
 -------------------------
