@@ -243,7 +243,7 @@ Description: Install Yamaha YMF719 (OPL3-SA3) drivers with correct IRQ/DMA (5,1,
     → Direct Memory Access: 0
 	Interrupt Request: 5, Direct Memory Access: 1, Direct Memory Access: 0
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DISPLAY PROPERTIES
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DISPLAY RESOLUTION AND COLOR DEPTH
 → Right click Desktop → Properties → Display Properties → Settings
     • Color depth: High Color (16‑bit)
     • Resolution: 800×600 
@@ -349,6 +349,14 @@ Description: Lock CD Audio volume to prevent it resetting to %100 when games loa
   • CD Audio: Enabled; Microphone: Disabled; Line: Disabled → OK
 → CD Audio (recording): **70%**; Select: Enabled
 
+⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ DISABLE POWER MANAGEMENT  
+Description: Disable Windows Power Management
+→ Display Properties → Screen Saver → Settings
+  • Power schemes: Always On
+  • System standby: Never
+  • Turn off monitor: Never
+  • Turn off hard disks: Never
+
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ 3DFX TOOLS UI (SET IN APP)
 Description: set sliders in 3dfx Tools UI  
 → Double click 3dfx in task tray to open UI
@@ -419,7 +427,7 @@ MinSPs=8
 MinFileCache=8192
 MaxFileCache=131072
 ChunkSize=512
-═══⟦  \‾(••)‾/  ⟧═══--- END SYSTEM.INI (Profile B) ---═══════════════════════⟦  \‾(••)‾/  ⟧═══
+═══⟦  \‾(••)‾/  ⟧═══--- END SYSTEM.INI ---═══════════════════════⟦  \‾(••)‾/  ⟧═══
 
 ⟦⟦⟦~⟡🐄⟧⟧⟧ QUICK TROUBLESHOOTING ⟦⟦🐄⟣~⟧⟧⟧
 Symptom | Likely cause | First action
@@ -584,8 +592,9 @@ M O O – M A N T R A :
   • v1.3 — Added host‑side RTSS 30 Hz cap.	
 
   • v1.4 — Re-branded as general-gamer.
-           Rustled Host-Side Paddock to pasture-toolshed.txt.
-  
+         — Rustled Host-Side Paddock to pasture-toolshed.txt.
+         — Added Power Management tweaks
+		 
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
 ⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜
