@@ -1,8 +1,8 @@
 86Box → Win98SE : ADVENTURE GAMER ⟿ GENERAL GAMER ⟿ POWER GAMER ⟣⟢ THREE PATHS
 
-[]]--------------][[
-  ADVENTURE PATH
-]][--------------[[]
+[]]------------------][[
+  ADVENTURE GAMER PATH
+]][------------------[[]
 ⎯(ᶜᵒʷᵒ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
                          86Box → Win98SE : S3 VOODOO2 OPL3 ADVENTURE GAMER SETUP
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
@@ -11,13 +11,13 @@
      Stable Win98 build for 2D engines & Software3D quests
 ≋⟢⟣⟜≋⟡⟣⟢≋⟣⟜⟢≋ ~(ᵘᴗᵘ⌐)~
 86Box → Win98SE : S3 TRIO64V+ ⟿ VOODOO2 ⟿ YAMAHA YMF719 ⟣⟢ ADVENTURE GAMER SETUP
-⟢(•(oo)•)→ 86box-win98-setup-v3-ya -- adventure-gamer.txt  
+⟢(•(oo)•)→ 86box-win98-setup-s3-v2-ya -- adventure-gamer.txt  
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
 
 
-[]]--------------][[
-  GENERAL PATH
-]][--------------[[]
+[]]------------------][[
+  GENERAL GAMER PATH
+]][------------------[[]
 ⎯(ᶜᵒʷᵒ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
                          86Box → Win98SE : VOODOO3 3000 OPL3 GENERAL GAMER SETUP
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
@@ -26,20 +26,20 @@
            Balanced Win98 build for stable 3D and classic audio
 ≋⟢⟡⟢≋⟡⟢≋⟡⟢≋ ~(ᶜᵒʷᵔᴗᵔ)~
 86Box → Win98SE : VOODOO3 3000 ⟿ YAMAHA YMF719 ⟣⟢ GENERAL GAMER SETUP
-⟢(•(oo)•)→ 86box-win98-setup-s3-v2-ya -- general-gamer.txt  
+⟢(•(oo)•)→ 86box-win98-setup-v3-ya -- general-gamer.txt  
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-v3-ya%20--%20general-gamer.txt
 
 
-[]]--------------][[
-  POWER PATH
-]][--------------[[]
+[]]------------------][[
+  POWER GAMER PATH
+]][------------------[[]
 ⎯(ᶜᵒʷᵒ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
-                         86Box → Win98SE : VOODOO3 3000 AUDIOPCI POWER GAMER SETUP
+                         86Box → Win98SE : VOODOO3 3000 PCM POWER GAMER SETUP
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓────────────────────────────────────────────────────────────────────────
 ~(⌐ᵘᴗᵘ)~ ≋⟣⟜⟢≋⟣⟡⟣≋⟜⟢⟣≋
-      POWER‑GAMER VM · VOODOO3 ~ D3D ~ GLIDE · AUDIOPCI · ≤450 MHz
+      POWER‑GAMER VM · VOODOO3 ~ D3D ~ GLIDE · AUDIOPCI ~ PCM · ≤450 MHz
      Powerful Win98 build for demanding 3D engines with hardware acceleration
 ≋⟢⟣⟜≋⟡⟣⟢≋⟣⟜⟢≋ ~(ᵘᴗᵘ⌐)~
-86Box → Win98SE : VOODOO3 3000 ⟿ ENSONIQ AUDIOPCI ES1370 ⟣⟢ POWER GAMER SETUP
-⟢(•(oo)•)→ 86box-win98-setup-s3-v2-ya -- power-gamer.txt  
+86Box → Win98SE : VOODOO3 3000 ⟿ ENSONIQ AUDIOPCI ES1370 ⟣⟢ POWER-GAMER SETUP
+⟢(•(oo)•)→ 86box-win98-setup-v3-ea -- power-gamer.txt  
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-v3-ea%20--%20power-gamer.txt
