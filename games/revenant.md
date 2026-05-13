@@ -10,7 +10,7 @@ Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)
 - Revenant Install Guide  
 https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/revenant%20--%20install.txt  
   
-- 86box-win98-setup-v3-ya -- adventure-gamer.txt  
+- 86box-win98-setup-s3-v2-ya -- adventure-gamer.txt  
 https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
   
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~  
