@@ -8,7 +8,7 @@ AMBER Journeys Beyond
 INSTALLATION
 (()~~~~~~~~~~))(
 
-⟢(•(oo)•)→ 86box-win98-setup-v3-ya -- adventure-gamer.txt  
+⟢(•(oo)•)→ 86box-win98-setup-s3-v2-ya -- adventure-gamer.txt  
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
 ⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  ⟝⟜⟝
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-toolshed.txt
@@ -18,7 +18,7 @@ VM CONFIGURATION
 • CPU Frequency: 100 MHz  
 • CD-ROM Speed: 72x 
 • Renderer: OpenGL
-• Target Framerate: 60 fps
+• Target Framerate: 60 FPS
 • Win98SE  
 • Desktop Resolution: 640x480  
 • Desktop Color Depth: 16‑bit (High Color)  
@@ -35,9 +35,14 @@ VM CONFIGURATION
   
 LOSSLESS SCALING SETTINGS
 -------------------------
+Note: Use RTSS to cap frame rate to 30 for frame generation with Lossless Scaling
+
 • Frame Generations Type: LSFG 3.1  
 • Mode: Fixed
-• Multiplier: 3.9 (235 fps)
+• Multiplier: ** 30 FPS base cap **
+  → 7.8  (240 Hz @ ~235 FPS)
+  → 3.9  (120 Hz @ ~117 FPS)
+  → 1.9  ( 60 Hz @  ~57 FPS)
 • Flow Scale: 40%  
 • Performance: ON **preserve VGA beauty**  
 • Capture API: WGC  
