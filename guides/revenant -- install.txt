@@ -10,7 +10,7 @@ NOTES
 -----  
 - Run Launcher.exe and set detail levels every time before starting the game. WARNING, opening Launcher.exe will reset configuration to defaults
 - Play the game with Launcher.exe. WARNING, opening Revenant.exe can make the game appear too bright
-- Cap fps at 30 to match the internal game engine for stability **required**
+- Cap FPS at 30 to match the internal game engine for stability **required**
 
 
 ))(~~~~~~~~~~(()
@@ -36,7 +36,7 @@ VM CONFIGURATION
 • CPU Frequency: 300 MHz  
 • CD-ROM Speed: 72x 
 • Renderer: OpenGL
-• Target Framerate: 60 fps **favor stability**
+• Target Framerate: 60 FPS **favor stability**
 • Win98SE  
 • Desktop Resolution: 800x600  
 • Desktop Color Depth: 16‑bit (High Color)  
@@ -86,10 +86,15 @@ SRWE CONFIGURATION (OPTIONAL)
 
 LOSSLESS SCALING SETTINGS (OPTIONAL)
 ---------------------------
+Note: Use RTSS to cap frame rate to 30 for frame generation with Lossless Scaling
+
 • Crop Input → Top Box: 22 **crops 86Box menu bar**  
 • Frame Generations Type: LSFG 3.1  
 • Mode: Fixed
-• Multiplier: 7.8 (235 fps)
+• Multiplier: ** 30 FPS base cap **
+  → 7.8  (240 Hz @ ~235 FPS)
+  → 3.9  (120 Hz @ ~117 FPS)
+  → 1.9  ( 60 Hz @  ~57 FPS)
 • Flow Scale: 30%  
 • Performance: ON **preserve VGA beauty**  
 • Capture API: WGC  
@@ -108,15 +113,17 @@ STARTUP ROUTINE
 • Launch 86Box → Sart Win98se VM → Mount Revenant Disk 2
 • Shaderglass: Select 86Box as Input Window; 
 • SRWE: Select Shaderglass and set size/position
-• Win98SE-Guest: Launch Launcher.exe → Configure cache and detail  
+• Win98SE-Guest → Launch Launcher.exe → Configure cache and detail  
+
+
 
 Notes:
 - VM path avoids modern rendering issues
 - VM path is the only path that enables redbook CD-Audio
-- Game timing is stable under Win98SE with host-side 30 fps cap
+- Game timing is stable under Win98SE with host-side 30 FPS cap
 - In 86Box, set CPU speed to 300 to avoid audio jitter and the training bug
   • 86Box → Settings → Processor → Frequency: 300 **233 for compatibility**
-- Requires host-side RTSS 30 fps limit; launch RTSS before 86Box  
+- Requires host-side RTSS 30 FPS limit; launch RTSS before 86Box  
 - Use S3 with software rendering for best gameplay
   • Voodoo3 DirectX hardware mode is unstable but the game is completable and visually authentic; its software path is broken
   • Voodoo1/2 Glide is incomplete and non-functional
@@ -249,7 +256,7 @@ Game Crashes
 • Disable “Fast Surface Locks” in launcher advanced options
 
 Visual effects stay active / minimap corruption / animation jitter
-• Requires 30 fps cap; save and reload to clear effect
+• Requires 30 FPS cap; save and reload to clear effect
 
 Character keeps walking
 • Open menu to clear input state
