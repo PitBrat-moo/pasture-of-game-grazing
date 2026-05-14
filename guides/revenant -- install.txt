@@ -275,6 +275,9 @@ Install disc 2 movies to the game folder
 Spell effects cause engine slowdown (geyser + flame + buffs + melee)
 • Lower Detail Level by one notch to reduce particle/event load with no noticeable visual loss
 
+Keyboard input stops works but mouse still works
+• Press Ctrl+Shift+Esc once to trigger a system interrupt and reinitialize the keyboard.
+
 
 /==\__==\---\__==\---\_
 G A M E   C O N T R O L S
