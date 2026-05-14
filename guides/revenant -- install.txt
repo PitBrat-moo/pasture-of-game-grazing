@@ -275,6 +275,55 @@ Install disc 2 movies to the game folder
 Spell effects cause engine slowdown (geyser + flame + buffs + melee)
 • Lower Detail Level by one notch to reduce particle/event load with no noticeable visual loss
 
+
+/==\__==\---\__==\---\_
+G A M E   C O N T R O L S
+\__==\---\__==\---/==/
+
+A ......................... Light attack (Swing)
+S ......................... Medium attack (Thrust)
+D ......................... Heavy attack (Chop)
+F ......................... Block
+C ......................... Draw/Sheathe weapon
+R (hold) .................. Run
+Arrow Keys / NumPad ....... Move (NumLock off)
+CTRL + Arrow .............. Dodge (combat mode only)
+U ......................... Use / Talk
+G ......................... Get item
+L‑Click ................... Attack / Interact
+R‑Click (hold) ............ Move
+
+Q ......................... Combo #1  (learned from Jong)
+W ......................... Combo #1  (learned from Jong)
+E ......................... Combo #1  (learned from Jong)
+
+F1–F4 ..................... Cast spells in slots 1–4
+F5–F9 ..................... Use belt items 1–5
+
+1 ......................... Show Information Pane
+2 ......................... Character Status/Skills
+3 ......................... Show Equipped Inventory
+4 ......................... Spell Crafter
+5 ......................... Show Inventory in bottom pane
+6 ......................... Show minimap in bottom pane
+
+SPACE ..................... Hide all UI panes
+B ......................... Hide bottom UI bar
+V ......................... Hide right UI bar
+P ......................... Pause
+CTRL + Right‑Click ........ Force item description
+Right-Click Description ... Return to stats page
+Click STATS/SKILLS ........ Toggle character pages
+
+X ......................... Arm bow (multiplayer only)
+Z ......................... Fire bow (multiplayer only)
+
+Notes:
+Controls mentioned in manual but not implemented in game  
+• CTRL + A/S/D .............. Interactive combos (learned from Jong)
+• ALT + A/S/D ............... Advanced combos (learned from Jong)
+
+
 KNOWN ISSUES (UNRESOLVED)
 -------------------------
 A4R4G4B4 Texture Failure (DXWND‑CONFIRMED)  
@@ -298,5 +347,6 @@ CHANGELOG
 ---------  
 1.1 — Added host‑side 30 Hz cap via RTSS
 1.2 — Optimized Windows10/11 installation
-1.3 — Updated recommended CPU frequency 	  
+1.3 — Updated recommended CPU frequency
+      Added Game Controls   	  
   
