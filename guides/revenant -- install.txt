@@ -292,21 +292,17 @@ U ......................... Use / Talk
 G ......................... Get item
 L‑Click ................... Attack / Interact
 R‑Click (hold) ............ Move
-
 Q ......................... Combo #1  (learned from Jong)
-W ......................... Combo #1  (learned from Jong)
-E ......................... Combo #1  (learned from Jong)
-
+W ......................... Combo #2  (learned from Jong)
+E ......................... Combo #3  (learned from Jong)
 F1–F4 ..................... Cast spells in slots 1–4
 F5–F9 ..................... Use belt items 1–5
-
 1 ......................... Show Information Pane
 2 ......................... Character Status/Skills
 3 ......................... Show Equipped Inventory
 4 ......................... Spell Crafter
 5 ......................... Show Inventory in bottom pane
 6 ......................... Show minimap in bottom pane
-
 SPACE ..................... Hide all UI panes
 B ......................... Hide bottom UI bar
 V ......................... Hide right UI bar
@@ -314,7 +310,6 @@ P ......................... Pause
 CTRL + Right‑Click ........ Force item description
 Right-Click Description ... Return to stats page
 Click STATS/SKILLS ........ Toggle character pages
-
 X ......................... Arm bow (multiplayer only)
 Z ......................... Fire bow (multiplayer only)
 
