@@ -2,38 +2,65 @@
 ⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣
       Windows Native Gamers Tools
 ⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢⟣⟢
-Description: Tools for pacing, scaling, shading, MIDI rendering and compatibility. 
-Note: Tools in this paddock are path‑specific. 
-      Scaling tools (ShaderGlass, Lossless Scaling, SRWE) affect only the picture. 
-      Audio tools (VirtualMIDISynth, SoundFonts) affect only MIDI. 
-	  Wrappers (dgVoodoo2, DXWND) affect compatibility. 
-      Lossless Scaling and ShaderGlass do not work well together. 
-      Use SRWE for custom scaling when the other options (ShaderGlass, Lossless Scaling) are not adequate.
-	  RTSS is optional and used only to cap the framerate.
+Description: Tools for pacing, scaling, shading, MIDI rendering and compatibility 
+
+Notes:  
+• Tools in this paddock are path‑specific 
+• Scaling tools (ShaderGlass, Lossless Scaling, SRWE) → picture only
+• Audio tools (VirtualMIDISynth, SoundFonts) → MIDI only
+• Wrappers (dgVoodoo2, DXWnd) → compatibility only
+• Lossless Scaling ↔ ShaderGlass do not work well together; choose one path
+• SRWE is the primary Windows‑side window manager and scaler
+  → It moves offscreen windows, overrides always‑on‑top conflicts, and is required for ShaderGlass custom scaling
+• RTSS is only used as an external framerate cap when driver‑level or in‑game caps are not adequate 
 
 ⟢(oo)⟣  Download Links → toolshed-download-links.txt  ⟢(oo)⟣
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/toolshed-download-links.txt
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ LOSSLESS SCALING
-Description: Lossless Scaling settings optimized for VGA gaming at 60Hz **not compatible with Shaderglass**
-→ Frame Generation → Type: LSFG 3.1 → Mode: Fixed → Multiplier: 4 → Flow scale: 55% → Performance: ON **preserves VGA detail**
-→ Capture → Capture API: WGC; Queue target: 0
-→ Scaling → Type: Sharp Bilinear **preserves VGA detail**
-→ Rendering → Sync mode: Vsync; Max frame latency: 1; G-Sync support: On
 
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ LOSSLESS SCALING
+Description: Lossless Scaling settings optimized for clean, stable scaling and LSFG frame generation 
+
+Notes:
+• Driver-level frame limiters (NVIDIA/AMD) are unreliable with LSFG
+• Does not work well with Shaderglass
+
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed
+• Multiplier (base FPS × multiplier ≈ refresh rate - safety margin)
+  → 30 FPS base:
+    • 7.8× → ~235 FPS @ 240 Hz
+    • 3.9× → ~117 FPS @ 120 Hz
+    • 1.9× →  ~57 FPS @  60 Hz
+  → 60 FPS base:
+    • 3.9× → ~235 FPS @ 240 Hz
+    • 1.9× → ~117 FPS @ 120 Hz
+• Flow Scale: 30% **preserve clarity** 
+• Performance: ON **preserve clarity**  
+• Capture API: WGC  
+• Queue target: 0 **1 for compatibility**
+• Clip cursor: On **Optional**
+• Adjust cursor speed: On **Optional**
+• Scaling Type: Sharp Bilinear **clean pixel edges**  
+• Rendering Sync Mode: Vsync
+• Max frame latency: 1
+• G-Sync support: ON
+  
+  
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ RTSS (RivaTuner Statistics Server)
-Description: Optional tool for an external framerate cap for games
+Description: External framerate limiter for clean, stable base framerates in games
 → Launch RTSS
 → Add → Game Process
-→ Framerate limit = ##
-
+→ Set “Framerate limit” to base FPS  
+  
+  
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SHADERGLASS
 Description: Applies .slang shaders in real time. **not compatible with Lossless Scaling.**
-→ Launch ShaderGlass → Input → Window → select your game.  
+→ Launch ShaderGlass → Input → Window → select your game  
 → Input → Pixel Size → x1
-→ Shader → Choose From Library / Import Custom → choose shader. 
+→ Shader → Choose From Library / Import Custom → choose shader 
 → Output → Scale →  Scaling % **for custom scaling select FREE and use SRWE to adjust Shaderglass window**
-  • Press 'm' to toggle menu on/off, useful when scaling with SRWE.
+  • Press 'm' to toggle menu on/off, useful when scaling with SRWE
 → Performance tweaks **Undo if tearing presents in game**
   • Processing → Advanced → Use Flip Mode: Enabled; Allow Tearing: Enabled; Max Capture Rate: Enabled
   • Processing → FPS → 100% (VSync)
@@ -41,6 +68,7 @@ Description: Applies .slang shaders in real time. **not compatible with Lossless
 → Shader suggestions:
   • RetroArch Library/pixel-art-scaling/sharp-bilinear **purity and edge integrity**
   • misc/simple_color_control **faithfully enhanced color depth**
+
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SRWE (SIMPLE RUNTIME WINDOW EDITOR)
 Description: Tool for resizing, repositioning, and border‑taming stubborn apps and games.
@@ -59,6 +87,7 @@ Description: Tool for resizing, repositioning, and border‑taming stubborn apps
   • 16x9 @ 4K → Width: 3853; Height: 2198
 → Save profiles for convenience
 
+
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Coolsoft VirtualMIDISynth
 Description: Host-side MIDI synthesizer with customizable soundfonts.
 → Launch VirtualMIDISynth → Add/Select soundfont → Apply
@@ -66,6 +95,7 @@ Description: Host-side MIDI synthesizer with customizable soundfonts.
   • For elevated accuracy: Arachno SoundFont - Version 1.0.sf2
   • For dreamy and atmospheric: GeneralUser GS v1.471.sf2
   • For SC‑55‑like correctness.: Unison.SF2
+
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ dgVoodoo2
 Description: Wrapper that converts DirectX 1–7 and Glide calls into Direct3D 11/12 so legacy games run correctly. Fixes broken rendering, missing textures, color corruption, and scaling issues.
@@ -81,6 +111,7 @@ Description: Wrapper that converts DirectX 1–7 and Glide calls into Direct3D 1
     • Application controlled fullscreen: Disabled
     • Disable Alt‑Enter: Enabled
     • dgVoodoo Watermark: Disabled
+
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DXWND
 Description: API‑hooking tool that forces windowed mode, fixes mouse capture, corrects timing, and applies compatibility patches for older Windows games.
