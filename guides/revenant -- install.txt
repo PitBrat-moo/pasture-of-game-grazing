@@ -33,7 +33,7 @@ A. VM INSTALLATION (Recommended)
 
 VM CONFIGURATION
 ---------------------------
-• CPU Frequency: 300 MHz  
+• CPU Frequency: 233 MHz  
 • CD-ROM Speed: 72x 
 • Renderer: OpenGL
 • Target Framerate: 60 FPS **favor stability**
@@ -298,5 +298,5 @@ CHANGELOG
 ---------  
 1.1 — Added host‑side 30 Hz cap via RTSS
 1.2 — Optimized Windows10/11 installation
-    	  
+1.3 — Updated recommended CPU frequency 	  
   
