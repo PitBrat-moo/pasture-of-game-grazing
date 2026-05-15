@@ -347,4 +347,5 @@ CHANGELOG
 1.2 — Optimized Windows10/11 installation
 1.3 — Updated recommended CPU frequency
       Added Game Controls   	  
-  
+      Updated LSFG
+	   
