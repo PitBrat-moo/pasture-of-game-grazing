@@ -36,7 +36,7 @@ VM CONFIGURATION
 • CPU Frequency: 233 MHz  
 • CD-ROM Speed: 72x 
 • Renderer: OpenGL
-• Target Framerate: 60 FPS **favor stability**
+• Target Framerate: OFF **use RTSS to cap FPS**
 • Win98SE  
 • Desktop Resolution: 800x600  
 • Desktop Color Depth: 16‑bit (High Color)  
@@ -97,13 +97,13 @@ Note: Use RTSS to cap frame rate to 30 for frame generation with Lossless Scalin
   → 1.9  ( 60 Hz @  ~57 FPS)
 • Flow Scale: 30%  
 • Performance: ON **preserve VGA beauty**  
-• Capture API: WGC  
+• Capture API: DXGI **WGC for compatibility** 
 • Queue target: 0 **1 for compatibility**
-• Clip cursor: On **Optional**
-• Adjust cursor speed: On **Optional**
-• Scaling Type: Sharp Bilinear **preserve VGA beauty**  
-• Sync Mode: Vsync
-• Max frame latency: 1
+• Clip cursor: Off **Optional**
+• Adjust cursor speed: Off **Optional**
+• Scaling Type: Sharp Bilinear **clean pixel edges**  
+• Rendering Sync Mode: Default **vsync for troubleshooting**
+• Max frame latency: 2 **general default**
 • G-Sync support: ON
 
 <>>------------------><<
