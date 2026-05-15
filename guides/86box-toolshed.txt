@@ -36,18 +36,19 @@ Notes:
     • 1.9× → ~117 FPS @ 120 Hz
 • Flow Scale: 30% **preserve clarity** 
 • Performance: ON **preserve clarity**  
-• Capture API: WGC  
+• Capture API: DXGI **WGC for compatibility** 
 • Queue target: 0 **1 for compatibility**
-• Clip cursor: On **Optional**
-• Adjust cursor speed: On **Optional**
+• Clip cursor: Off **Optional**
+• Adjust cursor speed: Off **Optional**
 • Scaling Type: Sharp Bilinear **clean pixel edges**  
-• Rendering Sync Mode: Vsync
-• Max frame latency: 1
+• Rendering Sync Mode: Default **vsync for troubleshooting**
+• Max frame latency: 2 **general default**
+  → 3 for FMV‑heavy games 
 • G-Sync support: ON
 
 • 86Box VM window  
   → View → Hide toolbar: ON; Hide status bar: ON **hide toolbar from scaled output**
-  → View → Renderer options → Use target framerate: 60 FPS 
+  → View → Renderer → OpenGL 
 
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SHADERGLASS
