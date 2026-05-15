@@ -106,7 +106,6 @@ Description: Disable unused COM/LPT ports in both 86Box and BIOS to prevent IRQ 
 → Enter BIOS: Start VM → Press DEL during boot
 → Set Renderer: 86Box VM window → View → Renderer → OpenGL **favor quality**
   • Vulkan renderer is more powerful, but less compatible, reduces Voodoo3 image quality, and requires RTSS for fps cap.
-→ Cap FPS: 86VBox VM window → View → Renderer options → Use target framerate: 60 fps **favor stability**
 → Mount WIN98se Install CD-ROM: 86VBox VM window → Media → CD-ROM → Image → Windows 98 Second Edition.iso
 
 \==[⟡ CLOSING THE 86BOX SETTINGS ]=/
