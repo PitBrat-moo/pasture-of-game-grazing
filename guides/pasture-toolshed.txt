@@ -37,14 +37,14 @@ Notes:
     • 1.9× → ~117 FPS @ 120 Hz
 • Flow Scale: 30% **preserve clarity** 
 • Performance: ON **preserve clarity**  
-• Capture API: WGC  
+• Capture API: DXGI **WGC for compatibility** 
 • Queue target: 0 **1 for compatibility**
-• Clip cursor: On **Optional**
-• Adjust cursor speed: On **Optional**
+• Clip cursor: Off **Optional**
+• Adjust cursor speed: Off **Optional**
 • Scaling Type: Sharp Bilinear **clean pixel edges**  
-• Rendering Sync Mode: Vsync
-• Max frame latency: 1
-• G-Sync support: ON
+• Rendering Sync Mode: Default **vsync for troubleshooting**
+• Max frame latency: 2 **general default**
+ • G-Sync support: ON
   
   
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ RTSS (RivaTuner Statistics Server)
