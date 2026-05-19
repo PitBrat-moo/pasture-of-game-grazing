@@ -8,22 +8,22 @@ Revenant
   
 NOTES  
 -----  
+- Revenant plays best with a hybrid approach: start in the VM for stability and authenticity, then switch to dgVoodoo in the late game when VM save times and particle-heavy areas become unmanageable
 - Run Launcher.exe and set detail levels every time before starting the game. WARNING, opening Launcher.exe will reset configuration to defaults
 - Play the game with Launcher.exe. WARNING, opening Revenant.exe can make the game appear too bright
 - Cap FPS at 30 to match the internal game engine for stability **required**
-
 
 ))(~~~~~~~~~~(()
 INSTALLATION
 (()~~~~~~~~~~))(
 
 Two install paths 
-  A. VM installation (Requires an existing 86Box Win98se VM)
-  B. Win10/11 Installation
+  A. VM installation (Recommended for early–mid game authenticity; requires an existing 86Box Win98se VM)
+  B. Windows 10/11 Installation (Recommended for late game performance)
 
 
 []]-----------------------------------][[
-A. VM INSTALLATION (Recommended)
+A. VM INSTALLATION 
 ]][-----------------------------------[[]
 
 ⟢(•(oo)•)→ 86box-win98-setup-s3-v2-ya -- adventure-gamer.txt  
@@ -43,7 +43,7 @@ VM CONFIGURATION
 
 VM INSTALLATION 
 ---------------------------
-• Set CPU Frequency to <=300MHZ **favor stability**
+• Set CPU Frequency to 233MHz **favor stability**
 • Start VM
 • Mount Revenant disc 1
 • Install Revenant inside the VM
@@ -121,13 +121,13 @@ Notes:
 - VM path avoids modern rendering issues
 - VM path is the only path that enables redbook CD-Audio
 - Game timing is stable under Win98SE with host-side 30 FPS cap
-- In 86Box, set CPU speed to 300 to avoid audio jitter and the training bug
-  • 86Box → Settings → Processor → Frequency: 300 **233 for compatibility**
+- In 86Box, set CPU speed to 233 to avoid audio jitter, the training bug, and vanishing enemies.
+  • 86Box → Settings → Processor → Frequency: 233  
 - Requires host-side RTSS 30 FPS limit; launch RTSS before 86Box  
 - Use S3 with software rendering for best gameplay
   • Voodoo3 DirectX hardware mode is unstable but the game is completable and visually authentic; its software path is broken
   • Voodoo1/2 Glide is incomplete and non-functional
-   
+- Save times increase progressively as the playthrough advances   
   
 []]-----------------------------------][[
 B. WINDOWS 10/11 INSTALLATION
@@ -295,9 +295,9 @@ U ......................... Use / Talk
 G ......................... Get item
 L‑Click ................... Attack / Interact
 R‑Click (hold) ............ Move
-Q ......................... Combo #1  (learned from Jong)
-W ......................... Combo #2  (learned from Jong)
-E ......................... Combo #3  (learned from Jong)
+Q ......................... Special #1  (learned from Jong)
+W ......................... Special #2  (learned from Jong)
+E ......................... Special #3  (learned from Jong)
 F1–F4 ..................... Cast spells in slots 1–4
 F5–F9 ..................... Use belt items 1–5
 1 ......................... Show Information Pane
@@ -313,8 +313,8 @@ P ......................... Pause
 CTRL + Right‑Click ........ Force item description
 Right-Click Description ... Return to stats page
 Click STATS/SKILLS ........ Toggle character pages
-X ......................... Arm bow (multiplayer only)
-Z ......................... Fire bow (multiplayer only)
+X ......................... Arm bow 
+Z ......................... Fire bow 
 
 Notes:
 Controls mentioned in manual but not implemented in game  
@@ -348,4 +348,5 @@ CHANGELOG
 1.3 — Updated recommended CPU frequency
       Added Game Controls   	  
       Updated LSFG
-	   
+1.4 — Recommended hybrid playthrough  
+  
