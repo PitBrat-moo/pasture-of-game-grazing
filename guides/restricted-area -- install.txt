@@ -124,7 +124,7 @@ Game crashes on launch
   → Fix option A – Disable video playback (no codec install)  
     • Launch Starter.exe → Gameplay → Display Movies: Disabled  
   → Fix option B – Install codec pack (video will play)  
-    • K‑Lite Codec Pack Standard  
+    • K‑Lite Codec Pack Basic  
     • Note: ⚠ Most standalone “VP3 codec” EXEs online are malware  
 • Disable G‑Sync/Freesync  
   → Use a fixed refresh rate  
