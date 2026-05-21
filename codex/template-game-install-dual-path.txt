@@ -1,0 +1,229 @@
+[[== Recommended 86Box Profile: <profile-name> -- <pasture-name>.txt =]]
+------------------------------------------------------------------------------
+
+<Game Title>
+============
+
+NOTES
+-----
+- <short bullet notes about quirks, timing, or warnings>
+- <fps cap requirement if any>
+- <renderer or mode warnings>
+
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+Two install paths  
+  A. VM installation (Requires an existing 86Box VM)  
+  B. Win10/11 Installation  
+
+
+[]]-----------------------------------][[
+A. VM INSTALLATION (Recommended)
+]][-----------------------------------[[]
+
+
+⟢(•(oo)•)→ <profile-file>.txt  
+⟝→ <profile-URL>  
+⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-toolshed.txt
+
+
+VM CONFIGURATION
+----------------
+• CPU Frequency: <MHz>  
+• CD-ROM Speed: <speed>x  
+• Renderer: <OpenGL/Software>  
+• Target Framerate: <value> fps  
+• OS: <Win98SE / Win95 / Win3.11>  
+• Desktop Resolution: <value>  
+• Desktop Color Depth: <value>  
+
+
+VM INSTALLATION
+---------------
+• Set CPU Frequency to <MHz> **favor stability**  
+• Start VM  
+• Mount <Disc 1>  
+• Install <Game> inside the VM  
+  → Complete <DirectX version> installation  
+• Install Patch <version>  
+• Install NoCD patch (if required)  
+• Install additional fixes (if any)  
+• Run <launcher> once to generate config  
+  → Configure:  
+    • Display Device: <value>  
+    • Display Mode: <value>  
+    • Advanced Options:  
+      • <option>: <value>  
+      • <option>: <value>  
+      • <option>: <value>  
+  → Start Game → config file generated  
+
+
+RTSS CONFIGURATION (optional/required)
+--------------------------------------
+• 86Box.exe → Framerate limit: <value>  
+
+
+SHADERGLASS CONFIGURATION (optional)
+------------------------------------
+• Crop Input Top: <value>  
+• Pixel Size: x1  
+• Custom Shader: <shader-name>  
+
+
+SRWE CONFIGURATION (optional)
+-----------------------------
+• y: <value>  
+• Width: <value>  
+• Height: <value>  
+• Align Windows: <value>  
+
+
+LOSSLESS SCALING SETTINGS (optional)
+------------------------------------
+• Crop Input → Top Box: <value>  
+• Frame Generation Type: LSFG <version>  
+• Mode: <Fixed/Auto>  
+• Multiplier: <value>  
+• Flow Scale: <value>%  
+• Performance: ON  
+• Capture API: WGC  
+• Queue target: <value>  
+• Scaling Type: <value>  
+• Sync Mode: <value>  
+• Max frame latency: <value>  
+• G-Sync support: ON  
+
+
+<>>------------------><<
+STARTUP ROUTINE
+>><------------------<<>
+• Windows-Host → Select Sound Playback Device → Attach Controller → Launch SRWE → Launch Shaderglass → Launch RTSS  
+• Launch 86Box → Start VM → Mount <Disc>  
+• Shaderglass: Select 86Box as Input Window  
+• SRWE: Set size/position  
+• Guest OS: Launch <launcher> → Configure settings  
+
+
+Notes:
+- <short bullet notes about stability, timing, quirks>
+- <renderer notes>
+- <CD‑Audio notes>
+- <timing requirements>
+
+
+[]]-----------------------------------][[
+B. WINDOWS 10/11 INSTALLATION
+]][-----------------------------------[[]
+
+
+⟝⟜⟝  wrappers · scaling · shading · MIDI · pacing graze in → pasture‑toolshed.txt  
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture‑toolshed.txt
+
+
+Steps:
+• Install the game normally  
+• Install dgVoodoo (if applicable)  
+  → Copy required files to game folder  
+• Install Patch <version>  
+• Install NoCD patch  
+• Install additional fixes  
+• Run <launcher> once to generate config  
+  → Configure:  
+    • Display Device: <value>  
+    • Display Mode: <value>  
+    • Advanced Options:  
+      • <option>: <value>  
+      • <option>: <value>  
+      • <option>: <value>  
+  → Exit game and configure dgVoodoo (if used)  
+
+
+DGVOODOO CONFIGURATION (if applicable)
+--------------------------------------
+• General  
+  → Appearance: <value>  
+  → Scaling: <value>  
+• DirectX  
+  → VRAM: <value>  
+  → Filtering: <value>  
+  → Mipmapping: <value>  
+  → Application controlled fullscreen: <value>  
+• GeneralExt  
+  → FPS Limit: <value>  
+
+
+<>>------------------><<
+STARTUP ROUTINE
+>><------------------<<>
+• Select Sound Playback Device → Attach Controller  
+• Insert <Disc>  
+• Launch <launcher> → Configure settings  
+
+
+Notes:
+- <timing requirements>  
+- <wrapper limitations>  
+- <CD‑Audio notes>  
+- <compatibility notes>  
+
+
+PATCHES
+-------
+Patch <version>  
+• File: <filename>  
+  <URL>
+
+<Additional Fix>  
+• File: <filename>  
+  <URL>
+
+
+MODS
+----
+<Mod Name>  
+• File: <filename>  
+  <URL>  
+  Note: <compatibility notes>
+
+
+EDITOR TOOLS (OPTIONAL)
+-----------------------
+<Tool Name>  
+• File: <filename>  
+  <URL>
+
+
+CUSTOM ENHANCEMENTS (OPTIONAL)
+------------------------------
+<Enhancement Name>  
+• GitHub: <URL>  
+• Purpose: <short description>  
+• Compatibility: <notes>
+
+
+TWEAKS & FIXES
+--------------
+• <issue>  
+  → <fix>  
+• <issue>  
+  → <fix>  
+• <issue>  
+  → <fix>  
+
+
+KNOWN ISSUES (UNRESOLVED)
+-------------------------
+• <issue>  
+• <issue>  
+• <issue>  
+
+
+CHANGELOG
+---------
+1.0 — Initial release  
+1.1 — <change>  
+1.2 — <change>  

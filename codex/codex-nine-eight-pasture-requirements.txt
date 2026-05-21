@@ -1,0 +1,200 @@
+THE NINE‑EIGHT PASTURE CODEX
+PILLAR‑ALIGNED REQUIREMENTS FOR CANONICAL INCLUSION
+Version: 1.1
+Author: PitBrat
+
+────────────────────────────────────────────────────────
+I. PURPOSE
+The Nine‑Eight Pasture preserves only those games whose
+best, most faithful, most stable, and most beautiful form
+exists inside a Windows 98 virtual machine under 86Box.
+
+The Pasture is not a museum of originals.
+The Pasture is a repository of the *best expression*.
+
+────────────────────────────────────────────────────────
+II. CORE DOCTRINE
+A game belongs in the Pasture only if ALL of the following
+are true:
+
+1. The Win98/86Box version is the best version that exists.
+2. No modern Windows 11 method (wrapper, patch, port,
+   engine replacement, emulator) produces an equal or
+   superior result.
+3. The version that best expresses the pillars—Beauty,
+   Power, Stability—is preserved, even if altered.
+4. Any version that violates the pillars is discarded,
+   even if it is the “original.”
+
+────────────────────────────────────────────────────────
+III. THE THREE PILLARS
+
+A. BEAUTY
+Beauty = fidelity to intended rendering, not resolution.
+
+A game satisfies Beauty when:
+• palette behavior is correct
+• lighting is correct
+• reflections are correct
+• fog volumes are correct
+• dithering is correct
+• transparency is correct
+• FMV cadence is correct
+• color grading is correct
+• animation pacing is correct
+
+High‑resolution Win11 output is acceptable ONLY IF:
+• it does not materially alter art direction
+• rendering issues are minor and non‑destructive
+
+Material Beauty violations include:
+• missing reflections
+• broken lighting
+• broken palette transitions
+• broken dithering
+• broken fog
+• broken transparency
+• broken color grading
+• broken FMV timing
+
+If Win11 introduces material Beauty loss → KEEP.
+If Win11 only has minor issues → DROP.
+
+────────────────────────────────────────────────────────
+B. POWER
+Power = correct mechanical expression.
+
+A game satisfies Power when:
+• physics timing is correct
+• AI behavior is correct
+• mission scripting is correct
+• input latency is correct
+• animation timing is correct
+• subsystem interactions behave as intended
+
+Minor timing drift is NOT a violation.
+Major timing collapse IS a violation.
+
+If Win11 breaks physics, AI, or scripting → KEEP.
+If Win11 preserves mechanical behavior → DROP.
+
+────────────────────────────────────────────────────────
+C. STABILITY
+Stability = predictable, reproducible, crash‑free behavior.
+
+A game satisfies Stability when:
+• no wrapper‑dependent crashes occur
+• no mission‑transition crashes occur
+• no GPU‑driver‑dependent failures occur
+• no Windows‑update breakage occurs
+• no FMV desync occurs
+• no memory‑leak collapse occurs
+
+If Win11 is fragile → KEEP.
+If Win11 is stable → DROP.
+
+────────────────────────────────────────────────────────
+IV. ALTERED FORMS RULE
+Altered forms (patches, fixes, wrappers, timing governors)
+are acceptable IF AND ONLY IF they increase alignment with
+Beauty, Power, and Stability.
+
+Rules:
+1. If an altered form is superior → it becomes canonical.
+2. If an altered form is inferior → it is documented as an
+   attempt, not preserved.
+3. The Pasture is anti‑inferior‑tinkering, not anti‑tinkering.
+
+────────────────────────────────────────────────────────
+V. RESOLUTION RULE
+Resolution is not a pillar.
+
+High resolution is allowed ONLY IF:
+• it preserves intended art direction
+• it does not introduce material rendering errors
+
+Low resolution is preferred ONLY IF:
+• it preserves intended rendering more faithfully
+
+────────────────────────────────────────────────────────
+VI. ENGINE SUPERIORITY RULE
+If a game runs better in ScummVM, ResidualVM, BuildGDX,
+NBlood, PCExhumed, EDuke32, GZDoom, OpenMW, OpenLara,
+DevilutionX, OpenRCT2, CorsixTH, or any other modern
+engine re‑implementation, then the game is DROPPED.
+
+A game is DROPPED when the modern engine is:
+• more beautiful
+• more mechanically correct
+• more stable
+• more faithful
+• less fragile
+• less wrapper‑dependent
+
+A game is KEPT only when the modern engine:
+• introduces material art‑direction loss
+• breaks timing, physics, or scripting
+• is unstable or incomplete
+
+────────────────────────────────────────────────────────
+VII. EMULATION SUPERIORITY RULE
+If a game runs better in DOSBox, DOSBox‑X, PCem, 86Box,
+or any other emulator than it does on native Windows 98,
+then the game is DROPPED.
+
+A game is DROPPED when the emulator version is:
+• more beautiful
+• more mechanically correct
+• more stable
+• more faithful
+• less fragile
+• less alchemical
+
+A game is KEPT only when:
+• the Win98/86Box version is superior
+• OR the emulator introduces material loss
+• OR the emulator breaks timing or scripting
+• OR the emulator is incomplete
+
+Minor differences do not qualify. Only superiority matters.
+
+────────────────────────────────────────────────────────
+VIII. INCLUSION TEST (FINAL)
+A game is included in the Pasture if:
+• Win98/86Box is the most beautiful version
+• Win98/86Box is the most mechanically correct version
+• Win98/86Box is the most stable version
+• Win11 cannot reproduce the intended experience
+• Win11 introduces material degradation
+• no emulator or engine surpasses Win98
+
+A game is excluded if:
+• Win11 high‑res output is more beautiful
+• Win11 is equally or more stable
+• Win11 preserves mechanical behavior
+• Win11 only has minor issues
+• OR an emulator or modern engine is superior
+
+────────────────────────────────────────────────────────
+IX. DOCUMENTATION STRUCTURE
+Each game entry uses:
+
+1. CANONICAL FORM
+   (Win98/86Box or Win11 or emulator/engine)
+
+2. PILLAR ALIGNMENT
+   Beauty:
+   Power:
+   Stability:
+
+3. MODERN WINDOWS STATUS
+   (material loss / minor issues / stable / fragile)
+
+4. PASTURE DECISION
+   KEEP or DROP
+
+5. ALCHEMICAL ATTEMPT NOTES
+   (if applicable)
+
+────────────────────────────────────────────────────────
+END OF CODEX

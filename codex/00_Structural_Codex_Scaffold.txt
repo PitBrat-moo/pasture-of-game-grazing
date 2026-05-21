@@ -1,0 +1,106 @@
+🐂 THE UNIFIED STRUCTURAL CODEX (SAFE VERSION)
+Unified structural scaffold for the Pasture Codex and all derived laws.
+
+[CODEX_STRUCTURE]
+version=2.0
+description=Complete structural codex containing all stable laws, lexicon, characters, and drive cosmology.
+
+[GLYPH_LEXICON]
+
+# SECTION HEADERS
+⎯(ᶜᵒʷᵔ)⎯ = neutral section header
+⎯(ᶜᵒʷ•)⎯ = technical section header
+⎯(ᶜᵒʷ•ᵎ)⎯ = warning header
+⎯(ᶜᵒʷ♥)⎯ = positive/recommended header
+⎯(ᶜᵒʷᵎ)⎯ = high-alert header
+
+# BLOCK FORMATS
+~~~≋≋≋⟪ (‾(oo)‾) ⟫≋≋≋~~~ = major section break
+═══⟦  \‾(••)‾/  ⟧═══ = code/config block
+/==[ ... ]=\ = procedural block
+──────────────────── = subsection divider
+
+# TONE MARKERS
+(oo) = neutral narrator
+( •.•) = calm informational tone
+(x.x) = failure state
+(⚈⚈) = emphasis
+(¬(oo)¬) = caution
+(‾(oo)‾) = elevated importance
+
+# DECORATIVE / STRUCTURAL
+⟪ ... ⟫ = encapsulated content
+⟜⟢⟟⣫ = decorative emphasis
+𐚁𐚁𐚁 = chapter marker
+⚠ = warning
+
+[CHARACTER_TABLE]
+GreatBull = primary narrator; authority; stability
+HeavenlySire = overseer; structure; codex-law
+MoosesTheProphet = advisor; guidance; best practices
+VirginMotherHeffer = preservation; backups; purity
+HolyCow = emphasis; transitions; revelations
+
+[PASTURE_LAW]
+
+# FILE STATES
+Back40 = raw files
+PastureLocal = working notes
+Pasture = final guides
+Graveyard = archived/obsolete
+
+# ENVIRONMENT STATES
+PoisonedInstall = misconfigured environment
+GoldenHerd = clean base image
+
+[DRIVE_CODEX]
+MAINSTAGE = system + tools; active arena
+PADDOCK = installed games; long-term residents
+RANGE = long-term wandering files; seasonal culling
+HOMESTEAD = personal working space
+BACK-40 = deep storage; long-term pasture
+GRAVEYARD = retired artifacts
+
+[NAMING_CODEX]
+- Drive names use ALL CAPS for maximum scan-legibility.
+- Pasture names use Title Case inside documents.
+- Codex files use “-codex” suffix to denote manuscript-grade stability.
+- Only refined, stable content enters the codex; all drafts remain in PastureLocal.
+
+[PASTURE_PURITY_RULES]
+- No modern ports, wrappers, or rescues qualify for Nine-Five Pasture.
+- Only artifact-pure, environment-dependent software qualifies.
+- Win95-only behavior must be intrinsic, not wrapper-induced.
+- No DOS versions, no modern ports, no fan engines, no compatibility layers.
+
+[NINE-FIVE_PASTURE_CANON]
+- MechWarrior 2 (Win95 3Dfx/Titanium/OEM) = qualifies
+- EarthSiege 2 (Win95) = qualifies
+- No other titles meet purity requirements.
+
+[FOLDER_STRUCTURE_DOCTRINE]
+- Shallow structures preferred; avoid deep taxonomies.
+- Tools, wrappers, shaders, and audio collapse into unified /tools/ unless role separation is required.
+- Codex-level law documents reside in /pasture-local/codex/.
+- Notes must be small, self-contained blocks to avoid dependency breakage.
+
+[DOCUMENT_PLACEHOLDERS]
+SacredForage = <INSERT_USER_TEXT>
+Chunk1 = <INSERT_USER_TEXT>
+Chunk2 = <INSERT_USER_TEXT>
+Chunk3 = <INSERT_USER_TEXT>
+
+[RESTORE_PROTOCOL]
+1. Paste payload into Copilot
+2. Copilot inflates DEFLATE+Base64
+3. Copilot reconstructs structural codex
+4. User inserts full documents into placeholders
+
+🐃 RESTORATION SCAFFOLD
+Paste this with the payload to reconstruct:
+
+Code
+[restore]
+format=base64(TPX‑NANO)
+payload=VFBYMntIOlVHQzI7UzpbQ1Modj0yLjAsZD1Db21wbGV0ZSBzdHJ1Y3R1cmFsIGNvZGV4KTtHTChbU0go4o6vKOG2nOG1ksq34bWUKeKOryxuZXV0cmFsKSxTSCjijq8o4bac4bWSyrfigKIp4o6vLHRlY2huaWNhbCksU0go4o6vKOG2nOG1ksq34oCi4bWOKeKOryx3YXJuaW5nKSxTSCjijq8o4bac4bWSyrfimaUp4o6vLHBvc2l0aXZlKSxTSCjijq8o4bac4bWSyrfhtY4p4o6vLGhpZ2hhbGVydCksQkYoTT1+fn7iiYviiYviiYvin6ogKOKAvihvbynigL4pIOKfq+KJi+KJi+KJi35+fiksQkYoQz3ilZDilZDilZDin6YgIFzigL4o4oCi4oCiKeKAvi8gIOKfp+KVkOKVkOKVkCksQkYoUD0vPT1bIC4uLiBdPVwpLEJGKEQ94pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAKSxUTShOPShvbykpLFRNKEM9KCDigKIu4oCiKSksVE0oRj0oeC54KSksVE0oRT0o4pqI4pqIKSksVE0oVz0owqwob28pwqwpKSxUTShJPSjigL4ob28p4oC+KSksREVDKEVDPeKfqi4uLuKfqyksREVDKERFPeKfnOKfouKfn+KjqyksREVDKENIPfCQmoHwkJqB8JCagSksREVDKFdBPeKaoCldKTtDVChbQyhHQixwcmltYXJ5IG5hcnJhdG9yO2F1dGhvcml0eTtzdGFiaWxpdHkpLEMoSFMsb3ZlcnNlZXI7c3RydWN0dXJlO2NvZGV4LWxhdyksQyhNUCxhZHZpc29yO2d1aWRhbmNlO2Jlc3QgcHJhY3RpY2VzKSxDKFZILHByZXNlcnZhdGlvbjtiYWNrdXBzO3B1cml0eSksQyhIQyxlbXBoYXNpczt0cmFuc2l0aW9ucztyZXZlbGF0aW9ucyldKTtQTChbRlMoQjQwLHJhdyksRlMoUEwsd29ya2luZyksRlMoUEEsZmluYWwpLEZTKEdZLGFyY2hpdmVkKSxFUyhQSSxtaXNjb25maWd1cmVkKSxFUyhHSCxjbGVhbildKTtEQ1goW0QoTVMsc3lzdGVtK3Rvb2xzKSxEKFBELGluc3RhbGxlZCBnYW1lcyksRChSQSxsb25nLXRlcm0gd2FuZGVyaW5nKSxEKEhNLHBlcnNvbmFsIHdvcmtzcGFjZSksRChCSzQwLGRlZXAgc3RvcmFnZSksRChHUixyZXRpcmVkIGFydGlmYWN0cyldKTtOQ1goW1IoQUxMQ0FQUyBkcml2ZXMpLFIoVGl0bGVDYXNlIHBhc3R1cmUgZG9jcyksUigtY29kZXggc3VmZml4KSxSKHN0YWJsZS1vbmx5KV0pO1BSKFtSKG5vIG1vZGVybiBwb3J0cyksUihhcnRpZmFjdC1wdXJlIG9ubHkpLFIod2luOTUgaW50cmluc2ljIG9ubHkpLFIobm8gRE9TL2ZhbiBlbmdpbmVzKV0pO0NBTk9OKFtUKE1XMixxdWFsaWZpZXMpLFQoRVMyLHF1YWxpZmllcyksVChvdGhlcixmYWlsKV0pO0ZTRChbUihzaGFsbG93KSxSKHVuaWZpZWQgdG9vbHMpLFIoY29kZXggaW4gL3Bhc3R1cmUtbG9jYWwvY29kZXgpLFIoc21hbGwgbm90ZXMpXSk7UEgoW1NGPTxJTlNFUlRfVVNFUl9URVhUPixDMT08SU5TRVJUX1VTRVJfVEVYVD4sQzI9PElOU0VSVF9VU0VSX1RFWFQ+LEMzPTxJTlNFUlRfVVNFUl9URVhUPl0pfQo=
+
