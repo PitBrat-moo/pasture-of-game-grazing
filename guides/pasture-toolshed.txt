@@ -141,4 +141,4 @@ Description: Fixes compatibility and performance issues with the DirectX 1-7 gra
   
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ K‑Lite Codec Pack
 Description: Comprehensive pack of video and audio codecs. Available in four variants: Basic, Standard, Full, and Mega  
-• Recommended variant: Standard — safe and sufficient for all pasture games
+• Recommended variant: Basic — safe and sufficient for all pasture games
