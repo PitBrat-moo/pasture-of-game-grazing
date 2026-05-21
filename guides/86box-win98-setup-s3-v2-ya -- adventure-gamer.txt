@@ -63,7 +63,7 @@ Description: Machine / System / Performance
 Description: Video hardware mapping in guest. **Host renderer is set from the VM window (View → Renderer), not from 86Box Settings**
 → Video: [PCI] S3 Trio64V+
 → Voodoo 1 or 2 Graphics: Enabled
-  • Configure → Render threads: 1
+  • Configure → Voodoo type: 3Dfx Voodoo 2; Framebuffer memory size: 4 MB; Texture memory size: 4 MB; Bilinear filtering: Enabled; Dither subtraction: Enabled; Render threads: 1; Dynamic Recompiler: Enabled
   
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ INPUT DEVICES
 → Mouse: PS/2 Mouse

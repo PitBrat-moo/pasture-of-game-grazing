@@ -1,0 +1,132 @@
+Restricted Area
+===============
+
+
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+Windows 10/11 Installation
+------------------------------
+• Install Restricted Area normally  
+  → EXIT without installing the VP3 Codec for Video for Windows
+    • (optional) Use K-Lite Codec Pack for movie playback
+  → CANCEL installing Microsoft DirectX 9.0c  
+• Install Patch 1.09 (latest English patch)  
+  → Launch ra_english_hotfix.exe
+• (Optional) Install NoCD patch  
+  → Only required for the 3‑CD StarForce edition  
+  → Recommended file: “Restricted Area v1.10 [EN] Fixed EXE #2”
+• Install dgVoodoo  
+  → Copy required files to game root folder:  
+    • dgVoodooCpl.exe, dgVoodoo.conf  
+    • MS\x86\D3DImm.dll, MS\x86\DDraw.dll, MS\x86\D3D8.dll  
+
+
+DGVOODOO CONFIGURATION 
+---------------------------
+• General  
+  → Appearance: Fullscreen ** Windowed for Lossless Scaling **   
+  → Scaling: Stretched, 4:3 Aspect Ratio  
+  → Capture mouse: Disabled  
+  → Center app window: Disabled
+• DirectX  
+  → VRAM: 512 MB (most stable; prevents FMV crashes)  
+  → Filtering: Force point sampled (sharper 2D assets)  
+  → Mipmapping: Disabled (RA has no proper mipmap chain)  
+  → Resolution: Unforced
+  → Application controlled fullscreen: Disabled  
+  → Disable Alt‑Enter: Enabled  
+  → Antialiasing (MSAA): Off
+  → Fast video memory access: Enabled (fixes inventory slowdown)  
+  → dgVoodoo Watermark: Disabled  
+• GeneralExt  
+  → FPS Limit: 60 (critical for stable timing)  
+
+
+GAMEPLAY SETTINGS
+-----------------
+Note: Optional QOL tweak
+• Launch Starter.exe to configure game
+  → Gameplay → Show Logos on startup: No
+
+
+LOSSLESS SCALING SETTINGS (optional)
+------------------------------------
+Notes: 
+- Cap frame rate to 60 for frame generation with Lossless Scaling
+- Restricted Area runs best in true fullscreen without Lossless Scaling. LSFG is optional
+
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed
+• Multiplier: ** 60 FPS base cap **
+  → 3.9  (240 Hz @ ~235 FPS)
+  → 1.9  (120 Hz @ ~117 FPS)
+• Flow Scale: 30%  
+• Performance: ON **preserve VGA beauty**  
+• Capture API: WGC 
+• Queue target: 0 **1 for compatibility**
+• Clip cursor: Off **Optional**
+• Adjust cursor speed: Off **Optional**
+• Scaling Type: Sharp Bilinear **clean pixel edges**  
+• Rendering Sync Mode: Default 
+• Max frame latency: 1  
+• G-Sync support: Enabled (only if supported)  
+
+  
+<>>------------------><<
+STARTUP ROUTINE
+>><------------------<<>
+• Select Sound Playback Device → Attach Controller → (Optional) Launch Lossless Scaling
+• Launch Starter.exe → Play Restricted Area
+• (Optional) Enable Lossless Scaling
+  → Press CTRL+ALT+DEL → Open Task Manager
+  → Select the Lossless Scaling window → Click Scale
+  → Click the game window to apply scaling
+
+
+Notes
+-----
+- For best stability, use dgVoodoo instead of DXWND. Never use both together  
+- If you use DDrawCompat as a fallback, do **not** combine it with dgVoodoo
+- Selecting the Alternative soundtrack cause the game to crash with an OGG stream error
+
+
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
+
+Patches
+-------
+Restricted Area Patches  
+• English Patch 1.09  
+  → File: ra_english_hotfix.exe  
+• German Patch 1.10  
+  → File: RestrictedArea_Update1_1.exe  
+• Note: Patch 1.09 is the latest English patch, and 1.10 is the latest German patch. Install only the patch that matches your game’s language  
+  https://community.pcgamingwiki.com/files/file/3166-restricted-area-patches/
+
+
+TWEAKS & FIXES
+--------------
+Broken mouse movement  
+• Set mouse polling rate to 125 Hz.
+
+Y and Z are reversed on US keyboards  
+• Use a temporary German (Germany) keyboard layout while playing, or remap Y↔Z externally (PowerToys recommended)
+
+Game is too dark
+• Disable weather effects → Options → Graphic → Options Advanced Options → Weather Effects: Disabled
+
+Game crashes on launch  
+• Video Playback Fix (VP3 codec issue)  
+  → Fix option A – Disable video playback (no codec install)  
+    • Launch Starter.exe → Gameplay → Display Movies: Disabled  
+  → Fix option B – Install codec pack (video will play)  
+    • K‑Lite Codec Pack Standard  
+    • Note: ⚠ Most standalone “VP3 codec” EXEs online are malware  
+• Disable G‑Sync/Freesync  
+  → Use a fixed refresh rate  
+• If all else fails, use DDrawCompat (not together with dgVoodoo)
+  

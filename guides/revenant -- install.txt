@@ -165,7 +165,7 @@ DGVOODOO CONFIGURATION
 ---------------------------
 • General 
   → Appearance: Fullscreen **favor stability**
-  → Scaling: Stretched, 4:3 Asspect Ration
+  → Scaling: Stretched, 4:3 Aspect Ratio
 • DirectX
   → VRAM: 64 MB
   → Filtering: Force point sampled

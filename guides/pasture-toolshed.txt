@@ -8,7 +8,9 @@ Notes:
 • Tools in this paddock are path‑specific 
 • Scaling tools (ShaderGlass, Lossless Scaling, SRWE) → picture only
 • Audio tools (VirtualMIDISynth, SoundFonts) → MIDI only
-• Wrappers (dgVoodoo2, DXWnd) → compatibility only
+• Wrappers (dgVoodoo2, DXWnd, DDrawCompat) → compatibility only
+• Patchers / Shims (Lame Patcher, dinputto8) → compatibility only
+• Codecs (K-Lite Codec Pack) → Video and sound playback only
 • Lossless Scaling ↔ ShaderGlass do not work well together; choose one path
 • SRWE is the primary Windows‑side window manager and scaler
   → It moves offscreen windows, overrides always‑on‑top conflicts, and is required for ShaderGlass custom scaling
@@ -68,8 +70,8 @@ Description: Applies .slang shaders in real time. **not compatible with Lossless
 → Shader suggestions:
   • RetroArch Library/pixel-art-scaling/sharp-bilinear **purity and edge integrity**
   • misc/simple_color_control **faithfully enhanced color depth**
-
-
+  
+  
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SRWE (SIMPLE RUNTIME WINDOW EDITOR)
 Description: Tool for resizing, repositioning, and border‑taming stubborn apps and games.
 → Launch SRWE → Select Running Application
@@ -86,8 +88,8 @@ Description: Tool for resizing, repositioning, and border‑taming stubborn apps
 → Optional Scaling
   • 16x9 @ 4K → Width: 3853; Height: 2198
 → Save profiles for convenience
-
-
+  
+  
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Coolsoft VirtualMIDISynth
 Description: Host-side MIDI synthesizer with customizable soundfonts.
 → Launch VirtualMIDISynth → Add/Select soundfont → Apply
@@ -95,8 +97,8 @@ Description: Host-side MIDI synthesizer with customizable soundfonts.
   • For elevated accuracy: Arachno SoundFont - Version 1.0.sf2
   • For dreamy and atmospheric: GeneralUser GS v1.471.sf2
   • For SC‑55‑like correctness.: Unison.SF2
-
-
+  
+  
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ dgVoodoo2
 Description: Wrapper that converts DirectX 1–7 and Glide calls into Direct3D 11/12 so legacy games run correctly. Fixes broken rendering, missing textures, color corruption, and scaling issues.
 • Install dgVoodoo (latest version)
@@ -107,12 +109,36 @@ Description: Wrapper that converts DirectX 1–7 and Glide calls into Direct3D 1
     • Glide 32 bit: 3Dfx\x86\Glide.dll, 3Dfx\x86\Glide2x.dll, 3Dfx\x86\Glide3x.dll
     • Glide 64 bit: 3Dfx\x64\Glide.dll, 3Dfx\x64\Glide2x.dll, 3Dfx\x64\Glide3x.dll
 • Configuration 
+  → Launce dgVoodooCpl.exe from the game folder
   → DirectX
     • Application controlled fullscreen: Disabled
     • Disable Alt‑Enter: Enabled
     • dgVoodoo Watermark: Disabled
+• Note: To access extended menus → right-click dgVoodoo Control Panel window → Show all sections of the configuration: Enabled  
 
-
+  
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DXWND
 Description: API‑hooking tool that forces windowed mode, fixes mouse capture, corrects timing, and applies compatibility patches for older Windows games.
-
+  
+  
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Lame Patcher
+Description: Applies small binary .lpatch fixes to game executables
+• Apply .lpatch to executable
+  → Copy lpatch.exe to the game folder
+  → Copy <game>.lpatch to the game folder
+  → Launch lpatch.exe → Select <game>.lpatch → Select <file to patch>
+  
+  
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ dinputto8
+Description: Improves compatibility in games using DirectInput 1-7 (dinput.dll) 
+• Copy the dinput.dll file into the folder of a DirectInput 1-7 program or game  
+  
+  
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DDrawCompat
+Description: Fixes compatibility and performance issues with the DirectX 1-7 graphics APIs
+• Copy ddraw.dll to the game install folder where the main executable (.exe) file resides
+  
+  
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ K‑Lite Codec Pack
+Description: Comprehensive pack of video and audio codecs. Available in four variants: Basic, Standard, Full, and Mega  
+• Recommended variant: Standard — safe and sufficient for all pasture games

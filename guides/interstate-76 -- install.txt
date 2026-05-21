@@ -1,0 +1,281 @@
+[[== Recommended 86Box Profile: 86box-win98-s3-v2-ya -- adventure-gamer.txt =][[
+------------------------------------------------------------------------------
+  
+  
+Interstate '76 - Install
+=====================  
+ 
+
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+Two install paths 
+  A. VM installation (Requires an existing 86Box Win98se VM)
+  B. Win10/11 Installation
+
+  
+[]]-----------------------------------][[
+A. VM INSTALLATION (Recommended)
+]][-----------------------------------[[]
+
+⟢(•(oo)•)→ 86box-win98-setup-s3-v2-ya -- adventure-gamer.txt  
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
+⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  ⟝⟜⟝
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-toolshed.txt
+
+
+VM CONFIGURATION
+------------------ 
+• CPU Frequency: 266 MHz  
+• CD-ROM Speed: 72x 
+• Renderer: OpenGL
+• Target Framerate: OFF **use RTSS to cap FPS**
+• Win98SE  
+• Desktop Resolution: 640x480  
+• Desktop Color Depth: 16‑bit (High Color)  
+• DirectX 3  
+
+ 
+86BOX WIN98SE VM INSTALLATION
+-------------------------------- 
+Host
+• Create a Windows 98 SE virtual machine in 86Box  
+• Set CPU Frequency to 266 MHz    
+• Start VM 
+Guest 
+• Mount Interstate '76 Disc 1 → 86Box → Media → CD-ROM → Image  
+• Launch Setup.exe from the CD-ROM  
+• Install DirectX 3 (included on disc 1) **harmless**  
+• Select Restart Now
+• Install Gold Patch 1.06
+  → i76gpat16.exe
+• Install Nitro Pack
+  → Mount Nitro Pack CD-ROM → 86Box → Media → CD-ROM → Image
+  → Launch Setup.exe → register later
+  → NORMAL (software version) → next 
+  → JUMBO PLATE (full install) → next
+  → Choose install path → next
+  → If the warning message appears, CD-ROM should be 4x or faster, click next **harmless**
+  → Finish
+
+
+GAME CONFIGURATION
+--------------------
+• Graphics Detail
+• Resolution: 640x480 **internal resolution**
+• Visibility Range: Far **preserves AI behavior**
+• Ext. Instrum. Disp: Off **causes jitter**
+• Rear Mirror: High
+
+
+LOSSLESS SCALING SETTINGS (OPTIONAL)
+------------------------------------
+Note: Use RTSS to cap frame rate to 30 for frame generation with Lossless Scaling
+
+• Crop Input → Top Box: 22 **crops 86Box menu bar**  
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed
+• Multiplier: ** 30 FPS base cap **
+  → 7.8  (240 Hz @ ~235 FPS)
+  → 3.9  (120 Hz @ ~117 FPS)
+  → 1.9  ( 60 Hz @  ~57 FPS)
+• Flow Scale: 30%  
+• Performance: ON **preserve VGA beauty**  
+• Capture API: DXGI **WGC for compatibility** 
+• Queue target: 0 **1 for compatibility**
+• Clip cursor: Off **Optional**
+• Adjust cursor speed: Off **Optional**
+• Scaling Type: Sharp Bilinear **clean pixel edges**  
+• Rendering Sync Mode: Default **vsync for troubleshooting**
+• Max frame latency: 2 **general default**
+• G-Sync support: ON
+
+
+<>>------------------><<
+STARTUP ROUTINE
+>><------------------<<>
+
+Windows‑Host →  
+• Select sound playback device  
+• Launch RTSS
+• Launch Lossless Scaling  
+• Launch 86Box → start VM → Mount Interstate 76' Disc 1    
+
+Guest OS →  
+• Launch game  
+• Activate Lossless Scaling (Ctrl+Alt+S)  
+
+
+[]]-----------------------------------][[
+B. WINDOWS 10/11 INSTALLATION
+]][-----------------------------------[[]
+
+⟝⟜⟝  wrappers · scaling · shading · MIDI · pacing graze in → pasture‑toolshed.txt  ⟞⟟⟞
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture‑toolshed.txt
+
+The official 16-bit installer will not run on 64-bit systems. Install the game manually.
+
+Note: <DRIVE> refers to the drive letter where you installed the game.
+
+• Create a folder where the game files will be located: <DRIVE>:\Games\I76
+• Copy all files and folders from Disc1 into .\I76, with the exception of DEMO and DirectX subfolders and setup.exe
+• Create a .reg file in notepad with the game install data 
+  → Update the game install path before saving
+    • Note: The path needs two \ characters: "<DRIVE>:\\Games\\I76\\I76.EXE"
+  → Steps:
+    1. Open Notepad, paste the REG block below with updated game path, save as `i76-install.reg`   
+    2. Double‑click the file → Accept prompts    
+ 
+ 
+═══⟦  \‾(••)‾/  ⟧═══════REG BLOCK (paste into Notepad and save as .reg)══════⟦  \‾(••)‾/  ⟧═══
+REGEDIT4
+
+; Replace <DRIVE> with the drive letter you use for game installations
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\I76.exe]
+"(Default)"="<DRIVE>:\\Games\\I76\\I76.exe"
+"Path"="<DRIVE>:\\Games\\I76"
+
+[HKEY_LOCAL_MACHINE\Software\Activision]
+
+[HKEY_LOCAL_MACHINE\Software\Activision\Interstate '76]
+"EXE"="i76.exe"
+
+[HKEY_LOCAL_MACHINE\Software\Activision\Interstate '76\1.06]
+═══⟦  \‾(••)‾/  ⟧══════════════════END REG BLOCK════════════════════⟦  \‾(••)‾/  ⟧═══
+
+
+• Install gold patch
+  → i76gpat16.exe
+
+• Install Interstate '76 + Nitro Pack AiO Patch
+  → Interstate76+Nitro_AiO_Patch_v1.05.zip
+
+• Install dgVoodoo
+  → Copy required files to game root folder
+    • dgVoodoo.conf, dgVoodooCpl.exe, MS\x86\D3DImm.dll, MS\x86\DDraw.dll
+
+• Install dxwnd
+	Use built in settings
+  → Extract CD-audio
+  → Settings:
+		no-shims
+
+DGVOODOO CONFIGURATION 
+---------------------------
+• General 
+  → Appearance: Windowed
+  → Scaling: Centered
+• DirectX
+  → VRAM: 64 MB
+  → Filtering: Force point sampled
+  → Mipmapping: Disabled
+  → Application controlled fullscreen: Disabled
+  → Disable Alt‑Enter: Enabled
+  → dgVoodoo Watermark: Disabled
+
+
+<>>------------------><<
+STARTUP ROUTINE
+>><------------------<<>
+
+Notes:
+• A3D wrapper is needed for Nitro Pack, otherwise all sounds play at 100% volume at player's position.
+• Out-of-the-box, music volume control doesn't work on most computers. Using DxWnd's virtual CD audio feature is recommended.
+
+
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
+
+PATCHES
+-------
+Interstate 76′ Gold Patch 1.06 and mission 13 fix
+• File: i76gpat16.exe
+• File: i76v1083.exe → ** DO NOT INSTALL ** → OPTIONAL (for Mission 13 only) → Extract I76shell.dll from i76v1083.exe 
+  https://www.howgeek.com/2009/08/20/interstate-76-d3d-patch-gold-patch-force-feedback-patch/
+
+
+MODS
+----
+Interstate '76 + Nitro Pack AiO Patch
+• File: Interstate76+Nitro_AiO_Patch_v1.05.zip
+  https://community.pcgamingwiki.com/files/file/1349-interstate-76-nitro-pack-aio-patch/
+
+"Unofficial" Nitro Patch IV - 20th Anniversary Patch
+• nitropatchIV.zip
+  https://forums.interstate76.com/viewtopic.php?f=8&t=1442
+
+
+TWEAKS & FIXES
+--------------
+
+Gold edition crashes on mission 13
+• Use the I76shell.dll from the 1.083 patch to temporarily gain access to the 13th level
+• Do not install the 1.083 patch to the Gold Edition. It will crash on Instant Melees
+• back up the original I76shell.dll file in the game folder → I76shell.bak
+• Extract the 1.083 patch to a temporary folder
+  → Copy the extracted I76shell.dll file to the Gold Edition directory and replace the existing file
+• Use the following batch scripts to enable and disable the fix
+  → Paste the contents into notepad; save as ENABLEM13.BAT and DISABLEM13.BAT in the game folder
+  → Run ENABLEM13.BAT to enable the fix
+  → Run DISABLEM13.BAT to disable the fix
+  
+═══⟦  \‾(••)‾/  ⟧═══--- ENABLEM13.BAT ---══════════════════════════⟦  \‾(••)‾/  ⟧═══
+@echo off
+if exist I76shell.bak goto error
+ren I76shell.dll I76shell.bak
+ren I76shell_1083.dll I76shell.dll
+goto fix
+
+:error
+echo Mission 13 Fix already enabled! If you are experiencing crashes in
+echo melee or other single player missions, run RevertM13.bat instead.
+pause
+goto end
+
+:fix
+echo Mission 13 Fix enabled. Run RevertM13.bat to disable.
+pause
+goto end
+
+:end
+═══⟦  \‾(••)‾/  ⟧═══--- END ENABLEM13.BAT ---═══════════════════════⟦  \‾(••)‾/  ⟧═══
+
+═══⟦  \‾(••)‾/  ⟧═══--- DISABLEM13.BAT ---══════════════════════════⟦  \‾(••)‾/  ⟧═══
+RevertM13.bat
+
+@echo off
+if exist I76shell_1083.dll goto error
+ren I76shell.dll I76shell_1083.dll
+ren I76shell.bak I76shell.dll
+goto fix
+
+:error
+echo Mission 13 Fix NOT enabled! If you are experiencing crashes in
+echo mission 13, run EnableM13.bat instead.
+pause
+goto end
+
+:fix
+echo Mission 13 Fix reverted. Run EnableM13.bat to re-patch.
+pause
+goto end
+
+:end
+═══⟦  \‾(••)‾/  ⟧═══--- END DISABLEM13.BAT ---═══════════════════════⟦  \‾(••)‾/  ⟧═══
+
+Force rendering mode **	⚠️ NOT RECOMMENDED ⚠️ **
+• Note: Default software renderer is the most stable and correct. 
+• Force either Glide or D3D rendering 
+  → Enable Glide → <game shortcut> → properties → Target
+    • "<DRIVE>:\Games\I76\i76.exe" -glide
+    • "<DRIVE>:\Games\I76nitro\nitro.exe" -glide
+    • Note: Limited to 640x480
+  → Enable D3D → <game shortcut> → properties → Target
+    • "<DRIVE>:\Games\I76\i76.exe" -d3d
+    • "<DRIVE>:\Games\I76nitro\nitro.exe" -d3d
+    • Note: Limited to 640x480
+  

@@ -36,4 +36,19 @@
 ⟢(•(oo)•)→ DXWND - API‑hooking tool for compatibility with older Windows games.
 ⟝→ https://sourceforge.net/projects/dxwnd/
 
+⟢(•(oo)•)→ Apple Computer QuickTime for Windows 2.1.2 (32-bit)
+⟝→ https://archive.org/details/apple-computer-quicktime-for-windows-2.1.2
+
+⟢(•(oo)•)→ Lame Patcher - Apply binary fixes to executables
+⟝→ http://aluigi.altervista.org/mytoolz.htm#lpatch
+
+⟢(•(oo)•)→ dinputto8 - DirectInput 1-7 to 8 wrapper
+⟝→ https://github.com/elishacloud/dinputto8
+
+⟢(•(oo)•)→ DDrawCompat 
+⟝→ https://github.com/narzoul/DDrawCompat
+
+⟢(•(oo)•)→ K-Lite Codec Pack 
+⟝→ https://www.codecguide.com/download_kl.htm
+
 ⟅⟅~⟣~⟅⟅⟅   ⇢ end of downloads ⇠   ⟆⟆~⟡~⟆⟆⟆

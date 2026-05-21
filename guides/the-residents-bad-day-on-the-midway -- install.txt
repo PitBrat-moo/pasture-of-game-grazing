@@ -1,0 +1,95 @@
+[[== Recommended 86Box Profile: 86box-win98-s3-v2-ya -- adventure-gamer.txt =][[
+------------------------------------------------------------------------------
+Note: Runs on Win98, but audio may drop due to timing. Stable path lives in the Three One One pasture.
+  
+  
+The Residents' Bad Day on the Midway - Install
+===============================================
+ 
+ 
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+⟢(•(oo)•)→ 86box-win98-setup-s3-v2-ya -- adventure-gamer.txt  
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-win98-setup-s3-v2-ya%20--%20adventure-gamer.txt
+⟞⟟⟞  host‑side scaling · shading · MIDI · pacing graze in → 86box‑toolshed.txt  ⟝⟜⟝
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/86box-toolshed.txt
+  
+VM CONFIGURATION
+---------------------
+• CPU Frequency: 100 MHz  
+• CD-ROM Speed: 72x 
+• Renderer: OpenGL
+• Target Framerate: OFF **use RTSS to cap FPS**
+• Win98SE  
+• Desktop Resolution: 640x480  
+• Desktop Color Depth: 16‑bit (High Color)  
+• QuickTime for Windows 2.1.2  
+	
+86BOX WIN98SE VM INSTALLATION
+--------------------------------
+• Create a Windows 98 SE virtual machine in 86Box  
+• Set CPU Frequency to 100 MHz    
+• Start VM  
+• Mount The Residents' Present Bad Day on the Midway CD-ROM 
+• Launch Bdminstl.exe from inside the Setup folder on the CD-ROM
+  → Complete a full installation
+  → If prompted, delete any previous version of QuickTime  
+• Install QuickTime 2.1.2
+• Restart
+  
+LOSSLESS SCALING SETTINGS (OPTIONAL)
+-------------------------
+Note: Use RTSS to cap frame rate to 30 for frame generation with Lossless Scaling
+
+• Crop Input → Top Box: 22 **crops 86Box menu bar**  
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed
+• Multiplier: ** 30 FPS base cap **
+  → 7.8  (240 Hz @ ~235 FPS)
+  → 3.9  (120 Hz @ ~117 FPS)
+  → 1.9  ( 60 Hz @  ~57 FPS)
+• Flow Scale: 40%  
+• Performance: ON **preserve VGA beauty**  
+• Capture API: DXGI **WGC for compatibility** 
+• Queue target: 0 **1 for compatibility**
+• Clip cursor: Off **Optional**
+• Adjust cursor speed: Off **Optional**
+• Scaling Type: Sharp Bilinear **clean pixel edges**  
+• Rendering Sync Mode: Default **vsync for troubleshooting**
+• Max frame latency: 3 **FMV clarity**
+• G-Sync support: ON
+
+STARTUP ROUTINE  
+---------------  
+Windows‑Host →  
+• Select sound playback device  
+• Launch Lossless Scaling  
+• Launch RTSS  
+• Launch 86Box → start Win98SE VM  
+• Mount game CD-ROM
+• Win98SE‑Guest → Start → Programs → Bad Day on the Midway → Bad Day on the Midway
+  
+NOTES
+-----
+• Native Win98SE path avoids modern QuickTime rendering issues.  
+• 100 MHz provides the cleanest audio and video playback.  
+• 640x480 @ 16‑bit prevents FMV from rendering as a small centered box.  
+• Re-install QuickTime 2.1.2 after installing QuickTime 2.03 from the disc.
+  
+  
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
+
+ARCHIVE
+--------
+The “It just works!” package for Bad Day on the Midway
+• File: RSDNT.zip  
+  https://www.wegneronline.com/badday/package.html
+
+Note: Contains the full game ISOs for:
+        • The Residents’ Present Bad Day on the Midway  →  \RSDNT\FILES\CD\RBD.iso
+        • Freak Show                                   →  \RSDNT\FILES\CD\RFS.iso
