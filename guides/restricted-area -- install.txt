@@ -139,17 +139,20 @@ Escape .................... Main menu
 I / C ..................... Inventory
 T / S ..................... Skills
 A ........................ Pick up everything
+E ........................ Show enemies
 Print Screen .............. Screenshot
 Left Shift ................ Stand and shoot
 Enter ..................... Chat
 Tab ....................... Mini‑map
+W ......................... Tools
 M / Q ..................... Mission log
 Alt ....................... Show objects
 H / F1 .................... Show help text
 Space ..................... Use Medikit
 K ........................ Battle drugs
-Up / Down Arrows .......... Move up/down
-Left / Right Arrows ....... Move left/right
+Up / Down Arrows .......... Move up / down
+Left / Right Arrows ....... Move left / right
+N ........................ Night vision
 1 ........................ Skill shortcut 1
 2 ........................ Skill shortcut 2
 3 ........................ Skill shortcut 3
@@ -158,4 +161,7 @@ Left / Right Arrows ....... Move left/right
 6 ........................ Skill shortcut 6
 7 ........................ Skill shortcut 7
 8 ........................ Skill shortcut 8
+F5 ........................ Quick Save
+F6 ........................ Quick Load
+Mouse Wheel ............... Zoom
   
