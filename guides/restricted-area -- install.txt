@@ -18,7 +18,7 @@ Windows 10/11 Installation
 • (Optional) Install NoCD patch  
   → Only required for the 3‑CD StarForce edition  
   → Recommended file: “Restricted Area v1.10 [EN] Fixed EXE #2”
-• Configure compatibility setting for ra.exe
+• Configure compatibility setting for ra.exe 
   → Right‑click ra.exe → Properties → Compatibility
     • Disable fullscreen optimizations: Enabled
     • Change high DPI settings → Override high DPI scaling behavior: Enabled
@@ -119,8 +119,8 @@ Restricted Area Patches
 
 TWEAKS & FIXES
 --------------
-Broken mouse movement  
-• Set mouse polling rate to 125 Hz.
+Broken mouse movement with micro‑stutter  
+• Set mouse polling rate to 125 Hz
 
 Y and Z are reversed on US keyboards  
 • Use a temporary German (Germany) keyboard layout while playing, or remap Y↔Z externally (PowerToys recommended)
