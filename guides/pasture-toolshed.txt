@@ -20,9 +20,62 @@ Notes:
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/toolshed-download-links.txt
 
 
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Coolsoft VirtualMIDISynth
+Description: Host-side MIDI synthesizer with customizable soundfonts.
+→ Launch VirtualMIDISynth → Add/Select soundfont → Apply
+→ Suggested soundfonts:
+  • For elevated accuracy: Arachno SoundFont - Version 1.0.sf2
+  • For dreamy and atmospheric: GeneralUser GS v1.471.sf2
+  • For SC‑55‑like correctness.: Unison.SF2
+
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DDrawCompat
+Description: Fixes compatibility and performance issues with the DirectX 1-7 graphics APIs
+• Copy ddraw.dll to the game install folder where the main executable (.exe) file resides
+
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ dinputto8
+Description: Improves compatibility in games using DirectInput 1-7 (dinput.dll) 
+• Copy the dinput.dll file into the folder of a DirectInput 1-7 program or game  
+
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ dgVoodoo2
+Description: Wrapper that converts DirectX 1–7 and Glide calls into Direct3D 11/12 so legacy games run correctly. Fixes broken rendering, missing textures, color corruption, and scaling issues.
+• Install dgVoodoo (latest version)
+  → Copy required files to game root folder (not all files are necessary for all games; copying all files is harmless)
+    • Control panel: dgVoodoo.conf, dgVoodooCpl.exe
+    • DirectX 32 bit: MS\x86\D3D8.dll, MS\x86\D3D9.dll, MS\x86\D3DImm.dll, MS\x86\DDraw.dll
+    • DirectX 64 bit: MS\x64\D3D9.dll   
+    • Glide 32 bit: 3Dfx\x86\Glide.dll, 3Dfx\x86\Glide2x.dll, 3Dfx\x86\Glide3x.dll
+    • Glide 64 bit: 3Dfx\x64\Glide.dll, 3Dfx\x64\Glide2x.dll, 3Dfx\x64\Glide3x.dll
+• Configuration 
+  → Launce dgVoodooCpl.exe from the game folder
+  → DirectX
+    • Application controlled fullscreen: Disabled
+    • Disable Alt‑Enter: Enabled
+    • dgVoodoo Watermark: Disabled
+• Note: To access extended menus → right-click dgVoodoo Control Panel window → Show all sections of the configuration: Enabled  
+
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DXWND
+Description: API‑hooking tool that forces windowed mode, fixes mouse capture, corrects timing, and applies compatibility patches for older Windows games.
+
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ K‑Lite Codec Pack
+Description: Comprehensive pack of video and audio codecs. Available in four variants: Basic, Standard, Full, and Mega  
+• Recommended variant: Basic — safe and sufficient for all pasture games
+
+
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Lame Patcher
+Description: Applies small binary .lpatch fixes to game executables
+• Apply .lpatch to executable
+  → Copy lpatch.exe to the game folder
+  → Copy <game>.lpatch to the game folder
+  → Launch lpatch.exe → Select <game>.lpatch → Select <file to patch>
+
+
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ LOSSLESS SCALING
 Description: Lossless Scaling settings optimized for clean, stable scaling and LSFG frame generation 
-
 Notes:
 • Driver-level frame limiters (NVIDIA/AMD) are unreliable with LSFG
 • Does not work well with Shaderglass
@@ -48,14 +101,14 @@ Notes:
 • Max frame latency: 2 **general default**
  • G-Sync support: ON
   
-  
+
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ RTSS (RivaTuner Statistics Server)
 Description: External framerate limiter for clean, stable base framerates in games
 → Launch RTSS
 → Add → Game Process
 → Set “Framerate limit” to base FPS  
-  
-  
+
+
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SHADERGLASS
 Description: Applies .slang shaders in real time. **not compatible with Lossless Scaling.**
 → Launch ShaderGlass → Input → Window → select your game  
@@ -70,8 +123,8 @@ Description: Applies .slang shaders in real time. **not compatible with Lossless
 → Shader suggestions:
   • RetroArch Library/pixel-art-scaling/sharp-bilinear **purity and edge integrity**
   • misc/simple_color_control **faithfully enhanced color depth**
-  
-  
+
+
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ SRWE (SIMPLE RUNTIME WINDOW EDITOR)
 Description: Tool for resizing, repositioning, and border‑taming stubborn apps and games.
 → Launch SRWE → Select Running Application
@@ -88,57 +141,3 @@ Description: Tool for resizing, repositioning, and border‑taming stubborn apps
 → Optional Scaling
   • 16x9 @ 4K → Width: 3853; Height: 2198
 → Save profiles for convenience
-  
-  
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Coolsoft VirtualMIDISynth
-Description: Host-side MIDI synthesizer with customizable soundfonts.
-→ Launch VirtualMIDISynth → Add/Select soundfont → Apply
-→ Suggested soundfonts:
-  • For elevated accuracy: Arachno SoundFont - Version 1.0.sf2
-  • For dreamy and atmospheric: GeneralUser GS v1.471.sf2
-  • For SC‑55‑like correctness.: Unison.SF2
-  
-  
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ dgVoodoo2
-Description: Wrapper that converts DirectX 1–7 and Glide calls into Direct3D 11/12 so legacy games run correctly. Fixes broken rendering, missing textures, color corruption, and scaling issues.
-• Install dgVoodoo (latest version)
-  → Copy required files to game root folder (not all files are necessary for all games; copying all files is harmless)
-    • Control panel: dgVoodoo.conf, dgVoodooCpl.exe
-    • DirectX 32 bit: MS\x86\D3D8.dll, MS\x86\D3D9.dll, MS\x86\D3DImm.dll, MS\x86\DDraw.dll
-    • DirectX 64 bit: MS\x64\D3D9.dll   
-    • Glide 32 bit: 3Dfx\x86\Glide.dll, 3Dfx\x86\Glide2x.dll, 3Dfx\x86\Glide3x.dll
-    • Glide 64 bit: 3Dfx\x64\Glide.dll, 3Dfx\x64\Glide2x.dll, 3Dfx\x64\Glide3x.dll
-• Configuration 
-  → Launce dgVoodooCpl.exe from the game folder
-  → DirectX
-    • Application controlled fullscreen: Disabled
-    • Disable Alt‑Enter: Enabled
-    • dgVoodoo Watermark: Disabled
-• Note: To access extended menus → right-click dgVoodoo Control Panel window → Show all sections of the configuration: Enabled  
-
-  
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DXWND
-Description: API‑hooking tool that forces windowed mode, fixes mouse capture, corrects timing, and applies compatibility patches for older Windows games.
-  
-  
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Lame Patcher
-Description: Applies small binary .lpatch fixes to game executables
-• Apply .lpatch to executable
-  → Copy lpatch.exe to the game folder
-  → Copy <game>.lpatch to the game folder
-  → Launch lpatch.exe → Select <game>.lpatch → Select <file to patch>
-  
-  
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ dinputto8
-Description: Improves compatibility in games using DirectInput 1-7 (dinput.dll) 
-• Copy the dinput.dll file into the folder of a DirectInput 1-7 program or game  
-  
-  
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DDrawCompat
-Description: Fixes compatibility and performance issues with the DirectX 1-7 graphics APIs
-• Copy ddraw.dll to the game install folder where the main executable (.exe) file resides
-  
-  
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ K‑Lite Codec Pack
-Description: Comprehensive pack of video and audio codecs. Available in four variants: Basic, Standard, Full, and Mega  
-• Recommended variant: Basic — safe and sufficient for all pasture games
