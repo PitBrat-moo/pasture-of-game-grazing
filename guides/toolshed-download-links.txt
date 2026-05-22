@@ -5,6 +5,37 @@
 
 ⟆⟆⟆~⟡~⟆⟆   ⇢ downloads ⇠   ⟅⟅~⟣~⟅⟅⟅
 
+⟢(•(oo)•)→ Apple Computer QuickTime for Windows 2.1.2 (32-bit)
+⟝→ https://archive.org/details/apple-computer-quicktime-for-windows-2.1.2
+
+⟢(•(oo)•)→ Arachno SoundFont - Version 1.0.sf2 — Elevated, accurate MIDI soundfont.
+⟝→ https://github.com/Daniel-176/Usefull-Soundfonts/blob/main/Arachno_SoundFont_Version_1.0.sf2
+
+⟢(•(oo)•)→ CoolSoft VirtualMIDISynth — High‑quality GM/GS MIDI output.
+⟝→ https://coolsoft.altervista.org/en/virtualmidisynth
+
+⟢(•(oo)•)→ DDrawCompat 
+⟝→ https://github.com/narzoul/DDrawCompat
+
+⟢(•(oo)•)→ dinputto8 - DirectInput 1-7 to 8 wrapper
+⟝→ https://github.com/elishacloud/dinputto8
+
+⟢(•(oo)•)→ dgVoodoo — Wrapper for rendering stability on modern Windows.  
+⟝→ https://dege.freeweb.hu/dgVoodoo2/  
+⟝→ https://github.com/dege-diosg/dgVoodoo2/releases
+
+⟢(•(oo)•)→ DXWND - API‑hooking tool for compatibility with older Windows games.
+⟝→ https://sourceforge.net/projects/dxwnd/
+
+⟢(•(oo)•)→ GeneralUser GS v1.471.sf2 — Dream, atmospheric MIDI soundfont.
+⟝→ https://github.com/Daniel-176/Usefull-Soundfonts/blob/main/GeneralUser%20GS%20v1.471.sf2
+
+⟢(•(oo)•)→ K-Lite Codec Pack 
+⟝→ https://www.codecguide.com/download_kl.htm
+
+⟢(•(oo)•)→ Lame Patcher - Apply binary fixes to executables
+⟝→ http://aluigi.altervista.org/mytoolz.htm#lpatch
+
 ⟢(•(oo)•)→ Lossless Scaling — Exact, artifact‑free scaling and frame generation.  
 ⟝→ https://losslessscaling.com/
 
@@ -17,38 +48,7 @@
 ⟢(•(oo)•)→ SRWE (Simple Runtime Window Editor) — Resize and reposition windows.
 ⟝→ https://github.com/dtgDTGdtg/SRWE
 
-⟢(•(oo)•)→ CoolSoft VirtualMIDISynth — High‑quality GM/GS MIDI output.
-⟝→ https://coolsoft.altervista.org/en/virtualmidisynth
-
-⟢(•(oo)•)→ Arachno SoundFont - Version 1.0.sf2 — Elevated, accurate MIDI soundfont.
-⟝→ https://github.com/Daniel-176/Usefull-Soundfonts/blob/main/Arachno_SoundFont_Version_1.0.sf2
-
-⟢(•(oo)•)→ GeneralUser GS v1.471.sf2 — Dream, atmospheric MIDI soundfont.
-⟝→ https://github.com/Daniel-176/Usefull-Soundfonts/blob/main/GeneralUser%20GS%20v1.471.sf2
-
 ⟢(•(oo)•)→ Unison.SF2 — Pure, SC-55-like correctness.
 ⟝→ https://github.com/wrightflyer/SF2_SoundFonts/blob/master/Unison.SF2
-
-⟢(•(oo)•)→ dgVoodoo — Wrapper for rendering stability on modern Windows.  
-⟝→ https://dege.freeweb.hu/dgVoodoo2/  
-⟝→ https://github.com/dege-diosg/dgVoodoo2/releases
-
-⟢(•(oo)•)→ DXWND - API‑hooking tool for compatibility with older Windows games.
-⟝→ https://sourceforge.net/projects/dxwnd/
-
-⟢(•(oo)•)→ Apple Computer QuickTime for Windows 2.1.2 (32-bit)
-⟝→ https://archive.org/details/apple-computer-quicktime-for-windows-2.1.2
-
-⟢(•(oo)•)→ Lame Patcher - Apply binary fixes to executables
-⟝→ http://aluigi.altervista.org/mytoolz.htm#lpatch
-
-⟢(•(oo)•)→ dinputto8 - DirectInput 1-7 to 8 wrapper
-⟝→ https://github.com/elishacloud/dinputto8
-
-⟢(•(oo)•)→ DDrawCompat 
-⟝→ https://github.com/narzoul/DDrawCompat
-
-⟢(•(oo)•)→ K-Lite Codec Pack 
-⟝→ https://www.codecguide.com/download_kl.htm
 
 ⟅⟅~⟣~⟅⟅⟅   ⇢ end of downloads ⇠   ⟆⟆~⟡~⟆⟆⟆
