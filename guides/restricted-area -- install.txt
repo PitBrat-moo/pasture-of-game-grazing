@@ -85,35 +85,6 @@ STARTUP ROUTINE
   → Click the game window to apply scaling
 
 
-/==\__==\---\__==\---\_
-G A M E   C O N T R O L S
-\__==\---\__==\---/==/
-
-Escape .................... Main menu
-I / C ..................... Inventory
-T / S ..................... Skills
-A ........................ Pick up everything
-Print Screen .............. Screenshot
-Left Shift ................ Stand and shoot
-Enter ..................... Chat
-Tab ....................... Mini‑map
-M / Q ..................... Mission log
-Alt ....................... Show objects
-H / F1 .................... Show help text
-Space ..................... Use Medikit
-K ........................ Battle drugs
-Up / Down Arrows .......... Move up/down
-Left / Right Arrows ....... Move left/right
-1 ........................ Skill shortcut 1
-2 ........................ Skill shortcut 2
-3 ........................ Skill shortcut 3
-4 ........................ Skill shortcut 4
-5 ........................ Skill shortcut 5
-6 ........................ Skill shortcut 6
-7 ........................ Skill shortcut 7
-8 ........................ Skill shortcut 8
-
-
 Notes
 -----
 - For best stability, use dgVoodoo instead of DXWND. Never use both together  
@@ -158,4 +129,33 @@ Game crashes on launch
 • Disable G‑Sync/Freesync  
   → Use a fixed refresh rate  
 • If all else fails, use DDrawCompat (not together with dgVoodoo)
+  
+
+/==\__==\---\__==\---\_
+G A M E   C O N T R O L S
+\__==\---\__==\---/==/
+
+Escape .................... Main menu
+I / C ..................... Inventory
+T / S ..................... Skills
+A ........................ Pick up everything
+Print Screen .............. Screenshot
+Left Shift ................ Stand and shoot
+Enter ..................... Chat
+Tab ....................... Mini‑map
+M / Q ..................... Mission log
+Alt ....................... Show objects
+H / F1 .................... Show help text
+Space ..................... Use Medikit
+K ........................ Battle drugs
+Up / Down Arrows .......... Move up/down
+Left / Right Arrows ....... Move left/right
+1 ........................ Skill shortcut 1
+2 ........................ Skill shortcut 2
+3 ........................ Skill shortcut 3
+4 ........................ Skill shortcut 4
+5 ........................ Skill shortcut 5
+6 ........................ Skill shortcut 6
+7 ........................ Skill shortcut 7
+8 ........................ Skill shortcut 8
   
