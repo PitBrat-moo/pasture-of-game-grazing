@@ -8,7 +8,8 @@ INSTALLATION
 
 Windows 10/11 Installation
 ------------------------------
-• Install Restricted Area normally  
+• Install Restricted Area normally
+  → Install outside Program Files (prevents config/save issues)  
   → EXIT without installing the VP3 Codec for Video for Windows
     • (optional) Use K-Lite Codec Pack for movie playback
   → CANCEL installing Microsoft DirectX 9.0c  
@@ -17,6 +18,11 @@ Windows 10/11 Installation
 • (Optional) Install NoCD patch  
   → Only required for the 3‑CD StarForce edition  
   → Recommended file: “Restricted Area v1.10 [EN] Fixed EXE #2”
+• Configure compatibility setting for ra.exe
+  → Right‑click ra.exe → Properties → Compatibility
+    • Disable fullscreen optimizations: Enabled
+    • Change high DPI settings → Override high DPI scaling behavior: Enabled
+    • Scaling performed by: Application
 • Install dgVoodoo  
   → Copy required files to game root folder:  
     • dgVoodooCpl.exe, dgVoodoo.conf  
@@ -27,7 +33,7 @@ DGVOODOO CONFIGURATION
 ---------------------------
 • General  
   → Appearance: Fullscreen ** Windowed for Lossless Scaling **   
-  → Scaling: Stretched, 4:3 Aspect Ratio  
+  → Scaling: Stretched, keep Aspect Ratio  
   → Capture mouse: Disabled  
   → Center app window: Disabled
 • DirectX  
@@ -116,8 +122,9 @@ Broken mouse movement
 Y and Z are reversed on US keyboards  
 • Use a temporary German (Germany) keyboard layout while playing, or remap Y↔Z externally (PowerToys recommended)
 
-Game is too dark
+Weather effects make the game too dark and cause a slow VRAM leak
 • Disable weather effects → Options → Graphic → Options Advanced Options → Weather Effects: Disabled
+  → Note: Also improves stability over long sessions
 
 Game crashes on launch  
 • Video Playback Fix (VP3 codec issue)  
@@ -129,30 +136,30 @@ Game crashes on launch
 • Disable G‑Sync/Freesync  
   → Use a fixed refresh rate  
 • If all else fails, use DDrawCompat (not together with dgVoodoo)
-  
+
+Savegame Corruption Avoidance
+• RA can corrupt saves if you exit during a streaming audio event.
+• Always return to the main menu before quitting
+
 
 /==\__==\---\__==\---\_
 G A M E   C O N T R O L S
 \__==\---\__==\---/==/
 
-Escape .................... Main menu
-I / C ..................... Inventory
-T / S ..................... Skills
+Escape ................... Main menu
+I / C .................... Inventory
+T / S .................... Skills
 A ........................ Pick up everything
 E ........................ Show enemies
-Print Screen .............. Screenshot
-Left Shift ................ Stand and shoot
-Enter ..................... Chat
-Tab ....................... Mini‑map
-W ......................... Tools
-M / Q ..................... Mission log
-Alt ....................... Show objects
-H / F1 .................... Show help text
-Space ..................... Use Medikit
+Print Screen ............. Screenshot
+Left Shift ............... Stand and shoot
+Enter .................... Chat
+Tab ...................... Mini‑map
+M / Q .................... Mission log
+Alt ...................... Show objects
+H / F1 ................... Show help text
+Space .................... Use Medikit
 K ........................ Battle drugs
-Up / Down Arrows .......... Move up / down
-Left / Right Arrows ....... Move left / right
-N ........................ Night vision
 1 ........................ Skill shortcut 1
 2 ........................ Skill shortcut 2
 3 ........................ Skill shortcut 3
@@ -161,7 +168,13 @@ N ........................ Night vision
 6 ........................ Skill shortcut 6
 7 ........................ Skill shortcut 7
 8 ........................ Skill shortcut 8
-F5 ........................ Quick Save
-F6 ........................ Quick Load
-Mouse Wheel ............... Zoom
+F5 ....................... Quick Save
+F6 ....................... Quick Load
+Mouse Wheel .............. Zoom
   
+Notes:
+Controls mentioned in the manual or settings but not implemented in‑game
+• W ........................ Tools
+• N ........................ Night vision
+• Up / Down Arrows ......... Move up / down
+• Left / Right Arrows ...... Move left / right
