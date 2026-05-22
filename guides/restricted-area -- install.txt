@@ -97,7 +97,7 @@ STARTUP ROUTINE
 Notes
 -----
 - For best stability, use dgVoodoo instead of DXWND. Never use both together  
-- If you use DDrawCompat as a fallback, do **not** combine it with dgVoodoo
+- Only use DDrawCompat as a fallback, do **not** combine it with dgVoodoo
 - Selecting the Alternative soundtrack cause the game to crash with an OGG stream error
 
 
