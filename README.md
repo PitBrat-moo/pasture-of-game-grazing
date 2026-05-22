@@ -2,11 +2,12 @@
 Clean, stable installation guides for games and platforms, gathered into one grazing pasture for clear, repeatable setup.
 
 ## Purpose
-This repository provides precise, reproducible instructions for installing and configuring games across multiple platforms and eras. Each guide is shaped by the three pillars: Beauty, Power, and Stability.
-
+This repository provides precise, reproducible instructions for installing and configuring games across multiple platforms and eras. Authentic enhancement uses modern tools only to preserve original intent without alteration. Each guide aligns with the three pillars: Beauty, Power, and Stability.  
+  
 ## Contents
 - Platform setup (Win98, 86Box, wrappers)
 - Game‑specific install steps
+- Authentic enhancement (Lossless Scaling, Shaderglass)
 - Required tools
 - Known issues + verified fixes
 - Configuration notes
