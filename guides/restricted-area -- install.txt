@@ -52,9 +52,12 @@ DGVOODOO CONFIGURATION
 
 GAMEPLAY SETTINGS
 -----------------
-Note: Optional QOL tweak
-• Launch Starter.exe to configure game
-  → Gameplay → Show Logos on startup: No
+Note: Optional QoL and stability tweaks
+• Launch Starter.exe
+  → Gameplay tab → Show Logos on startup: No (optional)
+  → Main Menu tab → Play Restricted Area (launch game)
+    → Options → Graphic options → Advanced graphical options → Weather Effects: Disabled
+      • Prevents VRAM leak and restores correct lighting
 
 
 LOSSLESS SCALING SETTINGS (optional)
@@ -122,9 +125,6 @@ Broken mouse movement
 Y and Z are reversed on US keyboards  
 • Use a temporary German (Germany) keyboard layout while playing, or remap Y↔Z externally (PowerToys recommended)
 
-Weather effects make the game too dark and cause a slow VRAM leak
-• Disable weather effects → Options → Graphic → Options Advanced Options → Weather Effects: Disabled
-  → Note: Also improves stability over long sessions
 
 Game crashes on launch  
 • Video Playback Fix (VP3 codec issue)  
