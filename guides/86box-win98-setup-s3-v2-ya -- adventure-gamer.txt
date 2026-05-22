@@ -223,9 +223,10 @@ Description: Install S3 Trio64V+ drivers.
 Description: Install 3dfx Voodoo2 drivers.
 → Install 3dfx Voodoo2 Reference Driver v3.02.02
   • Launch Voodoo2-30202.exe to extract files
-  • Device Manager → Other devices → PCI Multimedia Video Device → Driver → Update Driver
+    → Note: Extracts to 'C:\Windows\System\Temp' (Voodoo2 driver files only)
+ Device Manager → Other devices → PCI Multimedia Video Device → Driver → Update Driver
     → If Missing file popup → mount Win98SE image → browse to 'D:\WIN98'
-  
+ 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ YAMAHA YMF719 (OPL3-SA3) SETUP
 Description: Install Yamaha YMF719 (OPL3-SA3) drivers with correct IRQ/DMA (5,1,0)
 → Verify IRQ Steering is disabled in Device Manager → System devices → PCI bus → IRQ Steering: Disabled **favor caution**
