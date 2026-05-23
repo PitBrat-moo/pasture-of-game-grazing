@@ -61,7 +61,7 @@ Note: Optional QoL and stability tweaks
   → Gameplay tab → Show Logos on startup: No (optional)
   → Main Menu tab → Play Restricted Area (launch game)
     → Options → Graphic options → Advanced graphical options → Weather Effects: Disabled
-      • Prevents VRAM leak and restores correct lighting
+      • Note: Prevents VRAM leak and restores correct lighting
 
 
 LOSSLESS SCALING SETTINGS (optional)
