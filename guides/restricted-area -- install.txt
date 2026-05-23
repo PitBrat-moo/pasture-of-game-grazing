@@ -129,7 +129,6 @@ Broken mouse movement with micro‑stutter
 Y and Z are reversed on US keyboards  
 • Use a temporary German (Germany) keyboard layout while playing, or remap Y↔Z externally (PowerToys recommended)
 
-
 Game crashes on launch  
 • Video Playback Fix (VP3 codec issue)  
   → Fix option A – Disable video playback (no codec install)  
@@ -141,9 +140,9 @@ Game crashes on launch
   → Use a fixed refresh rate  
 • If all else fails, use DDrawCompat (not together with dgVoodoo)
 
-Savegame Corruption Avoidance
-• RA can corrupt saves if you exit during a streaming audio event.
-• Always return to the main menu before quitting
+Savegame Corruption Avoidance  
+• ‘Save and Exit’ during active audio streaming corrupts the save  
+• After combat or music transitions, wait a moment before using ‘Save and Exit’
 
 
 /==\__==\---\__==\---\_
