@@ -283,7 +283,9 @@ Description: Update and disable unused USB controller
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DMA - DISK PERFORMANCE (HDD & CD‑ROM)
 Description: Increase performance of HDD and CD-ROM
-→ Device Manager → CDROM → [CD ROM DRIVE] → Properties → Settings → DMA: Enabled
+→ Device Manager → CDROM → [CD ROM DRIVE] → Properties → Settings  
+  • DMA: Enabled
+  • General → Auto Insert Notification: Disabled
 → Device Manager → Disk drives → [IDE DISK DRIVE] → Properties → Settings → DMA: Enabled
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ JOYSTICK **Optional**
@@ -355,6 +357,14 @@ Description: Disable Windows Power Management
   • System standby: Never
   • Turn off monitor: Never
   • Turn off hard disks: Never
+
+⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ DISABLE SYSTEM SOUNDS  
+Description: Disable system sounds for stability
+Control Panel → Sounds → Schemes: No Sounds  
+
+⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ SET NETWORK SERVER MODE  
+Description: Network Server mode improves file caching and reduces stalls
+Control Panel → System → Performance → File System → Typical role of this computer: Network server  
 
 ⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ 3DFX TOOLS UI (SET IN APP)
 Description: set sliders in 3dfx Tools UI  
@@ -593,6 +603,7 @@ M O O – M A N T R A :
   • v1.4 — Re-branded as general-gamer.
          — Rustled Host-Side Paddock to pasture-toolshed.txt.
          — Added Power Management tweaks
+  • v1.5 — Wrangled Windows Tweaks 
 		 
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
