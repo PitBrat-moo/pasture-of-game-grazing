@@ -281,7 +281,9 @@ Description: Update and disable unused USB controller
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DMA - DISK PERFORMANCE (HDD & CD‑ROM)
 Description: Increase performance of HDD and CD-ROM
-→ Device Manager → CDROM → [CD ROM DRIVE] → Properties → Settings → DMA: Enabled
+→ Device Manager → CDROM → [CD ROM DRIVE] → Properties → Settings  
+  • DMA: Enabled
+  • General → Auto Insert Notification: Disabled
 → Device Manager → Disk drives → [IDE DISK DRIVE] → Properties → Settings → DMA: Enabled
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ JOYSTICK **Optional**
@@ -354,6 +356,14 @@ Description: Disable Windows Power Management
   • System standby: Never
   • Turn off monitor: Never
   • Turn off hard disks: Never
+
+⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ DISABLE SYSTEM SOUNDS  
+Description: Disable system sounds for stability
+Control Panel → Sounds → Schemes: No Sounds  
+
+⎯(ᶜᵒʷ•)⎯─◐◑◒◓─ SET NETWORK SERVER MODE  
+Description: Network Server mode improves file caching and reduces stalls
+Control Panel → System → Performance → File System → Typical role of this computer: Network server  
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ TWEAKS · AUDIO / DMA / VCACHE
 Description: Stability/Performance System.ini profile for virtual memory, DMA and vcache.
@@ -532,7 +542,8 @@ M O O – M A N T R A :
 ⟢⟞⟟⟡⟠⟜⟣⟿⟿⟿  C H A N G E   L O G   O F   T H E   C O D E X  ⟿⟿⟿⟣⟜⟠⟡⟟⟞⟢
 
   • v1.0 — Initial forging of the Codex structure; paddock boundaries raised.
-  
+  • v1.1 — Wrangled Windows Tweaks 
+
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
 ⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜
