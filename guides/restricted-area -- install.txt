@@ -31,19 +31,22 @@ Windows 10/11 Installation
 
 DGVOODOO CONFIGURATION 
 ---------------------------
+Note: If using Lossless Scaling: run dgVoodoo in Windowed mode and disable vSync
+
 • General  
-  → Appearance: Fullscreen ** Windowed for Lossless Scaling **   
+  → Appearance: Fullscreen    
   → Scaling: Stretched, keep Aspect Ratio  
   → Capture mouse: Disabled  
   → Center app window: Disabled
 • DirectX  
-  → VRAM: 512 MB (most stable; prevents FMV crashes)  
+  → VRAM: 2048 MB (best for streaming)  
   → Filtering: Force point sampled (sharper 2D assets)  
   → Mipmapping: Disabled (RA has no proper mipmap chain)  
   → Resolution: Unforced
   → Application controlled fullscreen: Disabled  
   → Disable Alt‑Enter: Enabled  
   → Antialiasing (MSAA): Off
+  → Force vSync: Enabled  
   → Fast video memory access: Enabled (fixes inventory slowdown)  
   → dgVoodoo Watermark: Disabled  
 • GeneralExt  
@@ -53,6 +56,7 @@ DGVOODOO CONFIGURATION
 GAMEPLAY SETTINGS
 -----------------
 Note: Optional QoL and stability tweaks
+
 • Launch Starter.exe
   → Gameplay tab → Show Logos on startup: No (optional)
   → Main Menu tab → Play Restricted Area (launch game)
