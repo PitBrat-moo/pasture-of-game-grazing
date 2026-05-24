@@ -144,10 +144,10 @@ Savegame Corruption Avoidance
 • ‘Save and Exit’ during active audio streaming corrupts the save  
 • After combat or music transitions, wait a moment before using ‘Save and Exit’
 
-Launch Quirk
-• Relaunch after exit may fail due to a lingering process
-• Delay varies, wait until it clears before launching again
-  
+Launch Quirk  
+• Launch may fail on the first try due to a lingering or slow‑clearing process
+• Delay varies — wait a moment, then try launching again  
+
   
 /==\__==\---\__==\---\_
 G A M E   C O N T R O L S
