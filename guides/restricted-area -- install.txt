@@ -167,6 +167,8 @@ Tab ...................... Mini‑map
 M / Q .................... Mission log
 Alt ...................... Show objects
 H / F1 ................... Show help text
+W ........................ Tools
+N ........................ Night vision
 Space .................... Use Medikit
 K ........................ Battle drugs
 1 ........................ Skill shortcut 1
@@ -181,11 +183,6 @@ F5 ....................... Quick Save
 F6 ....................... Quick Load
 Mouse Wheel .............. Zoom
   
-Notes:
-Controls mentioned in the manual or settings but not implemented in‑game
-• W ........................ Tools
-• N ........................ Night vision
-
 
 KNOWN ISSUES (UNRESOLVED)
 -------------------------
