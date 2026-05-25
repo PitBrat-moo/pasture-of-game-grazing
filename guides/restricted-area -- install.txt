@@ -145,7 +145,7 @@ Savegame Corruption Avoidance
 • After combat or music transitions, wait a moment before using ‘Save and Exit’
 
 Launch Quirk  
-• Launch may fail on the first try due to a lingering or slow‑clearing process
+• Launch may fail on the first try due to a slow‑clearing internal engine lock
 • Delay varies — wait a moment, then try launching again  
 
   
@@ -158,6 +158,8 @@ I / C .................... Inventory
 T / S .................... Skills
 A ........................ Pick up everything
 E ........................ Show enemies
+Up / Down Arrows ......... Move up / down
+Left / Right Arrows ...... Move left / right
 Print Screen ............. Screenshot
 Left Shift ............... Stand and shoot
 Enter .................... Chat
@@ -183,5 +185,10 @@ Notes:
 Controls mentioned in the manual or settings but not implemented in‑game
 • W ........................ Tools
 • N ........................ Night vision
-• Up / Down Arrows ......... Move up / down
-• Left / Right Arrows ...... Move left / right
+
+
+KNOWN ISSUES (UNRESOLVED)
+-------------------------
+Restricted Area may crash when loading into a mission (Mission 3 is the most common)
+• This is an original engine instability; if it happens, restart and re‑enter the mission (no progress lost)  
+  
