@@ -144,6 +144,14 @@ Savegame Corruption Avoidance
 • ‘Save and Exit’ during active audio streaming corrupts the save  
 • After combat or music transitions, wait a moment before using ‘Save and Exit’
 
+Recovering a corrupted save (character stuck in a broken animation state after reloading)
+• Start a new game and save it in a different slot
+• Go to the save folder → \Restricted Area\Save\
+• Copy the character files (*.dat, *.itm, *.pic, *.sav) from the corrupted slot
+• Paste them into the new slot and overwite 
+• Do not copy any mapXX.dat or mapXX.map files
+• Load the new slot. The character will spawn safely in the hub with all progress intact
+
 Launch Quirk  
 • Launch may fail on the first try due to a slow‑clearing internal engine lock
 • Delay varies — wait a moment, then try launching again  
