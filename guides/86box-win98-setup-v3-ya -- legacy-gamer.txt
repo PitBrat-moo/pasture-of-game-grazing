@@ -635,8 +635,9 @@ M O O – M A N T R A :
          — Added Power Management tweaks.
   • v1.5 — Wrangled Windows Tweaks. 
   • v1.6 — Tilled Windows Setup. Weeded drivers. Fertilized Tweaks. 
-  • v1.7 — Re-branded as legacy-gamer and retired
-  
+  • v1.7 — Re-branded as legacy-gamer and retired.
+  • v1.8 — Sowed 60Hz Desktop Display Configuration.
+ 
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
 ⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜

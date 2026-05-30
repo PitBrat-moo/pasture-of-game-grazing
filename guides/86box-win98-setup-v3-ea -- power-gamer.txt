@@ -630,7 +630,7 @@ M O O – M A N T R A :
 ⟢⟞⟟⟡⟠⟜⟣⟿⟿⟿  C H A N G E   L O G   O F   T H E   C O D E X  ⟿⟿⟿⟣⟜⟠⟡⟟⟞⟢
 
   • v1.0 — Initial forging of the Codex structure; paddock boundaries raised.
-  • v1.1 — Sowed 60Hz Desktop Display Configuration
+  • v1.1 — Sowed 60Hz Desktop Display Configuration.
   
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
