@@ -241,12 +241,18 @@ Description: Install Yamaha YMF719 (OPL3-SA3) drivers with correct IRQ/DMA (5,1,
     → Direct Memory Access: 0
 	Interrupt Request: 5, Direct Memory Access: 1, Direct Memory Access: 0
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DISPLAY RESOLUTION AND COLOR DEPTH
-Description: Open Display Properties and cofigure desktop
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DESKTOP DISPLAY CONFIGURATION
+Description: Open Display Properties and configure desktop resolution, color depth, and refresh rates
 Note: Voodoo 3 renders all games in 16-bit; 32-bit desktop only affects icons/wallpapers
 → Right-click Desktop → Properties → Settings
+  • Note: Win98 stores refresh rate per resolution. Set 60 Hz for BOTH 640×480 and 800×600
   • Color depth: High Color (16‑bit) **favor stability**
-  • Resolution: 800×600 
+  • Resolution: 640×480
+  • Apply
+  • Advanced → Adapter → Refresh Rate: 60 Hz → Apply → OK
+  • Resolution: 800×600
+  • Apply  
+  • Advanced → Adapter → Refresh Rate: 60 Hz → Apply
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ MIDI SETUP
 Description: Play MIDI through the host 
