@@ -201,10 +201,11 @@ Description: install Windows and avoid IRQ/DMA poisoning
    \  (oo)\___\  (oo)\___\  (oo)\___\  (oo)\___\  (oo)\___\  (oo)\__\
 
 ⚠⟪ W A R N I N G ⟫⚠ EJECT WIN98SE INSTALL DISK BEFORE RESTARTING
-  • 86Box vm window → Media → CD-ROM → Eject **Prevents Windows installing WDM drivers**
+  • 86Box VM window → Media → CD-ROM → Eject **Prevents Windows installing WDM drivers**
+    ○ ⟪⟜⟢⟟⣫⟫ If the CD is present during reboot, Windows installs WDM drivers that permanently break timing, audio, and performance. There is no fix except reinstalling from a clean image
   • Backup drive .img (strongly recommended) **Avoids reinstallation if system becomes poisoned** **favor caution**
 ⚠⟪ W A R N I N G ⟫⚠ CANCEL DRIVER INSTALLATION
-→ After Windows completes setup and restarts, CANCEL driver installation **Avoids Poisoning → Reinstalling Windows**
+  • After Windows completes setup and restarts, CANCEL driver installation **Avoids Poisoning → Reinstalling Windows**
 
   /   ^__^     /   ^__^     /   ^__^     /   ^__^     /   ^__^    /
  (\\  (oo)/___(\\  (oo)/___(\\  (oo)/___(\\  (oo)/___(\\  (oo)/___(\\
