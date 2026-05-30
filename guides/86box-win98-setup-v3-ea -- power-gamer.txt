@@ -245,9 +245,9 @@ Description: Install Ensoniq AudioPCI (ES1370) drivers
 Description: Open Display Properties and cofigure desktop
 Note: Voodoo 3 renders all games in 16-bit; 32-bit desktop only affects icons/wallpapers
 → Right-click Desktop → Properties → Settings
+  • Color depth: High Color (16‑bit) **favor stability**
   • Advanced → Adapter → Refresh Rate: 60 Hz → Apply
     → Note: Win98 stores refresh rate per resolution. Set 60 Hz for BOTH 640×480 and 800×600
-  • Color depth: High Color (16‑bit) **favor stability**
   • Resolution: 800×600 
   • Advanced → Adapter → Refresh Rate: 60 Hz → Apply
   
