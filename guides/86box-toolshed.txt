@@ -34,35 +34,35 @@ Description: Host-side MIDI synthesizer with customizable soundfonts.
 Description: Lossless Scaling settings optimized for 86Box scaling and LSFG frame generation 
 
 Notes:
-• Use RTSS to cap frame rate to 30 or when using the Vulkan renderer; necessary for frame generation with Lossless Scaling
-• NVIDIA/AMD driver-level frame limiters do not work on 86Box VM window
-• Not compatible with Shaderglass
+→ Use RTSS to cap frame rate to 30 or when using the Vulkan renderer; necessary for frame generation with Lossless Scaling
+→ NVIDIA/AMD driver-level frame limiters do not work on 86Box VM window
+→ Not compatible with Shaderglass
 
-• Frame Generations Type: LSFG 3.1  
-• Mode: Fixed
-• Multiplier (base FPS × multiplier ≈ refresh rate - safety margin)
-  → 30 FPS base:
-    • 7.8× → ~235 FPS @ 240 Hz
-    • 3.9× → ~117 FPS @ 120 Hz
-    • 1.9× →  ~57 FPS @  60 Hz
-  → 60 FPS base:
-    • 3.9× → ~235 FPS @ 240 Hz
-    • 1.9× → ~117 FPS @ 120 Hz
-• Flow Scale: 30% **preserve clarity** 
-• Performance: ON **preserve clarity**  
-• Capture API: DXGI **WGC for compatibility** 
-• Queue target: 0 **1 for compatibility**
-• Clip cursor: Off **Optional**
-• Adjust cursor speed: Off **Optional**
-• Scaling Type: Sharp Bilinear **clean pixel edges**  
-• Rendering Sync Mode: Default **vsync for troubleshooting**
-• Max frame latency: 2 **general default**
-  → 3 for FMV‑heavy games 
-• G-Sync support: ON
+→ Frame Generations Type: LSFG 3.1  
+→ Mode: Fixed
+→ Multiplier (base FPS × multiplier ≈ refresh rate - safety margin)
+  • 30 FPS base:
+    → 7.8× → ~234 FPS @ 240 Hz
+    → 3.9× → ~117 FPS @ 120 Hz
+    → 1.9× →  ~57 FPS @  60 Hz
+  • 60 FPS base:
+    → 3.9× → ~235 FPS @ 240 Hz
+    → 1.9× → ~117 FPS @ 120 Hz
+→ Flow Scale: 30% **preserve clarity** 
+→ Performance: ON **preserve clarity**  
+→ Capture API: DXGI **WGC for compatibility** 
+→ Queue target: 0 **1 for compatibility**
+→ Clip cursor: Off **Optional**
+→ Adjust cursor speed: Off **Optional**
+→ Scaling Type: Sharp Bilinear **clean pixel edges**  
+→ Rendering Sync Mode: Default **vsync for troubleshooting**
+→ Max frame latency: 2 **general default**
+  • 3 for FMV‑heavy games 
+→ G-Sync support: ON
 
-• 86Box VM window  
-  → View → Hide toolbar: ON; Hide status bar: ON **hide toolbar from scaled output**
-  → View → Renderer → OpenGL 
+→ 86Box VM window  
+  • View → Hide toolbar: ON; Hide status bar: ON **hide toolbar from scaled output**
+  • View → Renderer → OpenGL 
 
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ RTSS (RivaTuner Statistics Server)

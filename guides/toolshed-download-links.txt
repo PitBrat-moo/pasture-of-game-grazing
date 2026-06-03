@@ -8,10 +8,10 @@
 ⟢(•(oo)•)→ Apple Computer QuickTime for Windows 2.1.2 (32-bit)
 ⟝→ https://archive.org/details/apple-computer-quicktime-for-windows-2.1.2
 
-⟢(•(oo)•)→ Arachno SoundFont - Version 1.0.sf2 — Elevated, accurate MIDI soundfont.
+⟢(•(oo)•)→ Arachno SoundFont - Version 1.0.sf2 — Elevated, accurate MIDI soundfont
 ⟝→ https://github.com/Daniel-176/Usefull-Soundfonts/blob/main/Arachno_SoundFont_Version_1.0.sf2
 
-⟢(•(oo)•)→ CoolSoft VirtualMIDISynth — High‑quality GM/GS MIDI output.
+⟢(•(oo)•)→ CoolSoft VirtualMIDISynth — High‑quality GM/GS MIDI output
 ⟝→ https://coolsoft.altervista.org/en/virtualmidisynth
 
 ⟢(•(oo)•)→ DDrawCompat 
@@ -20,11 +20,11 @@
 ⟢(•(oo)•)→ dinputto8 - DirectInput 1-7 to 8 wrapper
 ⟝→ https://github.com/elishacloud/dinputto8
 
-⟢(•(oo)•)→ dgVoodoo — Wrapper for rendering stability on modern Windows.  
+⟢(•(oo)•)→ dgVoodoo — Wrapper for rendering stability on modern Windows  
 ⟝→ https://dege.freeweb.hu/dgVoodoo2/  
 ⟝→ https://github.com/dege-diosg/dgVoodoo2/releases
 
-⟢(•(oo)•)→ DXWND - API‑hooking tool for compatibility with older Windows games.
+⟢(•(oo)•)→ DXWND - API‑hooking tool for compatibility with older Windows games
 ⟝→ https://sourceforge.net/projects/dxwnd/
 
 ⟢(•(oo)•)→ GeneralUser GS v1.471.sf2 — Dream, atmospheric MIDI soundfont.
@@ -36,19 +36,22 @@
 ⟢(•(oo)•)→ Lame Patcher - Apply binary fixes to executables
 ⟝→ http://aluigi.altervista.org/mytoolz.htm#lpatch
 
-⟢(•(oo)•)→ Lossless Scaling — Exact, artifact‑free scaling and frame generation.  
+⟢(•(oo)•)→ Lossless Scaling — Exact, artifact‑free scaling and frame generation  
 ⟝→ https://losslessscaling.com/
 
-⟢(•(oo)•)→ RTSS (RivaTuner Statistics Server) — Stable frame pacing.
+⟢(•(oo)•)→ ReShade — Shader injection 
+⟝→ https://reshade.me/
+
+⟢(•(oo)•)→ RTSS (RivaTuner Statistics Server) — Stable frame pacing
 ⟝→ https://www.guru3d.com/download/rtss-rivatuner-statistics-server-download/
 
-⟢(•(oo)•)→ ShaderGlass — Host‑side shader layer.
+⟢(•(oo)•)→ ShaderGlass — Host‑side shader layer
 ⟝→ https://github.com/mausimus/ShaderGlass
 
-⟢(•(oo)•)→ SRWE (Simple Runtime Window Editor) — Resize and reposition windows.
+⟢(•(oo)•)→ SRWE (Simple Runtime Window Editor) — Resize and reposition windows
 ⟝→ https://github.com/dtgDTGdtg/SRWE
 
-⟢(•(oo)•)→ Unison.SF2 — Pure, SC-55-like correctness.
+⟢(•(oo)•)→ Unison.SF2 — Pure, SC-55-like correctness
 ⟝→ https://github.com/wrightflyer/SF2_SoundFonts/blob/master/Unison.SF2
 
 ⟅⟅~⟣~⟅⟅⟅   ⇢ end of downloads ⇠   ⟆⟆~⟡~⟆⟆⟆

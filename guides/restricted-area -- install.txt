@@ -98,7 +98,7 @@ STARTUP ROUTINE
   → Click the game window to apply scaling
 
 
-Notes
+NOTES
 -----
 - For best stability, use dgVoodoo instead of DXWND. Never use both together  
 - Only use DDrawCompat as a fallback, do **not** combine it with dgVoodoo
@@ -110,7 +110,7 @@ END INSTALLATION
 )((~~~~~~~~~~())
 
 
-Patches
+PATCHES
 -------
 Restricted Area Patches  
 • English Patch 1.09  
