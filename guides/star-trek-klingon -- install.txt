@@ -46,7 +46,7 @@ Note: Cap frame rate to 60 for frame generation with Lossless Scaling
 • Frame Generations Type: LSFG 3.1  
 • Mode: Fixed
 • Multiplier: ** 60 FPS base cap **
-  → 3.9  (240 Hz @ ~235 FPS)
+  → 3.9  (240 Hz @ ~234 FPS)
   → 1.9  (120 Hz @ ~117 FPS)
 • Flow Scale: 40%  
 • Performance: ON **preserve VGA beauty**  

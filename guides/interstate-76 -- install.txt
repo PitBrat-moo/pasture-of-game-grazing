@@ -77,7 +77,7 @@ Note: Use RTSS to cap frame rate to 30 for frame generation with Lossless Scalin
 • Frame Generations Type: LSFG 3.1  
 • Mode: Fixed
 • Multiplier: ** 30 FPS base cap **
-  → 7.8  (240 Hz @ ~235 FPS)
+  → 7.8  (240 Hz @ ~234 FPS)
   → 3.9  (120 Hz @ ~117 FPS)
   → 1.9  ( 60 Hz @  ~57 FPS)
 • Flow Scale: 30%  
