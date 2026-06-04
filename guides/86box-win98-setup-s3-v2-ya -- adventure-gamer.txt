@@ -517,7 +517,7 @@ Note: Enable the host audio device and joystick before launching 86Box; they wil
 ⚠ W A R N I N G ⚠  
 ⟬⟜⟢⟟⟣⟭  (⟁MOO⟆)  DO NOT install Intel Chipset INF — harms IDE  ⟞⟡⟜⟢⟟⣜~
 ⟣⟟⢀⟜⟞⟡   ~~~>
-⟬⟜⟢⟟⟣⟭  (⟁MOO⟆)  DO NOT install DirectX 8 or 9 — harms Voodoo3  ⟞⟡⟜⟢⟟⣜~
+⟬⟜⟢⟟⟣⟭  (⟁MOO⟆)  DO NOT install DirectX 8 or 9 — harms Voodoo2  ⟞⟡⟜⟢⟟⣜~
 ⟣⟟⢀⟜⟞⟡   ~~~>
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ FILE TRANSFER RITUAL
