@@ -1,0 +1,362 @@
+Two Worlds  
+=====================  
+
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+Windows 10/11 Installation
+------------------------------
+
+Install game  
+If installing from disc, install Patch 1.7b  
+   • Two_Worlds_Update_1.0-1.7b.exe  
+
+Right‑click TWOWORLDS.EXE → Properties → Compatibility  
+   • Disable fullscreen optimizations: Enabled  
+   • Change high DPI settings  
+       → Override high DPI scaling behavior: Enabled  
+       → Set dropdown to Application  
+   • Compatibility Mode: Windows Vista  
+
+Cap framerate to 60 in NVIDIA Control Panel (ignored by game, but safe)  
+
+Launch game  
+
+If installing from disc, activation is required  
+   • Enter Serial  
+       → Use copy/paste if the text box does not accept typed input  
+   • Activate Online  
+   • Copy/paste information into form  
+   • Registration will ask about connection  
+   • Click Continue  
+   • Connection will fail and the game will automatically activate  
+
+Use RTSS to set the framerate limit to 60  
+   Notes:  
+   • Animation and physics break above 60 FPS  
+   • The game ignores driver‑level framerate caps  
+
+IN‑GAME SETTINGS  
+----------------  
+Settings  
+   Notes:  
+   • Using an aspect ratio other than 4:3 or 16:9 results in clipped videos  
+   • Autosave causes the game to crash  
+Graphics  
+   • If using Lossless Scaling → Window Mode: Enabled  
+Interface  
+   • Autosave backup every 5 min.: Disabled  (prevents crashing)  
+
+
+Configure AutoexecGame.con  
+--------------------------  
+Notes:  
+   • The game does not automatically generate a configuration file  
+   • These commands also work from inside the game console  
+   • Setting Engine.FOV > 50 breaks the game engine  
+
+Navigate to <path‑to‑game>  
+If it doesn't already exist, create a folder named “Parameters”  
+Inside Parameters, create a text file named “AutoexecGame.con”  
+Open AutoexecGame.con in a text editor, add one of the following blocks, and save  
+
+
+Beauty settings  
+══════AutoexecGame.con══════════ 
+Engine.FOV 50  
+Interface.Camera.FPP.FOV 50  
+Engine.TrueWaterRef 1  
+Engine.WaterReflections 1  
+Engine.FarPlane 3000  
+Engine.LOD0 3000  
+Engine.LOD1 4000  
+Engine.LODblend 350  
+Engine.GrassDisp 32  
+Engine.GrassQ 0.5
+Engine.GFadeFar 2000  
+Engine.TShadows 0  
+Engine.Shadows 1  
+Engine.UseStencilShadows 0  
+Engine.AlphaFadeNear 1500  
+Engine.AlphaFadeFar 3000  
+Engine.DLandAFade 1800  
+Engine.SunFlareLens 0  
+Engine.SunMoonSize 0,24  
+══════End AutoexecGame.con══════ 
+
+
+Stability settings  
+══════AutoexecGame.con══════════ 
+Engine.FOV 50  
+Interface.Camera.FPP.FOV 50  
+Engine.TrueWaterRef 1  
+Engine.WaterReflections 1  
+Engine.FarPlane 2400  
+Engine.LOD0 2400  
+Engine.LOD1 3200  
+Engine.LODblend 275  
+Engine.GrassDisp 28  
+Engine.GrassQ 0.4  
+Engine.TShadows 0  
+Engine.Shadows 0  
+Engine.UseStencilShadows 0  
+Engine.AlphaFadeNear 1500  
+Engine.AlphaFadeFar 3000  
+Engine.DLandAFade 1800  
+Engine.SunFlareLens 0  
+Engine.SunMoonSize 0,24  
+══════End AutoexecGame.con══════ 
+
+
+LOSSLESS SCALING  
+----------------  
+Notes:  
+   • Use RTSS to cap framerate to 60 for frame generation  
+   • Requires Window Mode  
+     → Launch game → Settings → Graphics → Window Mode: Enabled  
+
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed  
+• Multiplier (base cap 60 FPS):  
+     → 3.9  (240 Hz @ ~234 FPS)  
+     → 1.9  (120 Hz @ ~114 FPS)  
+• Flow Scale: 30%  
+• Performance: ON  
+• Capture API: DXGI (WGC for compatibility)  
+• Queue target: 0 (1 for compatibility)  
+• Clip cursor: Off (optional)  
+• Adjust cursor speed: Off (optional)  
+• Scaling Type: Sharp Bilinear  
+• Rendering Sync Mode: Default  
+• Max frame latency: 2  
+• G‑Sync support: ON  
+
+
+RESHADE  
+-------  
+Note: Loading screens use a different color profile, so ReShade may oversaturate them. Gameplay is unaffected  
+
+Rendering API: DirectX 9
+Custom Shader: two-worlds-shader-authentic-enhanced.ini
+
+SAFE RESHADE SHADERS FOR TWO WORLDS   
+
+Delete unused shaders from: <path‑to‑game>\reshade‑shaders\Shaders\
+(Keep: Blending.fxh, DrawText.fxh, Macros.fxh, ReShade.fxh, ReShadeUI.fxh, UIMask.fx,  TriDither.fx, Daltonize.fx)  
+
+══════ DELETE SHADERS ══════  
+Deband.fx
+DisplayDepth.fx
+LUT.fx
+══════ END DELETE SHADERS ══════  
+
+
+Delete all other shaders from: <path‑to‑game>\reshade‑shaders\Shaders\SweetFX  
+
+══════ KEEP SHADERS ══════  
+CAS.fx  
+Curves.fx  
+LumaSharpen.fx  
+Vibrance.fx  
+══════ END KEEP SHADERS ══════  
+
+
+Open <path‑to‑game>\reshade.ini and add:  
+
+══════reshade.ini══════════ 
+[DX9]  
+DisableINTZ=1  
+══════End reshade.ini══════ 
+
+
+<>>------------------><<  
+STARTUP ROUTINE  
+>><------------------<<>  
+• Select Sound Playback Device → Attach Controller  
+• (Optional) Launch RTSS  
+• (Optional) Launch Lossless Scaling  
+• Launch Two Worlds → Play  
+
+
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
+
+BONUSCODES  
+----------  
+Notes:  
+   • If the text box doesn't accept typed input, use copy/paste  
+   • Open console with the ~ key  
+   • Enter: Bonuscode ####‑####‑####‑####  
+   • Press RETURN  
+   • Pick up the spawned item  
+
+Armor of Darkness  
+   • Bonuscode 9728‑1349‑2105‑2168  
+
+Aziraal's Sword of Fire  
+   • Bonuscode 9470‑4690‑1542‑1152  
+
+Great Shield of Yatolen  
+   • Bonuscode 9470‑6557‑8820‑9563  
+
+Spear of Destiny  
+   • Bonuscode 9144‑3879‑7593‑9224  
+
+The Great Bow of Heaven's Fury  
+   • Bonuscode 9447‑1204‑8639‑0832  
+
+Great Shield of Yatolen  
+   • Bonuscode 6781‑6119‑4635‑8887  
+
+
+PATCHES  
+-------  
+Two Worlds patch 1.x → 1.7b  
+https://www.patches-scrolls.de/patch/4554/7/  
+
+
+TOOLS  
+-----  
+(Obsolete) Two Worlds Control Panel  
+TwoWorldsCP.exe  
+https://www.moddb.com/games/two-worlds/downloads/two-worlds-control-panel  
+
+
+CUSTOM ENHANCEMENTS (OPTIONAL)
+------------------------------
+two-worlds-shader-authentic-enhanced.ini
+• GitHub: https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/enhancements/two-worlds/two-worlds-shader-authentic-enhanced.ini  
+• Purpose: Crisp, vibrant sharpening and color tuning that modernizes Two Worlds without changing its style  
+• Compatibility: Requires ReShade
+
+
+TWEAKS & FIXES  
+--------------  
+Enable/Disable intro videos  
+   Registry:  
+      HKEY_CURRENT_USER\Software\Reality Pump\TwoWorlds\Interface  
+      ShowIntro: 0  (1 = Enabled, 0 = Disabled)  
+
+UI Scale Adjustment  
+   Note: Values other than 0 (autoscaling) may cause corruption or crashes  
+   Registry:  
+      HKEY_CURRENT_USER\Software\Reality Pump\TwoWorlds\Interface  
+      ForceScaleX / ForceScaleY  
+      Set Base: Decimal  
+      Start low (e.g., 640 × 480) and adjust upward  
+    
+Console Commands  
+   • Display.Show 1  (Show stats HUD; default 0)  
+  
+The game crashes immediately on AMD GPUs  
+   • Install the game on the C: drive  
+  
+Typing doesn’t work in the serial box or console  
+   • The text input widget is broken on modern Windows  
+   • Use copy/paste to enter text  
+
+Missing DX9 components (xinput1_3.dll, d3dx9_31.dll)
+   • Install DirectX June 2010 Runtime   
+
+Missing voices or music
+   • Note: Two Worlds uses Windows Media Audio/Video 9 codecs
+   • Install K‑Lite Codec Pack (Standard or Mega)
+
+NPC stutter / freeze when many footsteps play
+   • Set Windows audio format to 16‑bit, 44.1 kHz
+   • Avoid 7.1/Atmos; use Stereo, 4.0, or 5.1
+
+Disable intro videos to prevent ReShade startup freezes
+   • Navigate to <path-to-game>\Data\Video
+   • Delete or rename these files:
+       Intro2.wmv
+       Intro3.wmv
+       Intro5.wmv
+   • Note: Some editions use different filenames (e.g., Intro.wmv, RealityPump.wmv, TopWare.wmv)
+
+The game crashes after ~3-6 manual saves
+   • Reload immediately after saving to reset engine state
+   
+ 
+/==\__==\---\__==\---\_
+G A M E   C O N T R O L S
+\__==\---\__==\---/==/
+
+W ........................ Move forward
+S ........................ Move back
+A ........................ Move left
+D ........................ Move right
+Q ........................ Jump Backward
+E ........................ Jump Forward
+F ........................ Set armed mode
+[Space] .................. Make action
+X ........................ Select next command
+Alt + X .................. Select previous command
+R ........................ Use previous weapon
+T ........................ Use next weapon
+Z ........................ Stop horse
+H ........................ Call horse
+Tab ...................... Fast zoom
+
+Left MB .................. Attack
+Right MB ................. Execute selected Action
+Middle MB ................ Next command panel
+Mouse Wheel .............. Zoom
+
+F1 ....................... Show skills dialog
+F2 ....................... Show inventory dialog
+F3 ....................... Show magic dialog
+F4 ....................... Open quests dialog
+F5 ....................... Open reputation dialog
+F6 ....................... Show/hide map
+F7 ....................... Show default shortcut bar
+F8 ....................... Show custom shortcut bar 1
+F9 ....................... Show custom shortcut bar 2
+F10 ...................... Show custom shortcut bar 3
+F11 ...................... Show chat dialog
+F12 ...................... Setup network game
+Ctrl + F12 ............... Cancel setup network game
+
+1 ........................ Make command #1
+2 ........................ Make command #2
+3 ........................ Make command #3
+4 ........................ Make command #4
+5 ........................ Make command #5
+6 ........................ Make command #6
+7 ........................ Make command #7
+8 ........................ Make command #8
+9 ........................ Make command #9
+0 ........................ Make command #10
+
+Esc ...................... Open game menu
+Pause .................... Pause game
+Enter .................... Show chat input
+
+Page Up ................. Camera angle up
+Page Down ............... Camera angle down 
+Home .................... Camera zoom in 
+End ..................... Camera zoom out 
+Delete .................. Camera rotate left 
+Insert .................. Camera rotate light 
+
+~ ....................... Show console
+Alt + F1 ................ Quick save
+Alt + F2 ................ Save game
+Alt + F3 ................ Load game
+
+  
+KNOWN ISSUES   
+------------  
+• HUD cannot be centered on ultrawide resolutions (hard‑coded)  
+• MSAA works only in fullscreen mode (engine limitation) 
+• Text input fields may not accept typed characters — use copy/paste  
+• FOV above 50 breaks geometry and lighting  
+• Autosave can cause crashes (disable it) 
+• Quicsave can cause crashes (avoid it) 
+• With ReShade installed, the game may occasionally freeze on a black screen before the intro video
+  This is a ReShade hook‑timing issue. Gameplay stability is not affected.
+  
+  
