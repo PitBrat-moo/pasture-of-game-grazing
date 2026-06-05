@@ -102,7 +102,7 @@ NOTES
 -----
 - For best stability, use dgVoodoo instead of DXWND. Never use both together  
 - Only use DDrawCompat as a fallback, do **not** combine it with dgVoodoo
-- Selecting the Alternative soundtrack cause the game to crash with an OGG stream error
+- Selecting the Alternative soundtrack causes the game to crash with an OGG stream error
 
 
 ())~~~~~~~~~~)((
