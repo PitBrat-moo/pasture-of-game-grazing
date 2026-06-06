@@ -279,8 +279,9 @@ Disable intro videos to prevent ReShade startup freezes
 
 The game crashes after ~3-6 manual saves
    • Reload immediately after saving to reset engine state
-   
- 
+   • In towns with many NPC's, restart the game every 2-3 saves   
+  
+  
 /==\__==\---\__==\---\_
 G A M E   C O N T R O L S
 \__==\---\__==\---/==/
@@ -355,7 +356,7 @@ KNOWN ISSUES
 • Text input fields may not accept typed characters — use copy/paste  
 • FOV above 50 breaks geometry and lighting  
 • Autosave can cause crashes (disable it) 
-• Quicsave can cause crashes (avoid it) 
+• Quicksave can cause crashes (avoid it) 
 • With ReShade installed, the game may occasionally freeze on a black screen before the intro video
   This is a ReShade hook‑timing issue. Gameplay stability is not affected.
   
