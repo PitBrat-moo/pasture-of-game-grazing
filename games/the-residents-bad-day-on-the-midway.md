@@ -1,3 +1,10 @@
+This page provides a setup reference for running The Residents’ Bad Day on the Midway using Windows
+3.11 inside 86Box, the most stable environment for its QuickTime 2.x FMV engine. It explains CPU
+timing requirements, codec behavior, installation quirks, and the display settings needed to
+reproduce the game’s original 1995 presentation. This entry links to the full installation guide and
+the recommended Three One One pasture configuration for clean audio/video sync and reliable module
+transitions.  
+  
 # The Residents’ Bad Day on the Midway  
 
 Best Grazing: 🐄 Three One One Pasture (Windows 3.11 via 86Box)  
@@ -23,6 +30,7 @@ Best Grazing: 🐄 Three One One Pasture (Windows 3.11 via 86Box)
 - 100 MHz CPU frequency provides the cleanest audio/video sync.  
 - Full installation required; FMV and assets stream from disc.  
 - 640×480 @ 16‑bit prevents FMV from rendering in a small centered box.  
+- Also runs under Win98SE with careful QuickTime management, but Win3.11 remains the most stable pasture.
 
 ⚠️ Stable under Windows 3.11 or carefully tuned Win98SE  
 QuickTime versions must match; reinstall QT 2.1.2 after disc‑installed QT 2.03.  

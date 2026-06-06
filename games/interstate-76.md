@@ -1,3 +1,8 @@
+This page provides a setup reference for running Interstate ’76 on Windows 98 SE inside 86Box. 
+It explains the correct patches, rendering modes, timing requirements, and stability notes needed 
+to replicate authentic 1997 behavior. This entry links to the full installation guide and the 
+recommended Win98 pasture configuration.
+
 # Interstate ’76  
 
 Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)  

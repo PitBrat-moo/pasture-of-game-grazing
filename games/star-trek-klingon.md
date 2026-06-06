@@ -1,3 +1,9 @@
+This page provides a setup reference for running Star Trek: Klingon on Windows 98 SE inside 86Box,
+with correct FMV timing and Video for Windows 1.1d behavior. It covers CPU pacing, disc handling,
+codec requirements, and the display settings needed to reproduce the game’s original 1996
+presentation. This entry links to the full installation guide and the recommended Win98 pasture
+configuration for stable module transitions and FMV playback.  
+  
 # Star Trek: Klingon
 
 Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)  

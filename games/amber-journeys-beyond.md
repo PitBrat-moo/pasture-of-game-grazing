@@ -1,3 +1,8 @@
+This page provides a setup reference for running Amber: Journeys Beyond on Windows 98 SE inside 86Box.
+It covers the correct QuickTime version, CPU timing requirements, FMV behavior, and display settings
+needed to reproduce the game’s original 1996 presentation. This entry links to the full installation
+guide and the recommended Win98 pasture configuration for stable FMV playback.  
+  
 # Amber: Journeys Beyond  
   
 Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)  

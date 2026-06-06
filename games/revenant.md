@@ -1,3 +1,9 @@
+This page provides a setup reference for running Revenant on Windows 98 SE inside 86Box using a
+Voodoo3‑based configuration for correct DirectDraw behavior. It covers required patches, dialogue
+restoration, renderer stability, and the timing conditions needed to reproduce the game’s intended
+1999 presentation. This entry links to the full installation guide and the recommended Win98 pasture
+configuration for stable play.  
+  
 # Revenant  
   
 Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)  

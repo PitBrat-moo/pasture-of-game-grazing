@@ -1,3 +1,9 @@
+This page provides a setup reference for running Temujin on Windows 98 SE inside 86Box, with correct
+FMV timing and CD‑streaming behavior. It explains the CPU pacing requirements, multimedia stack
+dependencies, and stability considerations needed to reproduce the game’s original 1997 presentation.
+This entry links to the full installation guide and the recommended Win98 pasture configuration for
+authentic and reliable play.  
+  
 # Temujin  
 
 Best Grazing: 🐄 Nine Eight Pasture (Windows 98 SE via 86Box)  

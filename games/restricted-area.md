@@ -1,3 +1,8 @@
+This page provides a setup reference for running Restricted Area on modern Windows using dgVoodoo
+for stable D3D8/D3D9 behavior. It covers required patches, wrapper configuration, timing fixes,
+and known engine issues such as VRAM leaks and weather‑effect instability. This entry links to the
+full installation guide and the recommended Modern Windows pasture configuration for reliable play.  
+  
 # Restricted Area  
 
 Best Grazing: 🐄 Modern Windows Pasture (Windows 10/11 + dgVoodoo)  
