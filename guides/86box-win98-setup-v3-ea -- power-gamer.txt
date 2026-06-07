@@ -605,6 +605,28 @@ Note: Enable the host audio device and joystick before launching 86Box; they wil
 Do not install drivers directly from the mounted folder.  
 Copy first, install second. This preserves Stability and prevents poisoning.
 
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ OPTIONAL RITUAL: AUTO‑LAUNCHING A GAME VM  
+Description: Launch directly into a game and shut down Windows when the game exits, or crashes.  
+→ Create a batch file on the guest  
+  
+═══⟦  \‾(••)‾/  ⟧════— LAUNCHER.BAT —════⟦  \‾(••)‾/  ⟧═══
+@echo off
+C:
+REM Replace MYGAME with your game folder
+cd \GAMES\MYGAME 
+REM Replace GAME.EXE with your game executable
+start /wait GAME.EXE 
+C:\WINDOWS\RUNDLL32.EXE user,ExitWindows
+═══⟦  \‾(••)‾/  ⟧═══— END LAUNCHER.BAT —══⟦  \‾(••)‾/  ⟧═══  
+  
+→ Modify SYSTEM.INI on the guest  
+  • Replace
+    shell=explorer.exe
+   With
+    shell=C:\GAMES\MYGAME\LAUNCHER.BAT 
+→ Launch 86Box with the -P parameter to boot directly into the VM  
+   86box.exe -P "%USERPROFILE%\86Box VMs\MYGAMEVM"  
+  
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ THE POISONED INSTALL
 Description: The system installs WDM instead of VxD drivers. Devices are locked to the wrong IRQ/DMA and stop functioning. Removing the device and reinstalling drivers does not restore functionality. 
 → Restore the image backup created before restarting after Win98 setup.
@@ -632,6 +654,7 @@ M O O – M A N T R A :
 
   • v1.0 — Initial forging of the Codex structure; paddock boundaries raised.
   • v1.1 — Sowed 60Hz Desktop Display Configuration.
+  • v1.2 — Added Auto Launching 
   
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
