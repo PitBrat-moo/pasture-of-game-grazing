@@ -612,7 +612,7 @@ C:\WINDOWS\RUNDLL32.EXE user,ExitWindows
     shell=explorer.exe
    With
     shell=C:\GAMES\MYGAME\LAUNCHER.BAT 
-→ Launch 86Box with the -P parameter to boot directly into the VM  
+→ Launch 86Box with the -P switch to boot directly into the VM  
    86box.exe -P "%USERPROFILE%\86Box VMs\MYGAMEVM"  
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ THE POISONED INSTALL
