@@ -538,7 +538,7 @@ Do not install drivers directly from the mounted folder.
 Copy first, install second. This preserves Stability and prevents poisoning.
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ OPTIONAL RITUAL: AUTO‑LAUNCHING A GAME VM  
-Description: Launch directly into a game and shut down Windows when the game exits, or crashes.  
+Description: Launch directly into a game and shut down Windows when the game exits, or crashes  
 → Create a batch file on the guest  
   
 ═══⟦  \‾(••)‾/  ⟧════— LAUNCHER.BAT —════⟦  \‾(••)‾/  ⟧═══
