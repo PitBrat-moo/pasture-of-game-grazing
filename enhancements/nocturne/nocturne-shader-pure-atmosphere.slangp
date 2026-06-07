@@ -1,1 +1,63 @@
+shaders = 6
 
+########################################
+# 0 — SHARP-BILINEAR (gentle clarity)
+########################################
+shader0 = "pixel-art-scaling/shaders/sharp-bilinear.slang"
+filter_linear0 = false
+scale_type0 = source
+parameters0 = "SHARPNESS;GAMMA"
+SHARPNESS = 0.22        # softer than Revenant — preserves 16-bit dithering
+GAMMA = 1.00
+
+########################################
+# 1 — CRT-GUESTLITE (film-noir depth)
+########################################
+shader1 = "custom/crt-guestlite.slang"
+filter_linear1 = false
+scale_type1 = source
+parameters1 = "glow_strength;chroma_spread;afterglow"
+glow_strength = 0.04     # extremely subtle — enhances fog without bloom
+chroma_spread = 0.18     # keeps colors tight, avoids rainbowing
+afterglow = 0.10         # softens shadows slightly
+
+########################################
+# 2 — MICRO-BLUR (cinematic soften)
+########################################
+shader2 = "custom/3x3-micro-blur.slang"
+filter_linear2 = false
+scale_type2 = source
+parameters2 = "strength"
+strength = 0.012         # tiny soften — blends dithering into fog
+
+########################################
+# 3 — HUD MICRO-STROKE (clean UI)
+########################################
+shader3 = "custom/hud-microstroke.slang"
+filter_linear3 = false
+scale_type3 = source
+parameters3 = "strength"
+strength = 0.12          # lighter than Revenant — Nocturne HUD is thin
+
+########################################
+# 4 — BLOOM-SOFT (lantern glow)
+########################################
+shader4 = "custom/bloom-soft.slang"
+filter_linear4 = true
+scale_type4 = source
+parameters4 = "strength;threshold"
+strength = 0.020         # extremely subtle — just a hint of light bleed
+threshold = 0.86         # bloom only on bright sources
+
+########################################
+# 5 — COLOR-GRADE (noir mood)
+########################################
+shader5 = "Custom/color-grade.slang"
+filter_linear5 = false
+scale_type5 = source
+parameters5 = "exposure;contrast;saturation;lift;gain"
+exposure = 1.00
+contrast = 1.03          # slight punch for shadows
+saturation = 0.96        # slight desaturation for horror tone
+lift = 0.99              # darker blacks; cinematic look = 0.98; authentic = 1.00 
+gain = 1.02              # subtle highlight lift
