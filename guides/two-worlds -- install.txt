@@ -280,7 +280,8 @@ Disable intro videos to prevent ReShade startup freezes
 The game crashes after ~3-6 manual saves
    • Reload immediately after saving to reset engine state
    • In towns with many NPC's, restart the game every 2-3 saves   
-  
+   • Lowering the resolution to ≤ 2560x1440 can improve save stability  
+   
   
 /==\__==\---\__==\---\_
 G A M E   C O N T R O L S
