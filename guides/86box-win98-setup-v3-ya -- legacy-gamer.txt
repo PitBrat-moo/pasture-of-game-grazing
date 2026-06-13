@@ -92,8 +92,8 @@ Note: Re‑enable COM/LPT in both 86Box and BIOS only when a guest device actual
   • Controller 1 → [PCI] IDE Controller
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ HARD DISKS **favor performance**
-→ Hard Disks → New → File Name: win98se-balanced-gamer.img
-→ Size (MB): 12288 MB **12GB**
+→ Hard Disks → New → File Name: win98se-legacy-gamer.img
+→ Size (MB): 16383 MB **16GB**
 → Channel: 0:0 (Primary Master)
 → Image Format: Raw Image (.img)
 
@@ -661,6 +661,8 @@ M O O – M A N T R A :
   • v1.7 — Re-branded as legacy-gamer and retired.
   • v1.8 — Sowed 60Hz Desktop Display Configuration.
   • v1.9 — Added Auto Launching 
+  • v1.9b — Cleanup 
+
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
 ⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜⟞⟡⟜⟢⟟⟣⟜

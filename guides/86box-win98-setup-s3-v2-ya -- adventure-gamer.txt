@@ -267,7 +267,7 @@ Note: Best with host-side VirtualMIDISynth installed with a custom soundfont (se
   
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DIRECTX
 → Install DirectX 7.0a
-→ Do NOT install DX8 or DX9 — reduces Voodoo3 stability.
+→ Do NOT install DX8 or DX9 — reduces Voodoo2 stability.
 
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ WIN98SE SHUTDOWN SUPPLEMENT
 → Install Win98SE Shutdown Supplement
@@ -441,7 +441,7 @@ Description: Determine optimum CPU frequency (MHz) settings on a per‑game basi
 
 ⎯(ᶜᵒʷ•⬛)⎯─◐◓◑◒─ TEST · VERIFY · ROLLBACK
 1. Backup VM drive .img.  
-2. Confirm Device Manager: **YAMAHA = IRQ 5 / DMA 0 / HDMA 1**; HDD & CD = DMA.  
+2. Confirm Device Manager: **YAMAHA = IRQ 5 / DMA 1 / HDMA 0**; HDD & CD = DMA.  
 3. Run tests (see Frequency Tuning).  
 4. Rollback if needed: Restore VM drive .img.
 
@@ -588,6 +588,7 @@ M O O – M A N T R A :
   • v1.1 — Wrangled Windows Tweaks. 
   • v1.2 — Tilled Windows Setup. Weeded drivers. Fertilized Tweaks. 
   • v1.3 — Added Auto Launching 
+  • v1.4 — Cleanup 
 
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 

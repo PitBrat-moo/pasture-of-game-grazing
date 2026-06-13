@@ -21,7 +21,7 @@ cat > Guide_Part1_Setup_Drivers.txt
 
 HOW TO READ
 → Heading → one‑line description (where to set) → exact settings/steps.
-→ Follow order: 86Box Host Install → 86Box settings → BIOS → Install order → Windows Setup → Disable IRQ Steering → S3 Drivers → 3dfx Drivers → AudioPCI Drivers → MIDI → DirectX → Shutdown Fix → PS2Plus mouse → DCOM98 → USB Supplement → DMA → Joystick → Multimedia/Mixer → 3dfx UI → Tweaks/INI/REG → Verify.
+→ Follow order: 86Box Host Install → 86Box settings → BIOS → Install order → Windows Setup → Disable IRQ Steering → 3dfx Drivers → AudioPCI Drivers → MIDI → DirectX → Shutdown Fix → PS2Plus mouse → DCOM98 → USB Supplement → DMA → Joystick → Multimedia/Mixer → 3dfx UI → Tweaks/INI/REG → Verify.
 
 ~(ᶜᵒʷʘ͜ʖʘ)~ ≈≋⟢(‾(oo)‾)⟣≋≈⟡(•(oo)•)⟢≈≋⟣(¬(oo)¬)⟡≋≈ ⟢(•(oo)•)⟣ ≋≈
                          86BOX HOST INSTALL
@@ -92,7 +92,7 @@ Note: Re‑enable COM/LPT in both 86Box and BIOS only when a guest device actual
   • Controller 1 → [PCI] IDE Controller
 
 ⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ HARD DISKS **favor performance**
-→ Hard Disks → New → File Name: win98se-adventure-gamer.img
+→ Hard Disks → New → File Name: win98se-power-gamer.img
 → Size (MB): 8192 MB **8GB**
 → Channel: 0:0 (Primary Master)
 → Image Format: Raw Image (.img)
@@ -233,7 +233,7 @@ Description: Install 3dfx Voodoo3 reference driver 1.07
 → Install Plug and Play Monitor
 → Windows detects “PCI Multimedia Audio Device” again — CANCEL
 
-⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ ESONIQ AUDIO PCI SETUP
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ ENSONIQ AUDIO PCI SETUP
 Description: Install Ensoniq AudioPCI (ES1370) drivers
 → Extract the "Ensoniq Audio PCI 1000/3000 Win9x & DOS drivers" archive 
 → Launch Setup.exe
@@ -562,10 +562,10 @@ Note: Enable the host audio device and joystick before launching 86Box; they wil
 → (Optional) Launch ShaderGlass or Lossless Scaling (choose one); use SRWE for scaling when using ShaderGlass
 → Launch 86Box → Start VM → Boot Win98 → Mount CD-ROM → Launch game
 
-⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ BOVINE SCRIPTURE (for the faithful retro‑cow)
-• "In the pasture of pixels, the cow of compatibility grazes first; speed follows where stability permits."  
-• "Blessed are the buffered, for their dialogues shall not stutter."  
-• "MIDI is a sacred stream; route it true and the moo shall sing."
+⎯(ᶜᵒʷᵔ)⎯─◐◑◒◓─ BOVINE SCRIPTURE (as the ordinal of the high-clock cow)
+• "In the pasture of frequencies, the cow of the Ensoniq PCI grazes cleanly past three hundred megahertz; its low-overhead architecture breaks the chains of ISA constraints."
+• "Blessed are the unburdened cycles of the Ensoniq, for its native PCI bus mastery spares the host CPU and feeds the Voodoo's ravenous hunger for raw throughput."
+• "Throughput is a sacred stream routed straight through the expansion slots; let the clocks soar high above the old limits, and the speed of the endgame shall reign supreme."
 
 ⎯(ᶜᵒʷᵔ)~~~≋≋≋≋≋≋≋≋≋≋≋≋⟪  (‾(oo)‾)  ⟫≋≋≋≋≋≋≋≋≋≋≋≋~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                The Omasum: A Filtered Forage of Win98se Essentials
@@ -655,6 +655,7 @@ M O O – M A N T R A :
   • v1.0 — Initial forging of the Codex structure; paddock boundaries raised.
   • v1.1 — Sowed 60Hz Desktop Display Configuration.
   • v1.2 — Added Auto Launching 
+  • v1.3 — Cleanup 
   
 ⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿⟿
 
