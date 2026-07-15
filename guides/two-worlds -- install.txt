@@ -278,8 +278,8 @@ Disable intro videos to prevent ReShade startup freezes
    • Note: Some editions use different filenames (e.g., Intro.wmv, RealityPump.wmv, TopWare.wmv)
 
 The game crashes after ~3-6 manual saves
-   • Reload immediately after saving to reset engine state
-   • In towns with many NPC's, restart the game every 2-3 saves   
+   • Reload immediately after saving — it resets the engine state
+   • In towns with lots of NPCs or near water, restart the game every 2–3 saves  
    • Lowering the resolution to ≤ 2560x1440 can improve save stability  
    
   
