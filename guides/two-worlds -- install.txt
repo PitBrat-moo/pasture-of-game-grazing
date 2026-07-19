@@ -19,7 +19,7 @@ Right‑click TWOWORLDS.EXE → Properties → Compatibility
        → Set dropdown to Application  
    • Compatibility Mode: Windows Vista  
 
-Cap framerate to 60 in NVIDIA Control Panel (ignored by game, but safe)  
+Cap framerate to 60 in GPU Control Panel (ignored by game, but safe)  
 
 Launch game  
 
@@ -307,6 +307,7 @@ Left MB .................. Attack
 Right MB ................. Execute selected Action
 Middle MB ................ Next command panel
 Mouse Wheel .............. Zoom
+Ctrl + Left MB ........... Select Stack
 
 F1 ....................... Show skills dialog
 F2 ....................... Show inventory dialog
