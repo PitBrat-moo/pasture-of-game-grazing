@@ -1,0 +1,299 @@
+Two Worlds II 
+=====================  
+
+A clean, stable setup guide for Two Worlds II on modern Windows systems, including fixes, configuration, and optional enhancements.
+
+
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+Windows 10/11 Installation
+------------------------------
+
+Install game
+   
+Use RTSS to set the framerate limit to 100  
+
+IN‑GAME SETTINGS  
+----------------
+Note: Disable HDR via AutoexecGame2.con
+  
+Graphics  
+   • Window Mode: Off (unless using Lossless Scaling)
+   • Anti-Aliasing Mode: 4x
+   • Anti-Aliasing Samples: 1 sample
+   • Detail Level: 3
+   • Ambient Shadows: 10
+   • Motion Blur Level: 0
+   • Bloom Level: 0
+   • DOF scale: 7
+   • Anisotropy Level: 16
+   • Draw Distance: 10
+   • Grass Draw Distance: 10
+   • Shadows: On
+   • Vsync: Off
+   • HD Video: On
+   • Use safe area in interface: Off
+   
+Physics
+   • Hardware Physic: On
+   • Physic Detail Level: High
+
+   
+Configure AutoexecGame2.con  
+--------------------------  
+Notes:  
+   • The game does not automatically generate a configuration file  
+   • These commands also work from inside the game console  
+   • FOV: 60 for 16x9 ; 80 for 32x9
+     
+Navigate to the game’s root folder (same level as TwoWorlds2.exe).  
+If it doesn't already exist, create a folder named “Parameters”  
+Inside Parameters, create a text file named “AutoexecGame2.con”  
+Open AutoexecGame2.con in a text editor, add one of the following blocks, and save  
+
+
+Beauty settings (may cause the Shattered Embrace DLC to crash) 
+══════AutoexecGame2.con══════════ 
+engine.fov 60
+engine.hdr 0
+graph.setfastrunspecialefx 0
+sound.voicevolume 1.5
+loadlevelmargin 3000 
+unloadlevelmargin 4000
+interface.XInputEnable 0
+══════End AutoexecGame2.con══════ 
+
+
+Stability settings  
+══════AutoexecGame2.con══════════ 
+engine.fov 60
+engine.hdr 0
+graph.setfastrunspecialefx 0
+sound.voicevolume 1.5
+interface.XInputEnable 0
+══════End AutoexecGame2.con══════ 
+
+
+RTSS   
+-------
+Framerate limit: 100 FPS
+Scanline sync: 0 (OFF)
+
+
+LOSSLESS SCALING  
+----------------  
+Notes:  
+   • Use RTSS to cap framerate to 100 for frame generation  
+   • Requires Window Mode  
+     → Launch game → Settings → Graphics → Window Mode: On  
+
+Settings:
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed  
+• Multiplier (base cap 100 FPS):  
+     → 2.35  (100 Hz @ ~236 FPS)  
+     → 2.4  (100 Hz @ ~240 FPS)  
+• Flow Scale: 25-30%   
+• Performance: ON   
+• Capture API: DXGI (WGC for compatibility)  
+• Queue target: 0 (1 for compatibility)  
+• Clip cursor: Off (optional)  
+• Adjust cursor speed: Off (optional)  
+• Scaling Type: Sharp Bilinear  
+• Rendering Sync Mode: Default  
+• Max frame latency: 2  
+• G‑Sync support: ON  
+
+For smoother motion:
+• Flow Scale: 20%   
+• Performance: OFF    
+• Max frame latency: 1  
+
+
+RESHADE  
+-------  
+Note: Use ReShade 5.8.0 for best compatibility.
+      Newer versions cause the game to freeze on the first splash screen and close.
+      Only install the default ReShade + SweetFX package. Do not install qUINT, prod80, or depth‑based effects. 
+
+Rendering API: DirectX 10/11
+Custom Preset: two-worlds-2-shader-authentic-enhanced.ini
+Effect Packages: Standard effects, SweetFX by CeeJay.dk
+
+
+<>>------------------><<  
+STARTUP ROUTINE  
+>><------------------<<>  
+• Select Sound Playback Device
+• (Optional) Attach Controller  
+• (Optional) Launch RTSS  
+• (Optional) Launch Lossless Scaling  
+• Launch Two Worlds 2 → Play  
+
+
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
+
+CUSTOM ENHANCEMENTS (OPTIONAL)
+------------------------------
+two-worlds-2-shader-authentic-enhanced.ini
+• GitHub: https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/enhancements/two-worlds-2/two-worlds-2-shader-authentic-enhanced.ini  
+• Purpose: Crisp, vibrant sharpening and color tuning that modernizes Two Worlds 2 without changing its style  
+• Compatibility: Requires ReShade
+
+
+TWEAKS & FIXES  
+--------------  
+Crash at start with the HD version on Steam
+   In the Two Worlds 2 game folder, go to -> Install -> PhysX, then run "PhysX_10.01.29_9.10.0129_SystemSoftware.exe" to install necessary files.
+
+Crash at start with the Shattered Embrace DLC installed, even after PhysX (Steam_api.dll error).  
+   Replace Steam_api.dll with a working version from another game:
+      • Legend of Grimrock
+      • Skyrim
+      • Mount and Blade
+      • Many other older titles
+   Copy the working DLL into the game folder and replace the old file.
+   This is the only way to make the Shattered Embrace DLC playable.
+
+Or
+
+   Uninstall the Shattered Embrace DLC:
+      Go to the Two Worlds 2 Steam Library page.
+      The DLC tab is on the right side of the page, below friends who play, additional content, achievements, notes and trading cards. Choose Manage My DLC for the option to uninstall/install the Shattered Embrace DLC.
+
+Enable/Disable intro videos  
+   Go to <path-to-game>\Video.
+   Delete or rename intro1.wmv, intro1.ogg, intro3.wmv, intro3.ogg, intro5.wmv, and intro5.ogg.    
+    
+Restore missing resolutions
+   Screen resolutions disappear from the graphics options in-game.
+   Delete Height and Width in the game's registry key.
+   Registry:
+      Computer\HKEY_CURRENT_USER\Software\Reality Pump\TwoWorlds2\Graphics\
+
+   Or 
+   
+   Set Height and Width to the desired values.
+   Common Resolutions:
+      Height = 0x5A0 = 1440
+      Height = 0x870 = 2160
+      Width = 0xF00 = 3840
+      Width = 0x13B0 = 5040
+      Width = 0x1400 = 5120
+      Width = 0x1680 = 5760
+      Width = 0x1E00 = 7680
+
+The Grace engine struggles to maintain frame pacing at high fps or in ultrawide aspect ratios.
+   Cap frame rate to ≤ 100.  
+   Use aspect ratio 4:3 or 16:9.  
+   
+Stuttering fix
+   On newer CPUs, the game may have mild to severe stuttering.
+   Set core affinity for TwoWorlds2.exe to up to 4 threads.
+
+Mouse input is unusable
+   Having a controller attached can make mouse input unusable in the game.
+   Unplug or disable the controller and restart the game.
+   To disable the controller, add/modify this line in AutoexecGame2.con: 
+      interface.XInputEnable 0
+   To re-enable the controller, delete the line or set the value to 1.
+
+Voice audio is too quiet
+   To increase audio gain for dialogue, add/modify this line in AutoexecGame2.con (volume can safely go up to 2):
+      sound.voicevolume 1.5
+      
+High view distance has an LOD bug in v2.0+.
+   It's noticeable on the mountains in the Savannah and near the ocean. 
+   Increasing loadlevelmargin/unloadlevelmargin fixes it, but may cause crashes in Shattered Embrace.
+   The fix, add these lines to AutoexecGame2.con:
+      loadlevelmargin 3000
+      unloadlevelmargin 4000
+   If The Shattered Embrace DLC crashes, remove the lines from AutoexecGame2.con.
+
+
+/==\__==\---\__==\---\_
+G A M E   C O N T R O L S
+\__==\---\__==\---/==/
+
+W ........................ Move forward
+S ........................ Move back
+A ........................ Move left
+D ........................ Move right
+
+Tab ...................... Toggle Auto Sprint
+Space .................... Jump / Action 
+
+F ........................ Set Armed Mode
+
+Left MB .................. Attack
+Right MB ................. Block / Sneak
+
+X ........................ Toggle Sniper Mode
+Q ........................ Toggle Aim to Left Target
+E ........................ Toggle Aim to Right Target
+H ........................ Call Horse
+N ........................ Regenerate HP 
+M ........................ Regenerate Mana
+
+R ........................ Previous Weapon Set 
+T ........................ Next Weapon Set 
+
+Alt + F5 ................. Show Shortcuts Bar 1
+Alt + F6 ................. Show Shortcuts Bar 2
+Alt + F7 ................. Show Shortcuts Bar 3
+Alt + F8 ................. Show Shortcuts Bar 4
+Alt + F9 ................. Next Command Panel
+
+1 ........................ Use Toolbar Item #1
+2 ........................ Use Toolbar Item #2
+3 ........................ Use Toolbar Item #3
+4 ........................ Use Toolbar Item #4
+5 ........................ Use Toolbar Item #5
+6 ........................ Use Toolbar Item #6
+7 ........................ Use Toolbar Item #7
+8 ........................ Use Toolbar Item #8
+9 ........................ Use Toolbar Item #9
+0 ........................ Use Toolbar Item #10
+
+Wheel Up ................. Camera Zoom In
+Wheel Down ............... Camer Zoom Out
+
+Esc ...................... Open Game Menu
+Alt + F1 ................. Quick Save
+Alt + F2 ................. Save Game
+Alt + F3 ................. Load Game
+
+F1 ....................... Open Skill Tree
+F2 ....................... Open Equipment Inventory
+F3 ....................... Open Item Inventory
+F4 ....................... Open Ingredients Inventory
+F5 ....................... Open Magic Inventory
+F6 ....................... Open World Map
+F7 ....................... Open Quests Log
+F8 ....................... Open Village Book
+
+Enter .................... Open Chat Input
+Alt + Enter .............. Open Chat Dialogue
+F10 ...................... Setup Network Game
+Alt + F10 ................ Cancel Setup Network Game
+Alt + Space .............. Set network game team
+
+Pause .................... Pause
+SysRq / PrtSc ............ Screenshot
+
+Music minigame key 1 ..... Q
+Music minigame key 1 ..... W
+Music minigame key 1 ..... E
+Music minigame key 1 ..... R
+
+
+KNOWN ISSUES   
+------------  
+Depth buffer is inaccessible; many ReShade effects will not work.
+
+HDR is broken in the engine; keep engine.hdr 0.
