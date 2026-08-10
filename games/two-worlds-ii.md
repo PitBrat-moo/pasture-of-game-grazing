@@ -11,7 +11,7 @@ Two Worlds II Best Grazing:
 
 Required Guides  
 Two Worlds II — Install Guide  
-https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/two-worlds-2-install.txt
+https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/two-worlds-ii%20--%20install.txt
 
 Pasture Toolshed (wrappers · scaling · shading · MIDI · pacing)  
 https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture-toolshed.txt
