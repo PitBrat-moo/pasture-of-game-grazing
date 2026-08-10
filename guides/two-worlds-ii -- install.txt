@@ -214,7 +214,7 @@ High view distance has an LOD bug in v2.0+.
       loadlevelmargin 3000
       unloadlevelmargin 4000
    If The Shattered Embrace DLC crashes, remove the lines from AutoexecGame2.con.
-
+   
 
 /==\__==\---\__==\---\_
 G A M E   C O N T R O L S
@@ -297,3 +297,5 @@ KNOWN ISSUES
 Depth buffer is inaccessible; many ReShade effects will not work.
 
 HDR is broken in the engine; keep engine.hdr 0.
+
+EAX audio may cause crashes when used with virtual‑surround headsets; disable EAX in the game’s audio settings.
