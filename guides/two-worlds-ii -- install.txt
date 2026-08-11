@@ -8,6 +8,9 @@ A clean, stable setup guide for Two Worlds II on modern Windows systems, includi
 INSTALLATION
 (()~~~~~~~~~~))(
 
+This guide documents the DX10 version of Two Worlds II (TwoWorlds2_DX10.exe).  
+The DX9 executable behaves similarly, but some fixes (ReShade, window mode, CPU affinity) apply specifically to DX10.
+
 Windows 10/11 Installation
 ------------------------------
 
@@ -48,7 +51,7 @@ Notes:
    • These commands also work from inside the game console  
    • FOV: 60 for 16x9 ; 80 for 32x9
      
-Navigate to the game’s root folder (same level as TwoWorlds2.exe).  
+Navigate to the game’s root folder (same level as TwoWorlds2_DX10.exe).  
 If it doesn't already exist, create a folder named “Parameters”  
 Inside Parameters, create a text file named “AutoexecGame2.con”  
 Open AutoexecGame2.con in a text editor, add one of the following blocks, and save  
@@ -197,9 +200,15 @@ Mouse input is unusable
    Unplug the controller or disable interface.XInputEnable and restart the game.
    For the fix, configure AutoexecGame2.con. 
 
-Stuttering fix
-   On newer CPUs, the game may have mild to severe stuttering.
-   Set core affinity for TwoWorlds2.exe to up to 4 threads.
+Stuttering Fix  
+   The DX10 version of Two Worlds II may stutter on modern CPUs because the Grace engine does not scale cleanly across many logical processors. Limiting the game to four physical cores restores stable frame pacing.
+
+   Fix:
+      Alt‑Tab → Task Manager → Details.
+      Right‑click TwoWorlds2_DX10.exe → Set affinity.
+      Select only logical processors: 0, 2, 4, 6.
+      (These correspond to four physical cores on typical CPUs.)
+   This prevents the engine from running on SMT/virtual cores, which cause irregular frame pacing.
 
 Enable/Disable intro videos  
    Go to <path-to-game>\Video.
@@ -213,7 +222,7 @@ Restore missing resolutions
 
    Or 
    
-   Set Height and Width to the desired values.
+   Set Height and Width to the desired values in the registry.
    Common Resolutions:
       Height = 0x5A0 = 1440
       Height = 0x870 = 2160
@@ -238,76 +247,141 @@ Lossless Scaling mouse input stuck in original window
 G A M E   C O N T R O L S
 \__==\---\__==\---/==/
 
+/==\______________________________/==\
+K E Y B O A R D   C O N T R O L S
+\==/______________________________\==/
+
 W ........................ Move forward
 S ........................ Move back
 A ........................ Move left
 D ........................ Move right
+Mouse .................... Camera control
 
 Tab ...................... Toggle Auto Sprint
-Space .................... Jump / Action 
+Space .................... Jump / Action / Sneak (hold idle) / Gallop (tap on horseback)
 
-F ........................ Set Armed Mode
+F ........................ Arm / Disarm weapon
 
-Left MB .................. Attack
-Right MB ................. Block / Sneak
+Left MB .................. Attack / Draw Bow / Begin Spell Cast
+Right MB ................. Block / Charge Ranged Attack / Charge Spell Meridian
 
 X ........................ Toggle Sniper Mode
-Q ........................ Toggle Aim to Left Target
-E ........................ Toggle Aim to Right Target
+Q ........................ Aim Left Target
+E ........................ Aim Right Target
+
 H ........................ Call Horse
-N ........................ Regenerate HP 
-M ........................ Regenerate Mana
+N ........................ Drink Healing Potion
+M ........................ Drink Mana Potion
 
-R ........................ Previous Weapon Set 
-T ........................ Next Weapon Set 
-
-Alt + F5 ................. Show Shortcuts Bar 1
-Alt + F6 ................. Show Shortcuts Bar 2
-Alt + F7 ................. Show Shortcuts Bar 3
-Alt + F8 ................. Show Shortcuts Bar 4
-Alt + F9 ................. Next Command Panel
-
-1 ........................ Use Toolbar Item #1
-2 ........................ Use Toolbar Item #2
-3 ........................ Use Toolbar Item #3
-4 ........................ Use Toolbar Item #4
-5 ........................ Use Toolbar Item #5
-6 ........................ Use Toolbar Item #6
-7 ........................ Use Toolbar Item #7
-8 ........................ Use Toolbar Item #8
-9 ........................ Use Toolbar Item #9
-0 ........................ Use Toolbar Item #10
+R ........................ Previous Weapon Set
+T ........................ Next Weapon Set
 
 Wheel Up ................. Camera Zoom In
-Wheel Down ............... Camer Zoom Out
+Wheel Down ............... Camera Zoom Out
 
-Esc ...................... Open Game Menu
-Alt + F1 ................. Quick Save
-Alt + F2 ................. Save Game
-Alt + F3 ................. Load Game
+Esc ...................... Open Game Menu / Pause
 
-F1 ....................... Open Skill Tree
-F2 ....................... Open Equipment Inventory
-F3 ....................... Open Item Inventory
-F4 ....................... Open Ingredients Inventory
-F5 ....................... Open Magic Inventory
-F6 ....................... Open World Map
-F7 ....................... Open Quests Log
-F8 ....................... Open Village Book
+Alt + F1 ................. Show Shortcuts Bar 1
+Alt + F2 ................. Show Shortcuts Bar 2
+Alt + F3 ................. Show Shortcuts Bar 3
+Alt + F4 ................. Show Shortcuts Bar 4
+Alt + F5 ................. Next Command Panel
 
-Enter .................... Open Chat Input
-Alt + Enter .............. Open Chat Dialogue
+1–0 ...................... Use Toolbar Item #1–10
+Shift + 1–0 .............. Assign selected item to toolbar slot
+
+F1 ....................... Skill Tree
+F2 ....................... Equipment Inventory
+F3 ....................... Item Inventory
+F4 ....................... Ingredients Inventory
+F5 ....................... Magic Inventory
+F6 ....................... World Map
+F7 ....................... Quest Log
+F8 ....................... Village Book
+
+Enter .................... Chat Input
+Alt + Enter .............. Chat Dialogue
+
 F10 ...................... Setup Network Game
-Alt + F10 ................ Cancel Setup Network Game
-Alt + Space .............. Set network game team
+Alt + F10 ............... Cancel Network Setup
+Alt + Space ............. Set Network Team
 
-Pause .................... Pause
 SysRq / PrtSc ............ Screenshot
 
-Music minigame key 1 ..... Q
-Music minigame key 1 ..... W
-Music minigame key 1 ..... E
-Music minigame key 1 ..... R
+Music Minigame ........... Q, W, E, R
+
+Oculus:
+   W/A/S/D ............... Move Oculus
+   Mouse ................. Look
+   Right MB (hold) ....... Propel Oculus
+   Left MB ............... Fire Oculus attack
+   Esc ................... Return to Hero
+
+Lockpicking:
+   Space ................. Begin Lockpicking
+   Right MB .............. Reverse Pick Direction
+   Left MB ............... Push Pick Through Grooves
+   Enter ................. Auto‑Lockpick
+
+Interaction:
+   Space ................. Loot / Open / Pick Up / Honor Altar
+
+Sailing:
+   A/D ................... Steer Rudder
+   W/S (hold) ............ Adjust Boom & Sails
+   Space ................. Board Vessel
+
+
+/==\______________________________________/==\
+C O N T R O L L E R   B I N D I N G S
+\==/______________________________________\==/
+
+Left Stick ............... Move
+Right Stick .............. Rotate Camera
+
+A ........................ Jump / Action / Sneak (hold idle)
+B ........................ Punch / Strike / Melee Attack
+X ........................ Arm / Disarm
+Y ........................ Quick Assign / Radial Menu
+
+LB ....................... Block
+RB ....................... Sprint (hold) / Gallop (tap on horseback)
+
+LT ....................... Aim / Charge Ranged Attack / Charge Spell Meridian
+RT ....................... Attack / Fire / Cast
+
+D‑Pad Up ................. Equipment Set 1
+D‑Pad Right .............. Equipment Set 2
+D‑Pad Down ............... Equipment Set 3
+D‑Pad Left ............... Call Horse
+
+Back ..................... Inventory
+Start .................... Pause / Menu
+
+Left Stick Click ......... Sneak
+Right Stick Click ........ Map Marker / Oculus Propel (hold)
+
+Hotkey Bars:
+   LB + X ................ Show HotKey Bar 1
+   LB + Y ................ Show HotKey Bar 2
+   LB + B ................ Show HotKey Bar 3
+   LB + A ................ Show HotKey Bar 4
+   LB + RT ............... Switch HotKey Bars
+
+Saving / Loading:
+   LB + F1 ............... Quick Save
+   LB + F2 ............... Save Game
+   LB + F3 ............... Load Game
+   LB + F4 ............... Exit Game
+
+Network:
+   LB + A ................ Set Network Team
+   Back (Menu) ........... Setup Network Game
+
+Misc:
+   RT (hold) ............. Charge Bow / Charge Spell
+   LT (hold) ............. Precision Aim / Sniper Mode (bow)
+   Right Stick ........... Camera Zoom (press + move)
 
 
 KNOWN ISSUES   
