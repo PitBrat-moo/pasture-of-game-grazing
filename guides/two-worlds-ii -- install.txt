@@ -54,19 +54,31 @@ Inside Parameters, create a text file named “AutoexecGame2.con”
 Open AutoexecGame2.con in a text editor, add one of the following blocks, and save  
 
 
-Beauty settings (may cause the Shattered Embrace DLC to crash) 
+Beauty settings (may cause crashes if The Shattered Embrace DLC is installed) 
 ══════AutoexecGame2.con══════════ 
 engine.fov 60
 engine.hdr 0
 graph.setfastrunspecialefx 0
 sound.voicevolume 1.5
-loadlevelmargin 3000 
+loadlevelmargin 1500
+unloadlevelmargin 2000
+interface.XInputEnable 0
+══════End AutoexecGame2.con══════ 
+
+
+Power settings (will cause crashes) 
+══════AutoexecGame2.con══════════ 
+engine.fov 80
+engine.hdr 0
+graph.setfastrunspecialefx 0
+sound.voicevolume 2
+loadlevelmargin 3000
 unloadlevelmargin 4000
 interface.XInputEnable 0
 ══════End AutoexecGame2.con══════ 
 
 
-Stability settings  
+Stability settings (safe) 
 ══════AutoexecGame2.con══════════ 
 engine.fov 60
 engine.hdr 0
@@ -166,6 +178,29 @@ Or
       Go to the Two Worlds 2 Steam Library page.
       The DLC tab is on the right side of the page, below friends who play, additional content, achievements, notes and trading cards. Choose Manage My DLC for the option to uninstall/install the Shattered Embrace DLC.
 
+High view distance has an LOD bug in v2.0+.
+   It's noticeable on the mountains in the Savannah and near the ocean. 
+   Increasing loadlevelmargin/unloadlevelmargin fixes it, but may cause crashes if The Shattered Embrace DLC is installed.
+   For the fix, configure AutoexecGame2.con with the beauty settings. 
+   If crashes occur during teleports or in The Shattered Embrace DLC, use the stability settings.
+
+The Grace engine struggles to maintain frame pacing at high fps or in ultrawide aspect ratios.
+   Cap frame rate to ≤ 100.  
+   Use aspect ratio 4:3 or 16:9.  
+   
+Voice audio is too quiet
+   Increasing sound.voicevolume improves gain for dialogue. Volume can safely go up to 2.
+      For the fix, configure AutoexecGame2.con.
+          
+Mouse input is unusable
+   Having a controller attached can make mouse input unusable in the game.
+   Unplug the controller or disable interface.XInputEnable and restart the game.
+   For the fix, configure AutoexecGame2.con. 
+
+Stuttering fix
+   On newer CPUs, the game may have mild to severe stuttering.
+   Set core affinity for TwoWorlds2.exe to up to 4 threads.
+
 Enable/Disable intro videos  
    Go to <path-to-game>\Video.
    Delete or rename intro1.wmv, intro1.ogg, intro3.wmv, intro3.ogg, intro5.wmv, and intro5.ogg.    
@@ -188,34 +223,17 @@ Restore missing resolutions
       Width = 0x1680 = 5760
       Width = 0x1E00 = 7680
 
-The Grace engine struggles to maintain frame pacing at high fps or in ultrawide aspect ratios.
-   Cap frame rate to ≤ 100.  
-   Use aspect ratio 4:3 or 16:9.  
+Lossless Scaling mouse input stuck in original window
+   Lossless Scaling may hook the wrong window after the first launch of the game.
+   This causes the mouse pointer to remain locked to the original game window instead of the LS fullscreen window.
    
-Stuttering fix
-   On newer CPUs, the game may have mild to severe stuttering.
-   Set core affinity for TwoWorlds2.exe to up to 4 threads.
-
-Mouse input is unusable
-   Having a controller attached can make mouse input unusable in the game.
-   Unplug or disable the controller and restart the game.
-   To disable the controller, add/modify this line in AutoexecGame2.con: 
-      interface.XInputEnable 0
-   To re-enable the controller, delete the line or set the value to 1.
-
-Voice audio is too quiet
-   To increase audio gain for dialogue, add/modify this line in AutoexecGame2.con (volume can safely go up to 2):
-      sound.voicevolume 1.5
-      
-High view distance has an LOD bug in v2.0+.
-   It's noticeable on the mountains in the Savannah and near the ocean. 
-   Increasing loadlevelmargin/unloadlevelmargin fixes it, but may cause crashes in Shattered Embrace.
-   The fix, add these lines to AutoexecGame2.con:
-      loadlevelmargin 3000
-      unloadlevelmargin 4000
-   If The Shattered Embrace DLC crashes, remove the lines from AutoexecGame2.con.
+   Fix (do not disable Lossless Scaling):
+      Alt‑Tab out of the game.
+      Click once on the desktop.
+      Click back on the game window.
+      Lossless Scaling will return to fullscreen with correct mouse input.
+  
    
-
 /==\__==\---\__==\---\_
 G A M E   C O N T R O L S
 \__==\---\__==\---/==/

@@ -270,17 +270,40 @@ NPC stutter / freeze when many footsteps play
    • Avoid 7.1/Atmos; use Stereo, 4.0, or 5.1
 
 Disable intro videos to prevent ReShade startup freezes
-   • Navigate to <path-to-game>\Data\Video
+   • Navigate to <path-to-game>\Video
+     (Disc version: <path-to-game>\Data\Video\)   
    • Delete or rename these files:
        Intro2.wmv
        Intro3.wmv
        Intro5.wmv
    • Note: Some editions use different filenames (e.g., Intro.wmv, RealityPump.wmv, TopWare.wmv)
 
+Cutscene freeze / missing videos late in the game
+During the final chapter, the game may freeze on a black screen when attempting to play a video.
+Pressing ESC quickly may help skip the video.
+The game may also skip the final videos and return directly to the main menu. A similar skip can occur during an earlier mid‑quest video.
+
+This is caused by unreliable WMV playback in the engine.
+ReShade can increase the chance of the freeze, but the issue also occurs without it.
+
+Fix:
+   • Watch the affected videos using a local media player.
+   • The game’s video files are located in:
+<path-to-game>\Video\
+   • Install WMV codecs as described earlier in the guide to ensure proper playback.
+
+Notes:
+   • The game continues normally; only the videos fail to play.
+   • ReShade may worsen the issue, but does not cause it alone.
+   • This issue cannot be fully corrected in‑game.
+
 The game crashes after ~3-6 manual saves
-   • Reload immediately after saving — it resets the engine state
-   • In towns with lots of NPCs or near water, restart the game every 2–3 saves  
-   • Lowering the resolution to ≤ 2560x1440 can improve save stability  
+   • Reload immediately after saving — it resets the engine state.
+   • Restart the game before entering and after leaving large towns.
+   • Save inside homes and dungeons in towns to prolong stability.
+   • Outdoor saves are safest in areas with few NPCs; avoid mixed NPC/enemy areas.
+   • In towns with many NPCs or near water, restart every 2–3 saves.
+   • Lowering the resolution to ≤ 2560x1440 can improve save stability.
    
   
 /==\__==\---\__==\---\_
