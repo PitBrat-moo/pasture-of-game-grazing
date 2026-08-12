@@ -3,6 +3,7 @@ Two Worlds II
 
 A clean, stable setup guide for Two Worlds II on modern Windows systems, including fixes, configuration, and optional enhancements.
 
+Focus: DX10 engine behavior, modern shader compatibility, and stable frame timing.
 
 ))(~~~~~~~~~~(()
 INSTALLATION
@@ -10,6 +11,10 @@ INSTALLATION
 
 This guide documents the DX10 version of Two Worlds II (TwoWorlds2_DX10.exe).  
 The DX9 executable behaves similarly, but some fixes (ReShade, window mode, CPU affinity) apply specifically to DX10.
+
+⟝⟜⟝  wrappers · scaling · shading · MIDI · pacing graze in → pasture‑toolshed.txt  ⟞⟟⟞
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture‑toolshed.txt
+
 
 Windows 10/11 Installation
 ------------------------------
@@ -392,3 +397,12 @@ Depth buffer is inaccessible; many ReShade effects will not work.
 HDR is broken in the engine; keep engine.hdr 0.
 
 EAX audio may cause crashes when used with virtual‑surround headsets; disable EAX in the game’s audio settings.
+
+CHANGELOG
+---------  
+1.0 — Initial forging of the compendium.
+1.1 — Grew Configure AutoexecGame2.con.
+      Lined up the seeders: Beauty, Power, and Stability.
+1.2 — Added Controller Bindings.
+      Tilled Keyboard Controls.
+      Grew Tweaks and Fixes. Weeded redundancy.

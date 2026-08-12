@@ -1,9 +1,17 @@
 Two Worlds  
 =====================  
 
+A clean, stable setup guide for Two Worlds on modern Windows systems, including fixes, configuration, and optional enhancements.
+
+Focus: legacy engine behavior, modern wrapper compatibility, save‑state integrity, and stable frame timing.
+
 ))(~~~~~~~~~~(()
 INSTALLATION
 (()~~~~~~~~~~))(
+
+⟝⟜⟝  wrappers · scaling · shading · MIDI · pacing graze in → pasture‑toolshed.txt  ⟞⟟⟞
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture‑toolshed.txt
+
 
 Windows 10/11 Installation
 ------------------------------
@@ -56,7 +64,7 @@ Notes:
    • These commands also work from inside the game console  
    • Setting Engine.FOV > 50 breaks the game engine  
 
-Navigate to <path‑to‑game>  
+Navigate to the game’s root folder (same level as TwoWorlds.exe).  
 If it doesn't already exist, create a folder named “Parameters”  
 Inside Parameters, create a text file named “AutoexecGame.con”  
 Open AutoexecGame.con in a text editor, add one of the following blocks, and save  
@@ -173,7 +181,8 @@ DisableINTZ=1
 <>>------------------><<  
 STARTUP ROUTINE  
 >><------------------<<>  
-• Select Sound Playback Device → Attach Controller  
+• Select Sound Playback Device
+• (Optional) Attach Controller  
 • (Optional) Launch RTSS  
 • (Optional) Launch Lossless Scaling  
 • Launch Two Worlds → Play  
@@ -297,7 +306,8 @@ Notes:
    • ReShade may worsen the issue, but does not cause it alone.
    • This issue cannot be fully corrected in‑game.
 
-The game crashes after ~3-6 manual saves
+{·\···\·} SAVE GAME PROTOCOL {·/···/·}
+The game crashes after ~3-6 manual saves. To maintain stability:
    • Reload immediately after saving — it resets the engine state.
    • Restart the game before entering and after leaving large towns.
    • Save inside homes and dungeons in towns to prolong stability.
@@ -386,3 +396,10 @@ KNOWN ISSUES
   This is a ReShade hook‑timing issue. Gameplay stability is not affected.
   
   
+CHANGELOG
+---------  
+1.0 — Initial forging of the compendium.
+1.1 — Repaired Authentic Enhanced Shader.
+      Wrangled Cutscenes.
+      Tilled Installation.
+      Grew Save Game protocol.
