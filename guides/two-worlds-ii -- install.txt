@@ -262,14 +262,14 @@ A ........................ Move left
 D ........................ Move right
 Mouse .................... Camera control
 
-Tab ...................... Toggle Auto Sprint
+Tab ...................... Toggle Auto Run
 Space .................... Jump / Action
 
 F ........................ Arm / Disarm weapon
 
 Left MB .................. Attack / Draw Bow / Begin Spell Cast
 Right MB ................. Block / Charge Ranged Attack / Charge Spell Meridian 
-                           Sneak (hold idle) / Gallop (tap on horseback)
+                           Sneak (hold idle) / Sprint (hold moving) / Gallop (tap on horseback)
                            
 X ........................ Toggle Sniper Mode
 Q ........................ Aim Left Target
