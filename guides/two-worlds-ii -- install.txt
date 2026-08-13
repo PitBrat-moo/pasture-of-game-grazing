@@ -294,7 +294,7 @@ Alt + F4 ................. Show Shortcuts Bar 4
 Alt + F5 ................. Next Command Panel
 
 1–0 ...................... Use Toolbar Item #1–10
-Shift + 1–0 .............. Assign selected item to toolbar slot
+                           Assign selected item to toolbar slot
 
 F1 ....................... Skill Tree
 F2 ....................... Equipment Inventory
