@@ -309,8 +309,8 @@ Enter .................... Chat Input
 Alt + Enter .............. Chat Dialogue
 
 F10 ...................... Setup Network Game
-Alt + F10 ............... Cancel Network Setup
-Alt + Space ............. Set Network Team
+Alt + F10 ................ Cancel Network Setup
+Alt + Space .............. Set Network Team
 
 SysRq / PrtSc ............ Screenshot
 
@@ -337,6 +337,15 @@ Sailing:
    W/S (hold) ............ Adjust Boom & Sails
    Space ................. Board Vessel
 
+Map:
+   Right MB .............. Set Active Waypoint
+   Left MB + Ctrl ........ Set Waypoint
+   Left MB (hold) ........ Mouse Free-look
+
+Quest Log:
+   Right MB .............. Set Quest as Active
+   Left MB ............... Track Quest on Map
+   
 
 /==\______________________________________/==\
 C O N T R O L L E R   B I N D I N G S
