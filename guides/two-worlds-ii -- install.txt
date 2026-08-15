@@ -346,6 +346,10 @@ Quest Log:
    Right MB .............. Set Quest as Active
    Left MB ............... Track Quest on Map
    
+Trade Menu:
+   Left MB ............... Sell/Buy Selected Item
+   Left MB + Ctrl ........ Sell Selected Item Stack
+   
 
 /==\______________________________________/==\
 C O N T R O L L E R   B I N D I N G S
@@ -397,6 +401,10 @@ Misc:
    RT (hold) ............. Charge Bow / Charge Spell
    LT (hold) ............. Precision Aim / Sniper Mode (bow)
    Right Stick ........... Camera Zoom (press + move)
+
+Trade Menu:
+   RB ............ Sell/Buy Selected Item 
+   RB + Y ........ Sell Selected Item Stack
 
 
 KNOWN ISSUES   
