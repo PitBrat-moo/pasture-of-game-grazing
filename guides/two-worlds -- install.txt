@@ -320,14 +320,18 @@ The game crashes after ~3-6 manual saves. To maintain stability:
 G A M E   C O N T R O L S
 \__==\---\__==\---/==/
 
+/==\______________________________/==\
+K E Y B O A R D   C O N T R O L S
+\==/______________________________\==/
+
 W ........................ Move forward
 S ........................ Move back
 A ........................ Move left
 D ........................ Move right
-Q ........................ Jump Backward
-E ........................ Jump Forward
+Q ........................ Jump backward
+E ........................ Jump forward
 F ........................ Set armed mode
-[Space] .................. Make action
+[Space] .................. Make action / interact
 X ........................ Select next command
 Alt + X .................. Select previous command
 R ........................ Use previous weapon
@@ -337,10 +341,10 @@ H ........................ Call horse
 Tab ...................... Fast zoom
 
 Left MB .................. Attack
-Right MB ................. Execute selected Action
+Right MB ................. Execute selected action
 Middle MB ................ Next command panel
-Mouse Wheel .............. Zoom
-Ctrl + Left MB ........... Select Stack
+Mouse Wheel .............. Zoom / scroll commands
+Ctrl + Left MB ........... Select stack
 
 F1 ....................... Show skills dialog
 F2 ....................... Show inventory dialog
@@ -354,7 +358,8 @@ F9 ....................... Show custom shortcut bar 2
 F10 ...................... Show custom shortcut bar 3
 F11 ...................... Show chat dialog
 F12 ...................... Setup network game
-Ctrl + F12 ............... Cancel setup network game
+Ctrl + F12 ............... Cancel network setup
+F2 (near horse) .......... Show horse inventory dialog
 
 1 ........................ Make command #1
 2 ........................ Make command #2
@@ -371,18 +376,56 @@ Esc ...................... Open game menu
 Pause .................... Pause game
 Enter .................... Show chat input
 
-Page Up ................. Camera angle up
-Page Down ............... Camera angle down 
-Home .................... Camera zoom in 
-End ..................... Camera zoom out 
-Delete .................. Camera rotate left 
-Insert .................. Camera rotate light 
+Page Up .................. Camera angle up
+Page Down ................ Camera angle down
+Home ..................... Camera zoom in
+End ...................... Camera zoom out
+Delete ................... Camera rotate left
+Insert ................... Camera rotate right
 
-~ ....................... Show console
-Alt + F1 ................ Quick save
-Alt + F2 ................ Save game
-Alt + F3 ................ Load game
+~ ........................ Show console
+Alt + F1 ................. Quick save
+Alt + F2 ................. Save game
+Alt + F3 ................. Load game
+  
+  
+/==\______________________________________/==\
+C O N T R O L L E R   B I N D I N G S
+\==/______________________________________\==/
 
+Left Stick ............... Move character / horse
+Right Stick .............. Camera control / aim
+Left Stick (press) ....... Sneak / crouch
+Right Stick (press) ...... Center camera
+
+A ........................ Jump / confirm / interact
+B ........................ Cancel / roll / dismount
+X ........................ Attack / use selected action
+Y ........................ Draw or sheath weapon
+
+LB ....................... Previous weapon / spell
+RB ....................... Next weapon / spell
+LT ....................... Block / aim (ranged)
+RT ....................... Attack / cast spell
+
+D-Pad Up ................. Open skills dialog
+D-Pad Down ............... Open inventory
+D-Pad Left ............... Open quests
+D-Pad Right .............. Open map
+
+Back ..................... Open game menu
+Start .................... Pause / options
+
+Left Trigger + D-Pad ..... Quick save / load shortcuts
+Right Trigger + D-Pad .... Hotkey bar selection
+
+Left Stick (horse) ....... Steer horse
+Right Trigger (horse) .... Accelerate / gallop
+Left Trigger (horse) ..... Slow down / stop
+A (horse) ................ Mount / dismount
+B (horse) ................ Stop horse
+Y (horse) ................ Call horse
+  
   
 KNOWN ISSUES   
 ------------  
@@ -403,3 +446,5 @@ CHANGELOG
       Wrangled Cutscenes.
       Tilled Installation.
       Grew Save Game protocol.
+1.2 — Added Controller Bindings.
+      Tilled Keyboard Controls.
