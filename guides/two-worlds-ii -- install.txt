@@ -403,8 +403,8 @@ Misc:
    Right Stick ........... Camera Zoom (press + move)
 
 Trade Menu:
-   RB ............ Sell/Buy Selected Item 
-   RB + Y ........ Sell Selected Item Stack
+   RB .................... Sell/Buy Selected Item 
+   RB + Y ................ Sell Selected Item Stack
 
 
 KNOWN ISSUES   
