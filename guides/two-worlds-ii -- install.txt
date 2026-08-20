@@ -180,7 +180,7 @@ Crash at start with the Shattered Embrace DLC installed, even after PhysX (Steam
    Copy the working DLL into the game folder and replace the old file.
    This is the only way to make the Shattered Embrace DLC playable.
 
-Or
+   Or
 
    Uninstall the Shattered Embrace DLC:
       Go to the Two Worlds 2 Steam Library page.
@@ -237,6 +237,17 @@ Restore missing resolutions
       Width = 0x1680 = 5760
       Width = 0x1E00 = 7680
 
+DXVK Wrapper (Optional)  
+If using DXVK with Two Worlds II (DX10):
+   DXVK converts the DX10 renderer to Vulkan. Install ReShade using the Vulkan API, and use DXVK’s internal limiter for Vulkan‑level framerate control.
+
+   (Optional) Set a framerate limit in dxvk.conf:
+      dxgi.maxFrameRate = <FPS>
+      d3d9.maxFrameRate = <FPS>
+      dxvk.maxFrameRate = <FPS>  
+
+   (Recommended) Use RTSS as the primary framerate limiter. It delivers smoother pacing and lower latency.
+   
 Lossless Scaling mouse input stuck in original window
    Lossless Scaling may hook the wrong window after the first launch of the game.
    This causes the mouse pointer to remain locked to the original game window instead of the LS fullscreen window.

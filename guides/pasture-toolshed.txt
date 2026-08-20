@@ -21,6 +21,13 @@ Notes:
 ⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/toolshed-download-links.txt
 
 
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ 4GB Patch
+Description:  A tool that patches x86 executables to let them access 4GB (rather than 2) of virtual memory on x64 platforms.
+→ Launch 4gb_patch.exe
+→ Select the executable file
+→ A backup is automatically created
+
+
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ Coolsoft VirtualMIDISynth
 Description: Host-side MIDI synthesizer with customizable soundfonts.
 → Launch VirtualMIDISynth → Add/Select soundfont → Apply
@@ -58,6 +65,28 @@ Description: Wrapper that converts DirectX 1–7 and Glide calls into Direct3D 1
 → Note: To access extended menus → right-click dgVoodoo Control Panel window → Show all sections of the configuration: Enabled  
 
 
+⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DXVK
+Description: A Vulkan-based translation layer for Direct3D 8/9/10/11.
+→ Install DXVK (latest version)
+  • Copy required files to game root folder (not all files are necessary for all games; copying all files is harmless)
+    → DirectX 32 bit: x32\d3d8.dll, x32\d3d9.dll, x32\d3d10core.dll, x32\d3d11.dll, x32\dxgi.dll
+    → DirectX 64 bit: x64\d3d8.dll, x64\d3d9.dll, x64\d3d10core.dll, x64\d3d11.dll, x64\dxgi.dll
+→ Configuration 
+  • Open "dxvk.conf" in a text editor and add the desired settings.
+    → Framerate Limit: 
+      • dxgi.maxFrameRate = <FPS>
+      • d3d9.maxFrameRate = <FPS>
+      • dxvk.maxFrameRate = <FPS>  
+    → HUD:
+      • DXVK_HUD = 1
+      • DXVK_HUD = fps
+      • DXVK_HUD = full
+    → Force Rendering Device:
+      Note: Use a tool like vulkaninfo to identify the correct device name and UUID.
+      • DXVK_FILTER_DEVICE_NAME="Device Name"
+      • DXVK_FILTER_DEVICE_UUID="00000000000000000000000000000001"      
+
+    
 ⎯(ᶜᵒʷ•ᵔ)⎯─◐◑◒◓─ DXWND
 Description: API‑hooking tool that forces windowed mode, fixes mouse capture, corrects timing, and applies compatibility patches for older Windows games
 

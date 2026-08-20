@@ -5,6 +5,9 @@
 
 ⟆⟆⟆~⟡~⟆⟆   ⇢ downloads ⇠   ⟅⟅~⟣~⟅⟅⟅
 
+⟢(•(oo)•)→ 4GB Patch — Patches x86 executables to let them access 4GB
+⟝→ https://ntcore.com/4gb-patch/
+
 ⟢(•(oo)•)→ Apple Computer QuickTime for Windows 2.1.2 (32-bit)
 ⟝→ https://archive.org/details/apple-computer-quicktime-for-windows-2.1.2
 
@@ -17,14 +20,17 @@
 ⟢(•(oo)•)→ DDrawCompat 
 ⟝→ https://github.com/narzoul/DDrawCompat
 
-⟢(•(oo)•)→ dinputto8 - DirectInput 1-7 to 8 wrapper
+⟢(•(oo)•)→ dinputto8 — DirectInput 1-7 to 8 wrapper
 ⟝→ https://github.com/elishacloud/dinputto8
 
 ⟢(•(oo)•)→ dgVoodoo — Wrapper for rendering stability on modern Windows  
 ⟝→ https://dege.freeweb.hu/dgVoodoo2/  
 ⟝→ https://github.com/dege-diosg/dgVoodoo2/releases
 
-⟢(•(oo)•)→ DXWND - API‑hooking tool for compatibility with older Windows games
+⟢(•(oo)•)→ DXVK — A D3D 8/9/10/11 translation layer for running 3D applications with the Vulkan API
+⟝→ https://github.com/doitsujin/dxvk
+
+⟢(•(oo)•)→ DXWND — API‑hooking tool for compatibility with older Windows games
 ⟝→ https://sourceforge.net/projects/dxwnd/
 
 ⟢(•(oo)•)→ GeneralUser GS v1.471.sf2 — Dream, atmospheric MIDI soundfont.
@@ -33,7 +39,7 @@
 ⟢(•(oo)•)→ K-Lite Codec Pack 
 ⟝→ https://www.codecguide.com/download_kl.htm
 
-⟢(•(oo)•)→ Lame Patcher - Apply binary fixes to executables
+⟢(•(oo)•)→ Lame Patcher — Apply binary fixes to executables
 ⟝→ http://aluigi.altervista.org/mytoolz.htm#lpatch
 
 ⟢(•(oo)•)→ Lossless Scaling — Exact, artifact‑free scaling and frame generation  
