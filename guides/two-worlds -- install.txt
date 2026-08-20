@@ -288,23 +288,23 @@ Disable intro videos to prevent ReShade startup freezes
    • Note: Some editions use different filenames (e.g., Intro.wmv, RealityPump.wmv, TopWare.wmv)
 
 Cutscene freeze / missing videos late in the game
-During the final chapter, the game may freeze on a black screen when attempting to play a video.
-Pressing ESC quickly may help skip the video.
-The game may also skip the final videos and return directly to the main menu. A similar skip can occur during an earlier mid‑quest video.
+   During the final chapter, the game may freeze on a black screen when attempting to play a video.
+   Pressing ESC quickly may help skip the video.
+   The game may also skip the final videos and return directly to the main menu. A similar skip can occur during an earlier mid‑quest video.
 
-This is caused by unreliable WMV playback in the engine.
-ReShade can increase the chance of the freeze, but the issue also occurs without it.
+   This is caused by unreliable WMV playback in the engine.
+   ReShade can increase the chance of the freeze, but the issue also occurs without it.
 
-Fix:
-   • Watch the affected videos using a local media player.
-   • The game’s video files are located in:
-<path-to-game>\Video\
-   • Install WMV codecs as described earlier in the guide to ensure proper playback.
+   Fix:
+      • Watch the affected videos using a local media player.
+      • The game’s video files are located in:
+        <path-to-game>\Video\
+      • Install WMV codecs as described earlier in the guide to ensure proper playback.
 
-Notes:
-   • The game continues normally; only the videos fail to play.
-   • ReShade may worsen the issue, but does not cause it alone.
-   • This issue cannot be fully corrected in‑game.
+   Notes:
+      • The game continues normally; only the videos fail to play.
+      • ReShade may worsen the issue, but does not cause it alone.
+      • This issue cannot be fully corrected in‑game.
 
 {·\···\·} SAVE GAME PROTOCOL {·/···/·}
 The game crashes after ~3-6 manual saves. To maintain stability:
