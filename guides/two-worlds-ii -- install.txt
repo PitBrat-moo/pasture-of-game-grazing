@@ -257,6 +257,17 @@ Lossless Scaling mouse input stuck in original window
       Click once on the desktop.
       Click back on the game window.
       Lossless Scaling will return to fullscreen with correct mouse input.
+
+Crash in Shattered Embrace that always occurs in the same spot (streaming corruption fix)
+   If the game crashes consistently in a specific small area (common in Shattered Embrace), the Grace engine may have corrupted its world‑cell streaming cache.
+
+   Fix:  
+      Launch the Two Worlds II 3D version once.
+      Ignore the warning about missing drivers.
+      Load the save and move past the crash location.
+      Exit the game and return to the HD DX10/11 executable.
+
+   This forces the engine to rebuild the corrupted world cell and usually prevents the crash from returning.
   
    
 /==\__==\---\__==\---\_
@@ -426,6 +437,7 @@ HDR is broken in the engine; keep engine.hdr 0.
 
 EAX audio may cause crashes when used with virtual‑surround headsets; disable EAX in the game’s audio settings.
 
+
 CHANGELOG
 ---------  
 1.0 — Initial forging of the compendium.
@@ -435,3 +447,4 @@ CHANGELOG
       Tilled Keyboard Controls.
       Grew Tweaks and Fixes. Weeded redundancy.
 1.3 — Added DXVK setup.
+1.4 — Tamed Streaming Corruption.
