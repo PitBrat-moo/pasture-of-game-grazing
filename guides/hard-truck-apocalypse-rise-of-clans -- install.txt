@@ -1,0 +1,273 @@
+Hard Truck Apocalypse - Rise of Clans
+
+A clean, stable setup guide for Hard Truck Apocalypse - Rise of Clans on modern Windows systems
+
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+⟝⟜⟝  wrappers · scaling · shading · MIDI · pacing graze in → pasture‑toolshed.txt  ⟞⟟⟞
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture‑toolshed.txt
+
+See the MODS section later in this guide for game specific file links.
+
+
+Windows 10/11 Installation
+------------------------------
+
+Install game
+
+Hex Edit Meridian113.exe to prevent startup crashes:
+  - Open Meridian113.exe in a hex editor like HxD.
+  - Look for line 000001d0
+  - Replace "80 F0 FA 02" (US STEAM) or "00 00 40 00" (COMMUNITY PATCH)
+      with "00 00 30 00"
+
+Edit data/config.cfg to prevent crashes and graphical issues:
+  - Copy and replace the config.cfg file from the unoficial patch into the \HARD TRUCK APOCALYPSE RISE OF CLANS\data folder.
+
+Set custom resolution:
+  - Edit config.cfg
+      r_desiredHeight="2160"
+      r_desiredWidth="2880"
+      r_fullScreen="false"
+      r_height="2160"
+      r_width="2880"
+
+
+TESTED CONFIGURATION
+--------------------
+
+Game Version:
+  Steam (US)
+Display:
+  2880x2160 Windowed
+Graphics:
+  High
+  Trilinear Filtering
+RTSS:
+  237 FPS
+Lossless Scaling:
+  Not required
+
+
+IN-GAME SETTINGS
+----------------
+
+Set graphics options to HIGH.
+Set texture filtering to TRILINEAR.
+  Anisotropic filtering causes graphical issues.
+
+Instead, force anisotropic filtering in the GPU control panel.
+
+
+GPU CONTROL PANEL SETTINGS
+--------------------------
+
+Any GPU:
+  Anisotropic Filtering: 16x
+  Vertical Sync: On
+
+NVIDIA:
+  FXAA: Off (blurs textures)
+  AA Gamma Correction: On
+  AA Mode: Override any application setting
+  AA Setting: 8x
+  AA Transparency: 8x
+  MFAA: Off
+  Anisotropic Sample Optimization: Off
+  Negative LOD Bias: Clamp
+  Texture Filtering Quality: High Quality
+  Texture Filtering Trilinear Optimization: Off
+
+
+RTSS
+----
+
+Note: 
+   • Set framerate limit for improved stability or when using frame generation.
+   • A 237 FPS cap is recommended when using a 240 Hz display to maintain consistent frametimes and VRR operation.
+
+Add Meridian113.exe to RTSS.
+Set Framerate limit.
+
+Recommended:
+  Framerate limit: 237 FPS
+
+Optional (Lossless Scaling Frame Generation):
+  Framerate limit: 144 FPS
+
+  
+SRWE
+----
+
+Use SRWE to set the size and position of the game window.
+To center the game window at 2160p and hide the top and bottom borders:
+  Select running Application: Hard Truck Apocalypse: Rise of Clans
+  Width: 2896  
+  Height: 2199
+  Y: -31
+  Align Window: H.Center
+
+
+LOSSLESS SCALING  
+----------------  
+
+Note:  
+  • The game already runs at very high framerates on modern hardware.
+  • Lossless Scaling Frame Generation is optional and generally provides little benefit compared to native rendering.
+  • Use RTSS to cap the framerate for frame generation.  
+
+Use RTSS to cap framerate:
+  • 237 FPS for native rendering
+  • 144 FPS when using frame generation
+  
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed  
+• Multiplier (base cap 144 FPS):  
+     → 1.8 x 144 FPS (240 Hz @ ~231 FPS)
+     → 1.9 x 120 FPS
+     → 2.9 x 80 FPS
+• Flow Scale: 20-30%  
+• Performance: ON  
+• Capture API: WGC  
+• Queue target: 0 (1 for compatibility)  
+• Clip cursor: Off (optional)  
+• Adjust cursor speed: Off (optional)  
+• Scaling Type: Sharp Bilinear  
+• Rendering Sync Mode: Default  
+• Max frame latency: 1  
+• G‑Sync support: ON  
+
+
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
+
+PATCHES / MODS
+--------------
+
+Unofficial Patch
+  https://github.com/JoomerOffical/EM-PatchOfMeridian
+
+The full patch modifies gameplay mechanics and changes the language to Russian.
+
+The unofficial config.cfg fixes:
+  • Startup crashes
+  • Screen blackouts
+  • Blur effects triggered by damage
+  • Miscellaneous rendering issues
+  
+Installing only the config.cfg from the unofficial patch is recommended.
+  Copy and overwrite config.cfg from the patch into the data folder inside the game folder.
+
+
+TWEAKS & FIXES
+--------------
+
+Fix for the "Unhandled exception errors" at startup:
+  - Use a hex editor like HxD to edit the game executable.
+    1. Browse to the game folder. (SteamLibrary > steamapps > common > HARD TRUCK APOCALYPSE RISE OF CLANS)
+    2. Open Meridian113.exe with a hex editor. 
+    3. Find the line 000001d0
+    4. Replace "80 F0 FA 02" (US STEAM) or "00 00 40 00" (COMMUNITY PATCH) with "00 00 30 00"
+    5. Save the modified executable.
+
+Fix for crashing at startup and graphical issues:
+  - In config.cfg (inside the data folder) change 
+      autoPlayVideo="true" to autoPlayVideo="false" 
+      r_compressedTextures="1" to r_compressedTextures="0"
+      r_graphicalStats_MemAlloc="no" to r_graphicalStats_MemAlloc="yes"
+      shaderMacro0="MIN_MAG_FILTER Anisotropic" to shaderMacro0="MIN_MAG_FILTER Linear" 
+
+Fix for game crashing:
+  - Start the game.
+  - Open Task Manager.
+  - Right-click the Meridian113 entry.
+  - Select and set priority to HIGH.
+  - Select and set affinity to a single CPU (CPU 2).
+
+Fix to prevent crash at startup:
+Note: This method is preserved for historical purposes; prefer the hex edit method.
+  - In Steam go to properties of the game. Under 'Launch Options' add:
+       cmd /c "set OPENSSL_ia32cap=:~0x20000000 && %command%"
+
+Low FPS after loading a save:
+  - Change the in-game graphics settings from the current to the minimum and back several times in the game menu, or reboot.
+
+
+KNOWN ISSUES
+------------
+
+Crashing when loading saves:
+  - Do not save the game during missions, the game may crash when loading. Try to save before missions, but be aware that saving can spawn a pack of bandits.
+
+Bug on mission with tank and city defender:
+  - Destroying all of the robots at the start of the mission creates a soft-lock. 
+    The mission will not register as complete and new robots will not spawn.
+    Fix: after spawning in the tank, wait until the robots come closer to the city (they can't destroy it) before destroying all of the little robots. Wait before destroying the big robots.
+
+Screen Darkening / Stuck Fade Bug
+If the screen remains dark or becomes stuck in a fade effect:
+  - Restart the game first.
+  - If that doesn't help, set graphics to Low.
+  - Play past the location or event where the darkening occurs.
+  - Create a new save after moving beyond the bugged point.
+  - Load a save from before the darkening occurred.
+  - Then load the new save created after the bugged section.
+  - Restore graphics to Medium or High. Select Trilinear Filtering; Anisotropic is broken.
+
+The HUD is stretched in aspect ratios other than 4x3; prefer 4x3 aspect ratio for stability.
+
+
+/==\__==\---\__==\---\_
+G A M E   C O N T R O L S
+\__==\---\__==\---/==/
+
+/==\______________________________/==\
+K E Y B O A R D   C O N T R O L S
+\==/______________________________\==/
+
+W ........................ Accelerate
+S ........................ Brake
+A ........................ Turn left
+D ........................ Turn right
+K ........................ Handbrake
+
+Mouse .................... Camera control / Aim
+Left MB .................. Fire group 1
+Right MB ................. Fire group 2
+Middle MB ................ Fire group 3
+1 ........................ Fire group 4
+2 ........................ Fire group 5
+Space .................... Fire all groups
+R ........................ Reload weapon
+
+H ........................ Signal (horn) / Enter town
+L ........................ Headlights
+O ........................ Return to road
+C ........................ Change camera view
+Ctrl + Left MB ........... Use consumable item
+
+I ........................ Munitions / Shop
+V ........................ Vehicle info / Repair shop
+Tab ...................... Game menu
+Q ........................ Missions
+J ........................ Log
+M ........................ Map
+B ........................ Bar
+N ........................ Optional mission in the city
+
+F1 ....................... Help
+F2 ....................... Quicksave
+F3 ....................... Quickload
+F7 ....................... Show / Hide interface
+F8 ....................... Pause
+F12 ...................... Screenshot
+
+` ........................ Previous weapon (network game)
+. ........................ Next weapon (network game)
+Insert ................... Add bot (network game)
+Delete ................... Delete bot (network game)
+X ........................ Team change (network game)

@@ -1,0 +1,144 @@
+Hard Truck Apocalypse
+
+A clean, stable setup guide for Hard Truck Apocalypse on modern Windows systems
+
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+⟝⟜⟝  wrappers · scaling · shading · MIDI · pacing graze in → pasture‑toolshed.txt  ⟞⟟⟞
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture‑toolshed.txt
+
+See the PATCHES / MODS section later in this guide for game specific file links.
+
+
+Windows 10/11 Installation
+------------------------------
+
+Install game
+
+Install the Community Remaster (TESTED)
+   Requires ComMod mod manager.
+   On Steam, right-click on the game > Properties > Set Language to "Russian". The game will then update.
+   From the release page, download the latest zip folder.
+   Launch the ComMod mod manager, and select the path to the game. If you own the game on Steam, the mod manager may automatically find it.
+   Select a folder where your mods will be kept. This will create two folders at the designated location : "mods" and "logs_commod"
+   Put the downloaded zip file containing the Community Patch in the newly created "mods" folder.
+   In ComMod mod manager, click on the "Local Mods" page, then extract the mod.
+   In the "Local Mods" page of ComMod, click on "Install" for the mod you want. A new page will open up, allowing you to choose if you want the Community Remaster or only the Community Patch, and the language you wish to have. Make sure to pick the English version if you want to play in English.
+   After pressing "Yes" to confirm your choices, you will have the option to deselect optional HD models and textures, and revamped soundtrack. Choose what you want, and press "Yes". The installation will begin, and once done you will have a screen confirming that the installation process is done, with a list of changes made.
+   
+Use RTSS to set the framerate limit to 60  
+
+
+IN‑GAME SETTINGS (TESTED) 
+----------------
+Video
+• Resolution: 3200 x 1800
+• Graphics quality: Custom
+• Water quality: High
+• Grass: Far
+• Shadow quality: High
+• Texture filtering: Anisotropic
+• Bloom quality: High
+• Antialiasing: x8
+• Draw distance: Maximum
+
+
+RTSS
+----
+Note: 
+   • Set framerate limit for improved stability or when using frame generation.
+   • A 60 FPS cap is recommended for stability and to maintain consistent frametimes.
+
+Add hta.exe to RTSS.
+Set Framerate limit: 60 FPS
+
+
+LOSSLESS SCALING  
+----------------  
+Notes:  
+   • Use RTSS to cap framerate to 60 for frame generation  
+   • Requires Window Mode  
+
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed  
+• Multiplier (base cap 60 FPS):  
+     → 3.9  (240 Hz @ ~234 FPS)  
+     → 1.9  (120 Hz @ ~114 FPS)  
+• Flow Scale: 30%  
+• Performance: ON  
+• Capture API: WGC  
+• Queue target: 0 (1 for compatibility)  
+• Clip cursor: Off (optional)  
+• Adjust cursor speed: Off (optional)  
+• Scaling Type: Sharp Bilinear  
+• Rendering Sync Mode: Default  
+• Max frame latency: 2  
+• G‑Sync support: ON  
+
+
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
+
+PATCHES / MODS
+--------------
+Note:
+  Community Remaster is an extensive modification that replaces graphics and changes gameplay mechanics.
+  For fixes only, prefer Community Patch.
+  
+Community Remaster / Community Patch  
+• File: CommunityRemaster-1.14.1-250112a.zip  
+ComMod mod manager
+• File: commod-3.0.6.exe
+
+  https://github.com/DeusExMachinaTeam/EM-CommunityPatch/tree/main
+
+
+
+/==\__==\---\__==\---\_
+G A M E   C O N T R O L S
+\__==\---\__==\---/==/
+
+/==\______________________________/==\
+K E Y B O A R D   C O N T R O L S
+\==/______________________________\==/
+
+W ........................ Accelerate
+S ........................ Brake
+A ........................ Turn left
+D ........................ Turn right
+K ........................ Handbrake
+
+Mouse .................... Camera control / Aim
+Left MB .................. Fire group 1
+Right MB ................. Fire group 2
+Middle MB ................ Fire group 3
+1 ........................ Fire group 4
+2 ........................ Fire group 5
+Space .................... Fire all groups
+R ........................ Reload weapon
+
+H ........................ Horn / Enter town
+L ........................ Headlights
+O ........................ Get out of the difficult place
+G ........................ Pick up everything
+
+I ........................ Inventory / Marketplace / Pick up cargo
+V ........................ Car stats / Workshop
+Tab ...................... Game menu
+Q ........................ Quest log
+J ........................ History
+M ........................ Map
+B ........................ Bar
+N ........................ Special place in town
+
+F1 ....................... Help
+F2 ....................... Quicksave
+F3 ....................... Quickload
+F7 ....................... Hide / Show interface
+F8 ....................... Pause
+F12 ...................... Screenshot
+
