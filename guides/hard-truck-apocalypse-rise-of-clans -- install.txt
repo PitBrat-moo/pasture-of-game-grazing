@@ -110,8 +110,8 @@ To center the game window at 2160p and hide the top and bottom borders:
   Align Window: H.Center
 
 
-LOSSLESS SCALING  
-----------------  
+LOSSLESS SCALING (OPTIONAL) 
+---------------------------  
 
 Note:  
   • The game already runs at very high framerates on modern hardware.
@@ -138,6 +138,20 @@ Use RTSS to cap framerate:
 • Rendering Sync Mode: Default  
 • Max frame latency: 1  
 • G‑Sync support: ON  
+
+
+<>>------------------><<  
+STARTUP ROUTINE  
+>><------------------<<>  
+• Select Sound Playback Device
+• (Optional) Attach Controller  
+• Launch RTSS
+• Launch SRWE
+• (Optional) Launch Lossless Scaling
+• Launch Hard Truck Apocalypse - Rise of Clans
+• SRWE → Select the game → set size/position 
+• (Optional) Lossless Scaling → Scale game window  
+• Play  
 
 
 ())~~~~~~~~~~)((

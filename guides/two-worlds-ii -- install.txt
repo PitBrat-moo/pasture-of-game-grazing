@@ -102,8 +102,8 @@ Framerate limit: 100 FPS
 Scanline sync: 0 (OFF)
 
 
-LOSSLESS SCALING  
-----------------  
+LOSSLESS SCALING (OPTIONAL) 
+---------------------------  
 Notes:  
    • Use RTSS to cap framerate to 100 for frame generation  
    • Requires Window Mode  
@@ -132,8 +132,8 @@ For smoother motion:
 • Max frame latency: 1  
 
 
-RESHADE  
--------  
+RESHADE (OPTIONAL)  
+------------------  
 Note: Use ReShade 5.8.0 for best compatibility.
       Newer versions cause the game to freeze on the first splash screen and close.
       Only install the default ReShade + SweetFX package. Do not install qUINT, prod80, or depth‑based effects. 
@@ -150,7 +150,9 @@ STARTUP ROUTINE
 • (Optional) Attach Controller  
 • (Optional) Launch RTSS  
 • (Optional) Launch Lossless Scaling  
-• Launch Two Worlds 2 → Play  
+• Launch Two Worlds 2   
+• (Optional) Lossless Scaling → Scale game window  
+• Play  
 
 
 ())~~~~~~~~~~)((

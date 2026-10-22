@@ -32,7 +32,7 @@ Use RTSS to set the framerate limit to 60
 
 
 IN‑GAME SETTINGS (TESTED) 
-----------------
+-------------------------
 Video
 • Resolution: 3200 x 1800
 • Graphics quality: Custom
@@ -55,8 +55,8 @@ Add hta.exe to RTSS.
 Set Framerate limit: 60 FPS
 
 
-LOSSLESS SCALING  
-----------------  
+LOSSLESS SCALING (OPTIONAL) 
+---------------------------  
 Notes:  
    • Use RTSS to cap framerate to 60 for frame generation  
    • Requires Window Mode  
@@ -76,6 +76,18 @@ Notes:
 • Rendering Sync Mode: Default  
 • Max frame latency: 2  
 • G‑Sync support: ON  
+
+
+<>>------------------><<  
+STARTUP ROUTINE  
+>><------------------<<>  
+• Select Sound Playback Device
+• (Optional) Attach Controller  
+• Launch RTSS
+• (Optional) Launch Lossless Scaling
+• Launch Hard Truck Apocalypse   
+• (Optional) Lossless Scaling → Scale game window  
+• Play  
 
 
 ())~~~~~~~~~~)((
