@@ -148,7 +148,7 @@ STARTUP ROUTINE
 >><------------------<<>  
 • Select Sound Playback Device
 • (Optional) Attach Controller  
-• (Optional) Launch RTSS  
+• Launch RTSS  
 • (Optional) Launch Lossless Scaling  
 • Launch Two Worlds 2   
 • (Optional) Lossless Scaling → Scale game window  
