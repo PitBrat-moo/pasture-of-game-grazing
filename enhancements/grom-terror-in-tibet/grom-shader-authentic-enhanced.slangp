@@ -1,1 +1,62 @@
+# GROM — AUTHENTIC ENHANCED (TRINITRON MEMORY) V2
+# Target:
+# • Authentic late-90s PC presentation
+# • Sony Trinitron-style depth and glow
+# • No scanlines
+# • Minimal modern processing
+# • Preserve texture detail and geometry
+# • Subtle phosphor blending and highlight bloom
 
+shaders = 4
+
+########################################
+# 0 — SHARP-BILINEAR
+# Gentle CRT-like clarity
+########################################
+shader0 = "pixel-art-scaling/shaders/sharp-bilinear.slang"
+filter_linear0 = false
+scale_type0 = source
+
+parameters0 = "SHARPNESS;GAMMA"
+SHARPNESS = 0.28
+GAMMA = 1.00
+
+########################################
+# 1 — CRT-GUESTLITE
+# Trinitron-style depth without scanlines
+########################################
+shader1 = "custom/crt-guestlite.slang"
+filter_linear1 = false
+scale_type1 = source
+
+parameters1 = "glow_strength;chroma_spread;afterglow"
+glow_strength = 0.045
+chroma_spread = 0.08
+afterglow = 0.05
+
+########################################
+# 2 — BLOOM-SOFT
+# Subtle phosphor bloom on highlights
+########################################
+shader2 = "custom/bloom-soft.slang"
+filter_linear2 = true
+scale_type2 = source
+
+parameters2 = "strength;threshold"
+strength = 0.025
+threshold = 0.88
+
+########################################
+# 3 — COLOR-GRADE
+# Neutral enhancement, preserve authenticity
+########################################
+shader3 = "Custom/color-grade.slang"
+filter_linear3 = false
+scale_type3 = source
+
+parameters3 = "exposure;contrast;saturation;lift;gain"
+exposure = 1.00
+contrast = 1.02
+saturation = 1.01
+lift = 1.00
+gain = 1.01
