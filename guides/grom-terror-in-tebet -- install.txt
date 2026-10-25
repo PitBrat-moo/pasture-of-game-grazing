@@ -189,7 +189,7 @@ Grom Debug and QA items
 CUSTOM ENHANCEMENTS (OPTIONAL)
 ------------------------------
 Grom Authentic Enhanced Shader  
-• GitHub: https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/enhancements/grom/grom-shader-authentic-enhanced.slangp  
+• GitHub: https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/enhancements/grom-terror-in-tibet/grom-shader-authentic-enhanced.slangp  
 • Purpose: Improved scaling clarity; preserves color behavior  
 • Compatibility: Requires ShaderGlass; not compatible with Lossless Scaling
 
