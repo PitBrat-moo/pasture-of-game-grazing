@@ -9,15 +9,15 @@ Best Grazing: 🐄 Modern Windows Pasture (Windows 10/11)
 (Chosen for DirectX compatibility, high refresh support, and authentic CRT-style enhancement.)
 
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~
-
+      
 ## Required Guides
 
-- Grom: Terror in Tibet — Install Guide
-  <a href="https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/grom-terror-in-tebet%20--%20install.txt" target="_blank" rel="noopener noreferrer" title="https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/grom-terror-in-tebet%20--%20install.txt">https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/grom-terror-in-tebet%20--%20install.txt</a>
-
-- Pasture Toolshed (wrappers · scaling · shading · MIDI · pacing)
-  <a href="https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture-toolshed.txt" target="_blank" rel="noopener noreferrer" title="https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture-toolshed.txt">https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture-toolshed.txt</a>
-
+- Grom: Terror in Tibet — Install Guide      
+  https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/grom-terror-in-tebet%20--%20install.txt      
+      
+- Pasture Toolshed (wrappers · scaling · shading · MIDI · pacing)      
+  https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture-toolshed.txt      
+      
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~
 
 ## Notes
