@@ -245,7 +245,7 @@ N ........................ Man - Defend
 Backspace ................ Reload weapon
 
   .......SYSTEM KEYS......
-M ........................ Menu 
+ESC, M ................... Menu 
 F2 ....................... Quick save game
 F3 ....................... Quick load game
 Space .................... Pause action
@@ -257,7 +257,6 @@ Num * .................... Zoom reset
 
   ........GAMEPLAY........    
 Shift .................... Modify selection
-ESC, M ................... Show the main menu
-Arrows .................... Scroll background
+Arrows ................... Scroll background
 Ctrl (held) .............. Select objects hidden behind characters
 Mouse Wheel .............. Select weapon
