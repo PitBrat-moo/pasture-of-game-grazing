@@ -216,12 +216,14 @@ A ........................ Small grenade
 S ........................ Panzerfaust
 D ........................ UFO Weapon
 F ........................ Mine
+Mouse Wheel .............. Change weapon
 
   .....ITEM SELECTION.....
 G ........................ Small medkit
 H ........................ Medkit
 J ........................ The stone of health
 K ........................ Mine detector
+Ctrl (held) .............. Select objects hidden behind characters
 
   ...CHARACTER SELECTION..
 1 ........................ Select character 1
@@ -231,6 +233,7 @@ K ........................ Mine detector
 5 ........................ Select character 5
 ` ........................ Select all characters 
 0 ........................ Unselect all characters 
+Shift (held) ............. Modify selection
 
   ....CHARACTER CONTROL...  
 Z ........................ Stand
@@ -254,9 +257,4 @@ Delete ................... Hide/unhide desktop icons
 Num + .................... Zoom in
 Num - .................... Zoom out
 Num * .................... Zoom reset
-
-  ........GAMEPLAY........    
-Shift .................... Modify selection
 Arrows ................... Scroll background
-Ctrl (held) .............. Select objects hidden behind characters
-Mouse Wheel .............. Select weapon
