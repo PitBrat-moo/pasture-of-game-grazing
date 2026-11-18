@@ -1,1 +1,62 @@
+# FRATER — AUTHENTIC ENHANCED
+# Target:
+# • High-end 2006 CRT / early LCD memory
+# • Preserve gothic textures and spell effects
+# • Minimal processing
+# • No scanlines
+# • Stronger readability than Grom
+# • Slight bloom on magic effects and highlights
 
+shaders = 4
+
+########################################
+# 0 — SHARP-BILINEAR
+# Preserve texture detail
+########################################
+shader0 = "pixel-art-scaling/shaders/sharp-bilinear.slang"
+filter_linear0 = false
+scale_type0 = source
+
+parameters0 = "SHARPNESS;GAMMA"
+SHARPNESS = 0.32
+GAMMA = 1.00
+
+########################################
+# 1 — CRT-GUESTLITE
+# Very subtle display depth
+########################################
+shader1 = "custom/crt-guestlite.slang"
+filter_linear1 = false
+scale_type1 = source
+
+parameters1 = "glow_strength;chroma_spread;afterglow"
+glow_strength = 0.030
+chroma_spread = 0.05
+afterglow = 0.035
+
+########################################
+# 2 — BLOOM-SOFT
+# Slight spell and highlight bloom
+########################################
+shader2 = "custom/bloom-soft.slang"
+filter_linear2 = true
+scale_type2 = source
+
+parameters2 = "strength;threshold"
+strength = 0.020
+threshold = 0.90
+
+########################################
+# 3 — COLOR-GRADE
+# Dark fantasy preservation
+########################################
+shader3 = "custom/color-grade.slang"
+filter_linear3 = false
+scale_type3 = source
+
+parameters3 = "exposure;contrast;saturation;lift;gain"
+exposure = 1.00
+contrast = 1.03
+saturation = 1.02
+lift = 0.995
+gain = 1.015
