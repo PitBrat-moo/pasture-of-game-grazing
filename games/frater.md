@@ -12,10 +12,10 @@ Best Grazing: 🐄 Modern Windows Pasture (Windows 10/11)
 
 ## Required Guides
 
-- Frater — Install Guide
+- Frater — Install Guide      
   <a href="https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/frater%20--%20install.txt" target="_blank" rel="noopener noreferrer" title="https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/frater%20--%20install.txt" class="fai-ChatInputEntity__text ___6erqso0 fyind8e f1tx3yz7 f1deo86v f1eh06m1 f1iescvh">https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/frater%20--%20install.txt</a>
 
-- Pasture Toolshed (wrappers · scaling · shading · MIDI · pacing)
+- Pasture Toolshed (wrappers · scaling · shading · MIDI · pacing)      
   <a href="https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture-toolshed.txt" target="_blank" rel="noopener noreferrer" title="https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture-toolshed.txt" class="fai-ChatInputEntity__text ___6erqso0 fyind8e f1tx3yz7 f1deo86v f1eh06m1 f1iescvh">https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture-toolshed.txt</a>
 
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~
