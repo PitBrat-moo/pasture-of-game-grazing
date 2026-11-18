@@ -41,7 +41,6 @@ The Anger of the Earth cave crash is a long-standing game bug. A workaround is d
 
 - ShaderGlass with Frater Authentic Enhanced Shader
 - Lossless Scaling Frame Generation
-- ReShade authentic-enhanced preset
 
 ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~ ~~
 
