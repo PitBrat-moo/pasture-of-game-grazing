@@ -1,0 +1,354 @@
+The Chosen - Well of Souls (Frater)
+
+A clean, stable setup guide for Frater on modern Windows systems
+
+))(~~~~~~~~~~(()
+INSTALLATION
+(()~~~~~~~~~~))(
+
+⟝⟜⟝  wrappers · scaling · shading · MIDI · pacing graze in → pasture‑toolshed.txt  ⟞⟟⟞
+⟝→ https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/guides/pasture‑toolshed.txt
+
+See the PATCHES and CUSTOM ENHANCEMENTS sections later in this guide for game specific file links.
+
+
+Windows 10/11 Installation
+------------------------------
+
+Note: On Windows 10 and later, there is a bug in all versions of the game that requires a workaround.
+      See the KNOWN ISSUES section at the end of the guide for the workaround.
+          
+
+Install game
+
+Install the 1.4 patch.
+  Note: The updated game reports version 1.13, do not apply the patch to this version.
+        If the base game is version 1.11, install the English patch.
+        For other versions of the base game:
+        Install the Polish patch (converts game to the Polish language).
+  
+Apply 4GB patch.
+  Run the patcher and select the game executable:
+    ..\Frater\bin\main.exe
+
+Install dgVoodoo.
+  Copy these file to ..\Frater\bin\
+    dgvoodoo.conf
+    dgvoodooCpl.exe
+    MS\x86\D3D8.dll
+    MS\x86\D3DImm.dll
+    MS\x86\DDraw.dll
+
+Configure the resolution.
+Note: Some resolutions are missing from the graphics options in-game.
+      Aspect ratios other than 4x3 result in HUD stretching.
+      4x3 resolutions greater than 2048x1538 result in crashing.
+      Tested: 3840x2160
+
+Set a custom resolution using regedit:
+   Key → \HKEY_CURRENT_USER\Software\Classes\VirtualStore\MACHINE\SOFTWARE\WOW6432Node\Rebelmind\Frater
+   Set v_sx and v_sy to the desired values.
+
+   Common Resolutions:
+      v_sx = 1600
+      v_sy = 1200
+      v_sx = 2048
+      v_sy = 1536
+      v_sx = 3840 
+      v_sy = 2160 
+    
+
+Set the window size and position with SRWE.
+(Optional) Apply shaders with Shaderglass.
+
+
+DGVOODOO CONFIGURATION 
+----------------------
+Note: The game ignores dgVoodoo's windowed, scaling, and FPS settings.
+      Use SRWE to adjust the game window size and position.
+
+• General  
+  → Appearance: Windowed    
+  → Scaling: Unspecified  
+  → Keep window aspect ratio: Enabled
+  → Capture mouse: Disabled  
+  → Center app window: Disabled
+• DirectX  
+  → VRAM: 1024 MB (best for streaming)  
+  → Filtering: App driven  
+  → Mipmapping: App driven  
+  → Resolution: Unforced
+  → Application controlled fullscreen: Disabled  
+  → Disable Alt‑Enter: Enabled  
+  → Antialiasing (MSAA): App driven
+  → Force vSync: Enabled  
+  → Fast video memory access: Enabled  
+  → dgVoodoo Watermark: Disabled  
+
+
+GPU CONTROL PANEL SETTINGS
+--------------------------
+
+Any GPU:
+  Anisotropic Filtering: 16x
+  Vertical Sync: Disabled (Only Enabled in dgVoodoo)
+
+NVIDIA:
+  FXAA: Off (blurs textures)
+  AA Gamma Correction: On
+  AA Mode: Override any application setting
+  AA Setting: 8x
+  AA Transparency: 4x-8x
+  MFAA: Off
+  Anisotropic Sample Optimization: Off
+  Negative LOD Bias: Clamp
+  Texture Filtering Quality: High Quality
+  Texture Filtering Trilinear Optimization: Off
+
+
+SRWE
+----
+Note:
+  • Use SRWE to set the size and position of the game window.
+  • If using Shaderglass, apply SRWE to both the Frater and Shaderglass windows.
+  
+Set the game window resolution and center it on the desktop:
+  Select running Application: Frater (main.exe)
+  Width: 3840 (4x3 = 2880) 
+  Height: 2160 
+  Align Window: H.Center
+  Align Window: V.Center
+
+
+SHADERGLASS CONFIGURATION (OPTIONAL)
+------------------------------------
+• Output → Mode → Glass
+• Output → Window → Click-through
+• Input → Pixel Size → x1
+• Shader → Import custom → frater-shader-authentic-enhanced.slangp
+• Hide Menu (Shortcut key 'm')
+ 
+  
+LOSSLESS SCALING (OPTIONAL) 
+---------------------------  
+Note:  
+  • The game already runs at very high framerates on modern hardware.
+  • Lossless Scaling Frame Generation is optional and generally provides little benefit compared to native rendering.
+  • Use RTSS to cap the framerate for frame generation.  
+
+Use RTSS to cap framerate:
+  • 144 FPS when using frame generation
+  
+• Frame Generations Type: LSFG 3.1  
+• Mode: Fixed  
+• Multiplier (base cap 144 FPS):  
+     → 1.8 x 144 FPS (240 Hz @ ~231 FPS)
+     → 1.9 x 120 FPS
+     → 2.9 x 80 FPS
+• Flow Scale: 20-30%  
+• Performance: ON  
+• Capture API: WGC  
+• Queue target: 0 (1 for compatibility)  
+• Clip cursor: Off (optional)  
+• Adjust cursor speed: Off (optional)  
+• Scaling Type: Sharp Bilinear  
+• Rendering Sync Mode: Default  
+• Max frame latency: 1  
+• G‑Sync support: ON  
+
+
+<>>------------------><<
+STARTUP ROUTINE
+>><------------------<<>
+• Select Sound Playback Device
+• (Optional) Attach Controller  
+• (Optional) Launch RTSS
+• Launch SRWE
+• Launch Frater  
+• SRWE → Select Frater → set size/position 
+• (Optional) Launch Shaderglass
+             SRWE → Select Shaderglass → set size/position
+             Shaderglass → x1 → Shader → Glass → Click-Through → Hide Menu
+             Alt+Tab to the Frater window
+• Play
+
+
+())~~~~~~~~~~)((
+END INSTALLATION
+)((~~~~~~~~~~())
+
+
+PATCHES  
+-------  
+
+Frater Patch 1.4 (1.13)
+(International) frater_v11_to_v14.zip
+(Polish) frater_patch_v14pl.zip
+https://www.patches-scrolls.de/patch/1721/7/
+
+
+CUSTOM ENHANCEMENTS (OPTIONAL)
+------------------------------
+
+Frater Authentic Enhanced Shader  
+• GitHub: https://github.com/PitBrat-moo/pasture-of-game-grazing/blob/main/enhancements/frater/frater-authentic-enhanced.slangp  
+• Purpose: Improved scaling clarity; preserves color behavior  
+• Compatibility: Requires ShaderGlass; not compatible with Lossless Scaling
+
+
+TWEAKS & FIXES
+--------------
+
+- SAVE GAMES
+Save games are stored in:
+%APPDATA%/Frater
+  or
+%APPDATA%/The Chosen
+  or
+Game Folder/save  
+
+To transfer saves, copy the active user_# folder into the working save folder.
+
+
+- CHEAT CODES
+How to Open the Cheat Console
+  Hotkey method: Press Alt + Shift + Pause during gameplay to open the cheat input window 
+  Console method: Launch the game with the -cheat parameter; open the console with Tab 
+  Case insensitive: Commands work in any capitalization 
+
+Useful Cheat Codes 
+Type each command in the console and press Enter:
+  MORT 0 – Make the player immortal.
+  MORT 1 – Re‑enable mortality.
+  VIS 0 – Become invisible.
+  VIS 1 – Make visible again.
+  GOLD <#> – Set gold to the given amount.
+  SPLEVEL <#> – Adjust spell level by the given amount.
+  POINTS <#> – Set development points to the given amount.
+  DAMAGE <#> – Set attack damage multiplier (e.g., 2 = double damage).
+  SPEED <#> – Set movement speed multiplier (e.g., 2 = double speed).
+  RESURRECT – Revive the player (functionality may vary).
+
+Example: GOLD 10000 will give 10,000 gold.
+
+
+/==\__==\---\__==\---\_
+G A M E   C O N T R O L S
+\__==\---\__==\---/==/
+
+/==\______________________________/==\
+K E Y B O A R D   C O N T R O L S
+\==/______________________________\==/
+
+Left MB .................. Move / Follow Cursor
+                           Attack with Weapon or Fists
+                           Pick Up Items
+                           Interact with NPCs / Objects
+
+Right MB ................. Cast Spell
+                           Summon Demon
+                           Confirm Spell/Demon Target
+
+ESC ...................... Main Menu
+
+W ........................ Camera Up
+S ........................ Camera Down
+A ........................ Rotate Camera Right
+D ........................ Rotate Camera Left
+
+Q ........................ Zoom Camera Out
+E ........................ Zoom Camera In
+X ........................ Reset Camera Position
+
+R ........................ Toggle Run / Walk
+Ctrl (hold) .............. Run
+Shift .................... Stand In Place
+
+1 ........................ Weapon Set 1
+2 ........................ Weapon Set 2
+` ........................ Toggle Weapon Sets
+F ........................ Reload Weapon
+
+H ........................ Use Health Potion
+M ........................ Use Mana Potion
+
+Tab ...................... Map
+I ........................ Inventory / Equipment
+C ........................ Character Screen
+L ........................ Log / Quest Log
+
+J ........................ Spell / Demon Selection
+K ........................ Skill Selection
+
+G ........................ Summon / Dismiss Golem
+N ........................ Summon / Dismiss Neferkar
+
+F5 ....................... Assign Spell / Demon
+F6 ....................... Assign Spell / Demon
+F7 ....................... Assign Spell / Demon
+F8 ....................... Assign Spell / Demon
+
+B ........................ Enter / Exit Laboratory
+
+F2 ....................... Quick Save
+F3 ....................... Quick Load
+
+Caps Lock ................ Toggle Show Object Names
+Alt (hold) ............... Show Object Names
+                           Show Enemy Health
+
+Space / P ................ Pause
+
+Mouse Wheel .............. Zoom Map In / Out (Defualt: Turn Scene)
+                           (while cursor is over expanded map)
+
+F13 ...................... Screenshot
+
+
+TESTED PLAYTHROUGH
+------------------
+
+Completed:
+✔ Main Campaign
+
+Test Platform:
+✔ Windows 11
+✔ dgVoodoo
+✔ 3840x2160
+✔ 16:9 HUD stretch
+
+Known Completion Blockers:
+✔ Anger of the Earth cave crash (workaround documented)
+   
+
+KNOWN ISSUES
+------------
+
+- The game crashes at the Anger of the Earth den in Desert City shortly after walking over the (!) trigger.
+  Note: Do not enter the cave. Do not go near the trigger nor the flame, not even from outside the cave.
+        Activating the trigger and approaching the flame will crash the game.
+        The cave contains no enemies nor any required progression content and may be safely skipped.
+
+  Bypass the cave with a workaround, either the immortality and speed cheats or "BLOW BLOCKING" armor.
+
+  Use immortality and speed cheats.
+  Enable cheats:
+    Press Shift + Alt + Pause and type mort 0
+    Press Shift + Alt + Pause and type speed 10
+  Bypass crash:
+    Backtrack to the flame where the cave exits near the start of the level.
+    Pass through the flame while immortal.  
+    Continue forward and shoot the snakes to extinguish the flame.
+    Leave without entering the cave. 
+  Disable cheats:
+    Press Shift + Alt + Pause and type mort 1
+    Press Shift + Alt + Pause and type speed 1
+  
+  Proceed to the end of the level.  
+  
+  Alternatively 
+  
+  Use "BLOW BLOCKING" armor.
+    Obtain and equip "BLOW BLOCKING" armor, stand next to any flame other than the flame in the cave, allow an enemy to hit the player character until the blow blocking effect activates and the armor glows blue, then immediately step through the flame. 
+
+  
